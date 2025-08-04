@@ -15,9 +15,15 @@ def fetch_jobs() -> list[dict]:
     jobs = []
     for card in soup.select("div.listing"):
         title = card.select_one("h3.listing-title").get_text(strip=True)
-        company = 'Yellowhouse Machinery'
-        location = card.select_one("li.udf-1960635 span.value")
-        salary = card.select_one("li.udf-salary span.value")
+
+        company = "Yellowhouse Machinery"       # hard-coded for this board
+
+        loc_el = card.select_one("li.udf-1960635 span.value")
+        location = loc_el.get_text(strip=True) if loc_el else None
+
+        sal_el = card.select_one("li.udf-salary span.value")
+        salary = sal_el.get_text(strip=True) if sal_el else None
+
         url2 = card.select_one("a[href]")["href"]
 
         jobs.append(
@@ -27,7 +33,7 @@ def fetch_jobs() -> list[dict]:
                 "company": company,
                 "location": location,
                 "salary": salary,
-                "url": BASE_URL+url2,
+                "url": url+url2,
                 "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
                 "source": "Yellowhouse",
             }
