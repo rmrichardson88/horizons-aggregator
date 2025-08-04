@@ -1,6 +1,8 @@
 import hashlib, json, pathlib
 
 DATA_PATH = pathlib.Path("data/latest_jobs.json")
+DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+
 
 def build_job_id(title: str, company: str, location: str) -> str:
     key = f"{title}|{company}|{location}"
