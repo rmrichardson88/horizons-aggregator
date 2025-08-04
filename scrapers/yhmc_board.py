@@ -2,7 +2,7 @@ import hashlib, json, time
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
-#from utils import build_job_id
+from utils import build_job_id
 
 BASE_URL = "https://careers.yhmc.com/"
 
@@ -22,7 +22,7 @@ def fetch_jobs() -> list[dict]:
 
         jobs.append(
             {
-                #"id": build_job_id(title, company, location),
+                "id": build_job_id(title, company, location),
                 "title": title,
                 "company": company,
                 "location": location,
