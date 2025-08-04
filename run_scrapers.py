@@ -3,7 +3,7 @@ from pathlib import Path
 from utils import load_previous, save_latest
 
 SCRAPER_MODULES = [
-    "scrapers.local_board_xyz",
+    "scrapers.yhmc_board",
     # "scrapers.other_board",
 ]
 
