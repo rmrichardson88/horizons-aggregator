@@ -33,7 +33,7 @@ def fetch_jobs() -> list[dict]:
                 "company": company,
                 "location": location,
                 "salary": salary,
-                "url": url+url2,
+                "url": BASE_URL+url2,
                 "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
                 "source": "Yellowhouse",
             }
