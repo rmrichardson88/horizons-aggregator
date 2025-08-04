@@ -1,0 +1,32 @@
+name: Nightly scrape & commit
+on:
+  schedule:
+    - cron: "0 5 * * *"   # 03:00 UTC ≈ 21:00 MT
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run scrapers
+        run: python run_scrapers.py
+
+      - name: Commit & push if changed
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "data/latest_jobs.json"
+          default_author: github_actions
+          message: "chore: nightly job scrape"
+
+      # GitHub automatically emails repo watchers on failure.
+      # For custom SMTP alerting add dawidd6/action-send-mail here.
