@@ -2,7 +2,7 @@ import hashlib, json, time
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
-from utils import build_job_id
+#from utils import build_job_id
 
 BASE_URL = "https://careers.yhmc.com/"
 
@@ -13,21 +13,21 @@ def fetch_jobs() -> list[dict]:
     soup = BeautifulSoup(resp.text, "html.parser")
 
     jobs = []
-    for card in soup.select(".job-card"):
-        title = card.select_one(".job-title").get_text(strip=True)
-        company = card.select_one(".company").get_text(strip=True)
-        location = card.select_one(".location").get_text(strip=True)
-        url = card.select_one("a")["href"]
-        posted = card.select_one(".date").get_text(strip=True)
+    for card in soup.select("div.listing"):
+        title = card.select_one("h3.listing-title").get_text(strip=True)
+        company = 'Yellowhouse Machinery'
+        location = card.select_one("li.udf-1960635 span.value")
+        salary = card.select_one("li.udf-salary span.value")
+        url2 = card.select_one("a[href]")["href"]
 
         jobs.append(
             {
-                "id": build_job_id(title, company, location),
+                #"id": build_job_id(title, company, location),
                 "title": title,
                 "company": company,
                 "location": location,
-                "url": url,
-                "posted": posted,
+                "salary": salary,
+                "url": url+url2,
                 "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
                 "source": "Yellowhouse",
             }
