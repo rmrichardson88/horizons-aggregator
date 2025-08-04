@@ -21,7 +21,7 @@ def main() -> None:
 
     if fresh or not prev:
         # Replace entire file with newest snapshot (simplest logic)
-        save_latest(sorted(fresh + list(prev.values()), key=lambda j: j["posted"], reverse=True))
+        save_latest(sorted(fresh + list(prev.values()), key=lambda j: j["scraped_at"], reverse=True))
 
 if __name__ == "__main__":
     main()
