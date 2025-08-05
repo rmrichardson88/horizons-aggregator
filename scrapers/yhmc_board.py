@@ -1,13 +1,22 @@
 from datetime import datetime
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 from utils import build_job_id
 
-BASE_URL = "https://careers.yhmc.com/"
+BASE_URL = "https://careers.yhmc.com"
+
+
+def normalize_href(href: str) -> tuple[str, str]:
+    """Return (absolute_url, slug) normalized for hashing & display."""
+    abs_url = urljoin(BASE_URL + "/", href.lstrip("/"))
+
+    path = urlparse(abs_url).path.lstrip("/")
+    return abs_url, path
+
 
 def fetch_jobs() -> list[dict]:
-    resp = requests.get(BASE_URL, timeout=15)
+    resp = requests.get(BASE_URL + "/", timeout=15)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -23,9 +32,8 @@ def fetch_jobs() -> list[dict]:
         salary = sal_el.get_text(strip=True) if sal_el else ""
 
         link_el = card.select_one("a[href]")
-        url_abs = urljoin(BASE_URL, link_el["href"]) if link_el else ""
+        abs_url, slug = normalize_href(link_el["href"] if link_el else title)
 
-        slug = link_el["href"].split("?")[0] if link_el else title
         job_id = build_job_id(slug, title, location)
 
         jobs.append({
@@ -34,7 +42,7 @@ def fetch_jobs() -> list[dict]:
             "company": company,
             "location": location,
             "salary": salary,
-            "url": url_abs,
+            "url": abs_url,
             "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
             "source": "Yellowhouse",
         })
