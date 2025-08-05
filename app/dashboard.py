@@ -7,7 +7,7 @@ DATA_FILE = Path(__file__).parents[1] / "data/latest_jobs.json"
 def load_data():
     if DATA_FILE.exists():
         return pd.read_json(DATA_FILE)
-    return pd.DataFrame(columns=["title","company","location","url","posted"])
+    return pd.DataFrame(columns=["title","company","salary","location","url"])
 
 df = load_data()
 
