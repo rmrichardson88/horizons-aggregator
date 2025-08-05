@@ -30,4 +30,4 @@ mask = (
     df["location"].str.contains(city_state, case=False, na=False) if city_state else True
 )
 
-st.dataframe(df[mask][["title","company","location","posted","url"]])
+st.dataframe(df[mask][["title","company","salary","location","url"]])
