@@ -1,6 +1,11 @@
 import json, pandas as pd, streamlit as st
 from pathlib import Path
 
+st.set_page_config(
+    page_title="Horizons Job Aggregator",
+    layout="wide",
+)
+
 DATA_FILE = Path(__file__).parents[1] / "data/latest_jobs.json"
 
 @st.cache_data
@@ -30,4 +35,4 @@ mask = (
     df["location"].str.contains(city_state, case=False, na=False) if city_state else True
 )
 
-st.dataframe(df[mask][["title","company","salary","location","url"]])
+st.dataframe(df[mask][["title","company","salary","location","url"]], use_container_width=True)
