@@ -1,5 +1,85 @@
 [
   {
+    "id": "f0ef0f8cab3f5fb9f9eccaee03b9a869cd3c928d",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "",
+    "salary": "$20 - $30 / hour",
+    "url": "https://careers.yhmc.com/31303336313835362d3734303633?rr_p=192",
+    "scraped_at": "2025-08-05T03:33:40",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "053d077c840d20811accf75654e139b4a80579e7",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "Enid, OK",
+    "salary": "$18 - $50 / hour",
+    "url": "https://careers.yhmc.com/31303330303032332d3733373031?rr_p=192",
+    "scraped_at": "2025-08-05T03:33:40",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "8426a81c8be135b4e9dd59b28c918efa5a98101d",
+    "title": "Preventative Maintenance Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "",
+    "salary": "$24 - $32 / hour",
+    "url": "https://careers.yhmc.com/31303531363037372d3734303633?rr_p=192",
+    "scraped_at": "2025-08-05T03:33:40",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "d02f342f5415bdffd9441ddb381887467b4ac495",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "",
+    "salary": "$18 - $50 / hour",
+    "url": "https://careers.yhmc.com/31303336313835332d3734373238?rr_p=192",
+    "scraped_at": "2025-08-05T03:33:40",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "ac3d0a2b4485106d7ca696dcb7f2937b588786d3",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "",
+    "salary": "$18 - $50 / hour",
+    "url": "https://careers.yhmc.com/31303336373039342d3739313031?rr_p=192",
+    "scraped_at": "2025-08-05T03:33:40",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "d16313a44269a52ac1bccd84fe26e0deda5b1336",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "",
+    "salary": "$18 - $50 / hour",
+    "url": "https://careers.yhmc.com/31303336313835302d3734353031?rr_p=192",
+    "scraped_at": "2025-08-05T03:33:40",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "8e55420d83417ed1af316018f274a21ce293c213",
+    "title": "Parts Representative",
+    "company": "Yellowhouse Machinery",
+    "location": "",
+    "salary": "$18 - $20 / hour",
+    "url": "https://careers.yhmc.com/31303439363931392d3734373238?rr_p=192",
+    "scraped_at": "2025-08-05T03:33:40",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "ed44380e000b65878151b8d39cd167136f8e831a",
+    "title": "Shop Foreman",
+    "company": "Yellowhouse Machinery",
+    "location": "",
+    "salary": "$85,000 - $95,000 / year",
+    "url": "https://careers.yhmc.com/31303532353239392d3739363031?rr_p=192",
+    "scraped_at": "2025-08-05T03:33:40",
+    "source": "Yellowhouse"
+  },
+  {
     "id": "46c257327d8ab74cf5496f347fae1ef162695098",
     "title": "Shop Service Technician",
     "company": "Yellowhouse Machinery",
