@@ -8,20 +8,16 @@ SCRAPER_MODULES = [
 ]
 
 def main() -> None:
-    prev = load_previous()
-    seen_ids = set(prev)
-    fresh = []
+    all_jobs = []
 
     for mod_path in SCRAPER_MODULES:
         scraper = import_module(mod_path)
-        for job in scraper.fetch_jobs():
-            if job["id"] not in seen_ids:
-                fresh.append(job)
-                seen_ids.add(job["id"])
+        all_jobs.extend(scraper.fetch_jobs())
 
-    if fresh or not prev:
-        # Replace entire file with newest snapshot (simplest logic)
-        save_latest(sorted(fresh + list(prev.values()), key=lambda j: j["scraped_at"], reverse=True))
+    # Sort newest-first on scraped_at just for tidy JSON
+    all_jobs.sort(key=lambda j: j["scraped_at"], reverse=True)
+
+    save_latest(all_jobs)
 
 if __name__ == "__main__":
     main()
