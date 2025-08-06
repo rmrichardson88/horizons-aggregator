@@ -1,57 +1,95 @@
 from __future__ import annotations
 
-"""Scraper for Sage Oil Vac job listings (Playwright, async).
+"""Scraper for Sage Oil Vac job listings.
 
-GitHub‑hosted runners can be *slow* to spin up headless Chromium and fetch
-client‑rendered pages, so the original 20‑second selector timeout sometimes
-fires.  This revision:
+⚠️  The site’s Vue front‑end sometimes withholds data from headless browsers
+(e.g., on GitHub Actions).  To make the scraper *reliable* we:
 
-* waits for **networkidle** after navigation, giving Vue time to pull data
-* bumps the selector timeout to **60 000 ms**
-* falls back to a 2‑minute navigation timeout
-* (optional) saves a screenshot ``debug_sageoilvac.png`` when no listings are
-  found, making CI debugging easier
+1. **Hit the board’s JSON feed first** – almost every iSolvedHire site exposes
+   `/jobs?format=json&page=1&per_page=100` (or the same array under a
+   `positions` key).  This returns instantly and bypasses any UI or bot‑block.
+2. Fall back to Playwright *only* if the feed is missing or empty, with a
+   custom, non‑headless user‑agent to dodge basic bot filters.
 
-Dependencies remain the same:
-    pip install playwright nest_asyncio
+Dependencies (unchanged):
+    pip install requests playwright nest_asyncio
     playwright install chromium
 """
 
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
-from typing import List, Dict
+from typing import List, Dict, Optional
 import asyncio
-import os
-
+import json
+import requests
 from playwright.async_api import async_playwright, TimeoutError as PWTimeout
 from utils import build_job_id
 
 BASE_URL = "https://sageoilvac.isolvedhire.com"
+JSON_URL = f"{BASE_URL}/jobs?format=json&page=1&per_page=100"
 LIST_URL = f"{BASE_URL}/jobs/"
 
+################################################################################
+# 1. Lightweight JSON feed
+################################################################################
 
-# ---------------------------------------------------------------------------
-# Async scraping routine
-# ---------------------------------------------------------------------------
+def _fetch_from_feed() -> Optional[List[Dict]]:
+    try:
+        resp = requests.get(JSON_URL, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception:
+        return None  # feed not available or malformed
+
+    rows = data.get("positions", data) if isinstance(data, dict) else data
+    if not rows:
+        return None
+
+    jobs: List[Dict] = []
+    for row in rows:
+        title = row.get("title") or row.get("name", "")
+        url = row.get("url") or row.get("applyUrl", "")
+        location = row.get("location", "").replace(", USA", "").strip()
+
+        jobs.append(
+            {
+                "id": build_job_id(str(row.get("id", url.split("/")[-1])), title, location),
+                "title": title,
+                "company": "Sage Oil Vac",
+                "location": location,
+                "employment_type": row.get("employment_type", ""),
+                "salary": row.get("pay", row.get("compensation", "")),
+                "posted": row.get("posted", row.get("postDate", "")),
+                "url": url,
+                "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
+                "source": "Sage Oil Vac",
+            }
+        )
+    return jobs
+
+################################################################################
+# 2. Playwright fallback (async)
+################################################################################
 
 async def _scrape_async() -> List[Dict]:
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        page = await browser.new_page()
+        browser = await p.chromium.launch(  # slower but only used when feed fails
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
+        context = await browser.new_context(
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/126.0.0.0 Safari/537.36"
+            )
+        )
+        page = await context.new_page()
         await page.goto(LIST_URL, timeout=120_000, wait_until="domcontentloaded")
-        # Wait until all fetch/XHR have quieted down.
         await page.wait_for_load_state("networkidle")
 
-        try:
-            await page.wait_for_selector("a.job-name", timeout=60_000)
-        except PWTimeout:
-            # Debug aid for CI: dump HTML + screenshot so we can inspect why.
-            html = await page.content()
-            Path("sage_debug.html").write_text(html, encoding="utf‑8")
-            await page.screenshot(path="sage_debug.png", full_page=True)
-            await browser.close()
-            raise RuntimeError("Sage Oil Vac listings did not load within 60 s – saved sage_debug.html/png for inspection")
+        await page.wait_for_selector("a.job-name", timeout=90_000)
 
         jobs: List[Dict] = []
         for card in await page.query_selector_all("div.bdb1"):
@@ -77,11 +115,9 @@ async def _scrape_async() -> List[Dict]:
                 if posted_span else ""
             )
 
-            job_id = build_job_id(Path(abs_url).stem, title, location)
-
             jobs.append(
                 {
-                    "id": job_id,
+                    "id": build_job_id(Path(abs_url).stem, title, location),
                     "title": title,
                     "company": "Sage Oil Vac",
                     "location": location,
@@ -97,13 +133,16 @@ async def _scrape_async() -> List[Dict]:
         await browser.close()
         return jobs
 
-
-# ---------------------------------------------------------------------------
-# Public helper that works in both CLI and Jupyter
-# ---------------------------------------------------------------------------
+################################################################################
+# Public helper that chooses the best path
+################################################################################
 
 def fetch_jobs() -> List[Dict]:
-    """Run the async scraper, adapting to the current event‑loop context."""
+    """Return job list from feed if available; otherwise use Playwright."""
+    if jobs := _fetch_from_feed():
+        return jobs
+
+    # Feed failed → fall back to browser scrape.
     try:
         return asyncio.run(_scrape_async())
     except RuntimeError as err:
