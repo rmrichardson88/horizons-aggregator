@@ -1,7 +1,7 @@
 name: Nightly scrape & commit
 on:
   schedule:
-    - cron: "0 5 * * *"   # 03:00 UTC ≈ 21:00 MT
+    - cron: "0 5 * * *"      # 03:00 UTC ≈ 21:00 MT
   workflow_dispatch:
 
 jobs:
@@ -17,17 +17,16 @@ jobs:
 
       - name: Install deps
         run: pip install -r requirements.txt
-        
+
       - name: Install Playwright browser
-        run: |
-          playwright install chromium
+        run: playwright install chromium
 
       - name: Run scrapers
-        run: python run_scrapers.py
-        continue-on-error: true          # keep workflow alive to upload artefacts
+        id: run_scrapers
+        run: python run_scrapers.py          # exits non-zero if it times out
 
       - name: Upload Sage debug artefacts
-        if: failure()                    # only when the scraper raised
+        if: always()                         # runs regardless of scraper outcome
         uses: actions/upload-artifact@v4
         with:
           name: sage-debug
@@ -41,6 +40,3 @@ jobs:
           add: "data/latest_jobs.json"
           default_author: github_actions
           message: "chore: nightly job scrape"
-
-      # GitHub automatically emails repo watchers on failure.
-      # For custom SMTP alerting add dawidd6/action-send-mail here.
