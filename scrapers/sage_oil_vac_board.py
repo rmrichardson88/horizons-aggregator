@@ -1,70 +1,90 @@
+from __future__ import annotations
 from datetime import datetime
-from urllib.parse import urljoin, urlparse
-import re
-import requests
-from bs4 import BeautifulSoup
+from pathlib import Path
+from urllib.parse import urljoin
+from typing import List, Dict
+import asyncio
+
+from playwright.async_api import async_playwright
 from utils import build_job_id
 
 BASE_URL = "https://sageoilvac.isolvedhire.com"
 LIST_URL = f"{BASE_URL}/jobs/"
 
-def normalize_href(href: str) -> tuple[str, str]:
-    """Return `(absolute_url, slug)` normalized for hashing & display."""
-    abs_url = urljoin(BASE_URL + "/", href.lstrip("/"))
-    path = urlparse(abs_url).path.lstrip("/")
-    return abs_url, path
 
-def clean_location(text: str) -> str:
-    m = re.search(r"([A-Za-z .'-]+?,?\s+[A-Z]{2})(?:,\s*USA)?$", text)
-    return m.group(1) if m else text.strip()
+# ---------------------------------------------------------------------------
+# Async scraping routine
+# ---------------------------------------------------------------------------
 
-def fetch_jobs() -> list[dict]:
-    resp = requests.get(LIST_URL, timeout=15)
-    resp.raise_for_status()
+async def _scrape_async() -> List[Dict]:
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto(LIST_URL, timeout=45_000)
 
-    soup = BeautifulSoup(resp.text, "html.parser")
-    jobs: list[dict] = []
+        # Wait for at least one job card (div.bdb1) to be injected
+        await page.wait_for_selector("div.bdb1 >> a.job-name", timeout=20_000)
 
-    for card in soup.select("div.bdb1"):
-        anchor = card.select_one("a.job-name")
-        if not anchor:
-            continue
-        title = anchor.get_text(strip=True)
-        abs_url, slug = normalize_href(anchor["href"])
+        jobs: List[Dict] = []
+        for card in await page.query_selector_all("div.bdb1"):
+            anchor = await card.query_selector("a.job-name")
+            if not anchor:
+                continue
+            title = (await anchor.inner_text()).strip()
+            href = (await anchor.get_attribute("href")) or ""
+            abs_url = urljoin(BASE_URL + "/", href.lstrip("/"))
 
-        span_texts = [
-            s.get_text(strip=True)
-            for s in card.select("div.w-card__content span")
-            if s.get_text(strip=True) and s.get_text(strip=True) != "|"
-        ]
+            # Spans inside the metadata row (location | employment type | salary)
+            spans = [
+                (await s.inner_text()).strip()
+                for s in await card.query_selector_all("div.w-card__content span")
+            ]
+            spans = [t for t in spans if t and t != "|"]
+            location = spans[0] if len(spans) >= 1 else ""
+            employment_type = spans[1] if len(spans) >= 2 else ""
+            salary = spans[2] if len(spans) >= 3 else ""
 
-        location_raw = span_texts[0] if len(span_texts) >= 1 else ""
-        location = clean_location(location_raw) if location_raw else ""
-        employment_type = span_texts[1] if len(span_texts) >= 2 else ""
-        salary = span_texts[2] if len(span_texts) >= 3 else ""
+            posted_span = await card.query_selector("div.pt1 span")
+            posted = (
+                (await posted_span.inner_text()).replace("Posted:", "").strip()
+                if posted_span else ""
+            )
 
-        posted_span = card.select_one("div.pt1 span")
-        posted = (
-            posted_span.get_text(strip=True).replace("Posted:", "").strip()
-            if posted_span
-            else ""
-        )
+            job_id = build_job_id(Path(abs_url).stem, title, location)
 
-        job_id = build_job_id(slug, title, location)
+            jobs.append(
+                {
+                    "id": job_id,
+                    "title": title,
+                    "company": "Sage Oil Vac",
+                    "location": location,
+                    "employment_type": employment_type,
+                    "salary": salary,
+                    "posted": posted,
+                    "url": abs_url,
+                    "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
+                    "source": "Sage Oil Vac",
+                }
+            )
 
-        jobs.append(
-            {
-                "id": job_id,
-                "title": title,
-                "company": "Sage Oil Vac",
-                "location": location,
-                "employment_type": employment_type,
-                "salary": salary,
-                "posted": posted,
-                "url": abs_url,
-                "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
-                "source": "Sage Oil Vac",
-            }
-        )
+        await browser.close()
+        return jobs
 
-    return jobs
+
+# ---------------------------------------------------------------------------
+# Public helper that works in both CLI and Jupyter
+# ---------------------------------------------------------------------------
+
+def fetch_jobs() -> List[Dict]:
+    """Run the async scraper, adapting to the current event‑loop context."""
+    try:
+        # Normal scripts → no loop running
+        return asyncio.run(_scrape_async())
+    except RuntimeError as err:
+        if "asyncio.run() cannot be called from a running event loop" not in str(err):
+            raise
+        # Inside an existing loop (e.g. Jupyter). Patch it and schedule.
+        import nest_asyncio  # lightweight; only imported on this path
+
+        nest_asyncio.apply()
+        return asyncio.get_event_loop().run_until_complete(_scrape_async())
