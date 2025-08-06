@@ -17,6 +17,10 @@ jobs:
 
       - name: Install deps
         run: pip install -r requirements.txt
+        
+      - name: Install Playwright browser
+        run: |
+          playwright install chromium
 
       - name: Run scrapers
         run: python run_scrapers.py
