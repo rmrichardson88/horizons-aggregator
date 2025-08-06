@@ -14,7 +14,6 @@ def main() -> None:
         scraper = import_module(mod_path)
         all_jobs.extend(scraper.fetch_jobs())
 
-    # Sort newest-first on scraped_at just for tidy JSON
     all_jobs.sort(key=lambda j: j["scraped_at"], reverse=True)
 
     save_latest(all_jobs)
