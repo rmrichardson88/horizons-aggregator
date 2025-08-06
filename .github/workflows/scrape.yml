@@ -24,6 +24,16 @@ jobs:
 
       - name: Run scrapers
         run: python run_scrapers.py
+        continue-on-error: true          # keep workflow alive to upload artefacts
+
+      - name: Upload Sage debug artefacts
+        if: failure()                    # only when the scraper raised
+        uses: actions/upload-artifact@v4
+        with:
+          name: sage-debug
+          path: |
+            sage_debug.html
+            sage_debug.png
 
       - name: Commit & push if changed
         uses: EndBug/add-and-commit@v9
