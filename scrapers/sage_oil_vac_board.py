@@ -1,11 +1,30 @@
 from __future__ import annotations
+
+"""Scraper for Sage Oil Vac job listings (Playwright, async).
+
+GitHub‑hosted runners can be *slow* to spin up headless Chromium and fetch
+client‑rendered pages, so the original 20‑second selector timeout sometimes
+fires.  This revision:
+
+* waits for **networkidle** after navigation, giving Vue time to pull data
+* bumps the selector timeout to **60 000 ms**
+* falls back to a 2‑minute navigation timeout
+* (optional) saves a screenshot ``debug_sageoilvac.png`` when no listings are
+  found, making CI debugging easier
+
+Dependencies remain the same:
+    pip install playwright nest_asyncio
+    playwright install chromium
+"""
+
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
 from typing import List, Dict
 import asyncio
+import os
 
-from playwright.async_api import async_playwright
+from playwright.async_api import async_playwright, TimeoutError as PWTimeout
 from utils import build_job_id
 
 BASE_URL = "https://sageoilvac.isolvedhire.com"
@@ -20,10 +39,19 @@ async def _scrape_async() -> List[Dict]:
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
-        await page.goto(LIST_URL, timeout=45_000)
+        await page.goto(LIST_URL, timeout=120_000, wait_until="domcontentloaded")
+        # Wait until all fetch/XHR have quieted down.
+        await page.wait_for_load_state("networkidle")
 
-        # Wait for at least one job card (div.bdb1) to be injected
-        await page.wait_for_selector("div.bdb1 >> a.job-name", timeout=20_000)
+        try:
+            await page.wait_for_selector("a.job-name", timeout=60_000)
+        except PWTimeout:
+            # Debug aid for CI: dump HTML + screenshot so we can inspect why.
+            html = await page.content()
+            Path("sage_debug.html").write_text(html, encoding="utf‑8")
+            await page.screenshot(path="sage_debug.png", full_page=True)
+            await browser.close()
+            raise RuntimeError("Sage Oil Vac listings did not load within 60 s – saved sage_debug.html/png for inspection")
 
         jobs: List[Dict] = []
         for card in await page.query_selector_all("div.bdb1"):
@@ -34,7 +62,6 @@ async def _scrape_async() -> List[Dict]:
             href = (await anchor.get_attribute("href")) or ""
             abs_url = urljoin(BASE_URL + "/", href.lstrip("/"))
 
-            # Spans inside the metadata row (location | employment type | salary)
             spans = [
                 (await s.inner_text()).strip()
                 for s in await card.query_selector_all("div.w-card__content span")
@@ -78,13 +105,17 @@ async def _scrape_async() -> List[Dict]:
 def fetch_jobs() -> List[Dict]:
     """Run the async scraper, adapting to the current event‑loop context."""
     try:
-        # Normal scripts → no loop running
         return asyncio.run(_scrape_async())
     except RuntimeError as err:
         if "asyncio.run() cannot be called from a running event loop" not in str(err):
             raise
-        # Inside an existing loop (e.g. Jupyter). Patch it and schedule.
-        import nest_asyncio  # lightweight; only imported on this path
+        import nest_asyncio
 
         nest_asyncio.apply()
         return asyncio.get_event_loop().run_until_complete(_scrape_async())
+
+
+if __name__ == "__main__":
+    from pprint import pprint
+
+    pprint(fetch_jobs()[:5])
