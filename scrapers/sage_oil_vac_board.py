@@ -52,7 +52,97 @@ HEADERS = {
 }
 
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # 1. Cloudflare‑aware JSON feed discovery (fast path)
+# ---------------------------------------------------------------------------
+
+# Cloudflare delivers a JS challenge the **first** time a new IP hits the
+# domain.  cloudscraper can solve it, but only if we let the challenge run on
+# a *regular* HTML page.  Requesting the JSON endpoint directly (with an
+# `Accept: application/json` header) short‑circuits the puzzle and we just get
+# a dummy HTML page — exactly what we saw in CI.
+#
+# Strategy:   1) GET the public job listing page with a *text/html* Accept
+#                header → cloudscraper solves the challenge and stores the
+#                `cf_clearance` cookie.
+#            2) Immediately request the JSON endpoints (with our normal
+#                headers).  The cookie rides along and Cloudflare returns real
+#                JSON.
+
+
+def _get_scraper() -> cloudscraper.CloudScraper:
+    """Return a session that negotiates Cloudflare and carries our headers."""
+
+    scraper = cloudscraper.create_scraper(browser="chrome")  # solves JS challenge automatically
+    scraper.headers.update(HEADERS)
+    return scraper
+
+
+def _prime_cloudflare(scraper: cloudscraper.CloudScraper) -> None:
+    """Visit LIST_URL once as a normal browser to obtain `cf_clearance`."""
+
+    try:
+        scraper.get(LIST_URL, timeout=20, headers={**HEADERS, "Accept": "text/html"})
+    except Exception:
+        # Even if this fails, continue – worst case we fall back to Playwright
+        pass
+
+
+def _fetch_from_feed() -> Optional[List[Dict]]:
+    """Try every candidate JSON endpoint behind Cloudflare."""
+
+    scraper = _get_scraper()
+    _prime_cloudflare(scraper)  # solve challenge before hitting JSON
+
+    feed_log: List[str] = []
+
+    for path in CANDIDATE_FEEDS:
+        url = f"{BASE_URL}/{path}"
+        try:
+            resp = scraper.get(url, timeout=20)
+            ctype = resp.headers.get("content-type", "")
+            feed_log.append(f"{url} → {resp.status_code} {ctype} (len={len(resp.content)})")
+            if "application/json" not in ctype:
+                continue  # Cloudflare handed us HTML or an error page
+            data = resp.json()
+        except Exception:
+            continue
+
+        rows = (
+            data.get("positions")
+            or data.get("data", {}).get("positions")
+            or (data if isinstance(data, list) else None)
+        ) or []
+        if not rows:
+            continue
+
+        jobs: List[Dict] = []
+        for row in rows:
+            title = row.get("title") or row.get("name", "")
+            url_ = row.get("url") or row.get("applyUrl", "")
+            location = row.get("location", "").replace(", USA", "").strip()
+
+            jobs.append(
+                {
+                    "id": build_job_id(str(row.get("id", url_.split("/")[-1])), title, location),
+                    "title": title,
+                    "company": "Sage Oil Vac",
+                    "location": location,
+                    "employment_type": row.get("employment_type", ""),
+                    "salary": row.get("pay", row.get("compensation", "")),
+                    "posted": row.get("posted", row.get("postDate", "")),
+                    "url": url_,
+                    "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
+                    "source": "Sage Oil Vac",
+                }
+            )
+
+        return jobs  # Success – no Playwright needed
+
+    # If every feed failed, save the log for CI debugging
+    Path("sage_debug_feed.txt").write_text("
+".join(feed_log), "utf-8")
+    return None
 # ---------------------------------------------------------------------------
 
 def _get_scraper() -> cloudscraper.CloudScraper:
