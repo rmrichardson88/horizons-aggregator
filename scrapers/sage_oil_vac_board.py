@@ -1,153 +1,100 @@
-from __future__ import annotations
+"""
+sage_oil_vac_scraper.py
+Scrapes the Sage Oil Vac job board (https://sageoilvac.isolvedhire.com/jobs/)
+and returns a list of dictionaries with keys:
 
-"""Sage Oil Vac scraper – *HTML‑only, no Cloudflare gymnastics*.
+    id, title, company, location, employment_type,
+    salary, posted, url, scraped_at, source
 
-How it works
-============
-* One `GET https://sageoilvac.isolvedhire.com/jobs/` with a desktop User‑Agent.
-* Parse the returned HTML.
-* Extract the big `<script id="__NEXT_DATA__" type="application/json">…` blob
-  that Next.js embeds server‑side.
-* Load the JSON → `positions` array → build job dicts.
-
-Why this is simpler
--------------------
-Because the data is delivered *inside the initial HTML*, Cloudflare never blocks
-it – even to GitHub runners. No JSON feed, no cookies, no Playwright.
-
-Dependencies: `requests`, `beautifulsoup4`, `utils.build_job_id`.
+Requirements:
+    pip install playwright beautifulsoup4
+    playwright install chromium
 """
 
-from datetime import datetime
-from pathlib import Path
-from typing import List, Dict, Optional, Any
-import json
-import requests
-from bs4 import BeautifulSoup, Tag
-from utils import build_job_id
+import asyncio
+import datetime as dt
+import re
+from typing import List, Dict
+
+from bs4 import BeautifulSoup  # for easier DOM traversal
+from playwright.async_api import async_playwright
+
 
 BASE_URL = "https://sageoilvac.isolvedhire.com"
-LIST_URL = f"{BASE_URL}/jobs/"
-
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/126.0.0.0 Safari/537.36"
-    ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9",
-}
-
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
-
-def _extract_positions(data: Any) -> List[Dict]:
-    """Traverse a Next.js `__NEXT_DATA__` payload and return positions list."""
-
-    # Expected path: props → pageProps → positions
-    ptr = data
-    for key in ("props", "pageProps"):
-        ptr = ptr.get(key, {}) if isinstance(ptr, dict) else {}
-    positions = ptr.get("positions") or ptr.get("data", {}).get("positions")
-    if not isinstance(positions, list):
-        return []
-    return positions
+LISTING_URL = f"{BASE_URL}/jobs/"
 
 
-# ---------------------------------------------------------------------------
-# Playwright HTML fallback (handles Cloudflare interstitial)
-# ---------------------------------------------------------------------------
-
-import asyncio
-from playwright.async_api import async_playwright, TimeoutError as PWTimeout
-import nest_asyncio
-
-
-async def _fetch_html_playwright() -> str:
-    """Return page HTML after Cloudflare JS has executed (headless)."""
+async def _get_page_html() -> str:
+    """Launch headless Chromium, navigate to the jobs page, and return full HTML."""
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
-        context = await browser.new_context(user_agent=HEADERS["User-Agent"])
-        page = await context.new_page()
-        await page.goto(LIST_URL, timeout=120_000, wait_until="domcontentloaded")
-        try:
-            # Wait either for job card or for __NEXT_DATA__ script to appear
-            await page.wait_for_function("() => document.querySelector('#__NEXT_DATA__') !== null", timeout=120_000)
-        except PWTimeout:
-            html = await page.content()
-            await browser.close()
-            return html  # Return whatever we have; caller will still attempt parse
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto(LISTING_URL, wait_until="networkidle")
+
+        # Wait until at least one job card is present
+        await page.wait_for_selector("div.bdb1 a.job-name", timeout=15_000)
+
         html = await page.content()
         await browser.close()
-        return html
+    return html
 
 
-# ---------------------------------------------------------------------------
-# Public API
-# ---------------------------------------------------------------------------
-
-def _parse_jobs_from_html(html: str) -> List[Dict]:
-    """Parse HTML and return jobs list (empty list if none)."""
+def _parse_cards(html: str) -> List[Dict]:
+    """Extract job data from the HTML produced by Playwright."""
     soup = BeautifulSoup(html, "html.parser")
-    script: Optional[Tag] = soup.find("script", id="__NEXT_DATA__", type="application/json")
-    if not script or not script.string:
-        return []
-    try:
-        data = json.loads(script.string)
-    except json.JSONDecodeError:
-        return []
-    rows = _extract_positions(data)
-    jobs: List[Dict] = []
-    for row in rows:
-        title = row.get("title") or row.get("name", "")
-        url_ = row.get("url") or row.get("applyUrl", "")
-        location = (row.get("location") or "").replace(", USA", "").strip()
-        posted = row.get("posted", row.get("postDate", ""))
-        employment_type = row.get("employment_type", "")
-        salary = row.get("pay", row.get("compensation", ""))
+    scraped_at = dt.datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    jobs = []
+
+    for card in soup.select("div.bdb1"):
+        title_el = card.select_one("a.job-name")
+        if not title_el:  # Skip malformed cards
+            continue
+
+        # Basic fields
+        title = title_el.get_text(strip=True)
+        href = title_el["href"]
+        url = href if href.startswith("http") else f"{BASE_URL}{href}"
+        job_id = re.search(r"/jobs/(\d+)", url).group(1)
+
+        # Additional metadata (selectors vary slightly between themes)
+        location = (
+            card.select_one(".job-location, .location, [data-testid='job-location']")
+            .get_text(strip=True)
+            if card.select_one(".job-location, .location, [data-testid='job-location']")
+            else ""
+        )
+        salary = (
+            card.select_one(".job-salary, .salary, .compensation")
+            .get_text(strip=True)
+            if card.select_one(".job-salary, .salary, .compensation")
+            else ""
+        )
+
         jobs.append(
             {
-                "id": build_job_id(str(row.get("id", url_.split("/")[-1])), title, location),
+                "id": job_id,
                 "title": title,
                 "company": "Sage Oil Vac",
                 "location": location,
-                "employment_type": employment_type,
                 "salary": salary,
-                "posted": posted,
-                "url": url_,
-                "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
-                "source": "Sage Oil Vac",
+                "url": url,
+                "scraped_at": scraped_at,
+                "source": "sageoilvac",
             }
         )
     return jobs
 
 
-def fetch_jobs() -> List[Dict]:
-    """Fetch Sage Oil Vac jobs, HTML first, Playwright fallback if needed."""
-
-    # 1. Simple requests HTML fetch
-    try:
-        resp = requests.get(LIST_URL, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
-        jobs = _parse_jobs_from_html(resp.text)
-        if jobs:
-            return jobs
-    except Exception:
-        pass
-
-    # 2. Fallback: Playwright to get HTML after Cloudflare JS challenge
-    try:
-        html = asyncio.run(_fetch_html_playwright())
-    except RuntimeError:
-        nest_asyncio.apply()
-        html = asyncio.get_event_loop().run_until_complete(_fetch_html_playwright())
-
-    jobs = _parse_jobs_from_html(html)
-    return jobs
+async def fetch_jobs() -> List[Dict]:
+    """Public entry point: returns list of job dicts."""
+    html = await _get_page_html()
+    return _parse_cards(html)
 
 
+# --------------------------------------------------------------------------- #
+# CLI usage                                                                   #
+# --------------------------------------------------------------------------- #
 if __name__ == "__main__":
-    from pprint import pprint
-    pprint(fetch_jobs()[:5])
+    jobs = asyncio.run(fetch_jobs())
+    for job in jobs:
+        print(job)
