@@ -24,16 +24,15 @@ jobs:
 
       - name: Run scrapers
         id: run_scrapers
-        run: python run_scrapers.py          # exits non-zero if it times out
+        run: python run_scrapers.py
 
-      - name: Upload Sage debug artefacts
-        if: always()                         # runs regardless of scraper outcome
+      - name: Upload Sage Oil Vac debug files
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: sage-debug
+          name: sage-oil-vac-debug
           path: |
-            sage_debug.html
-            sage_debug.png
+            sage_debug*.*
 
       - name: Commit & push if changed
         uses: EndBug/add-and-commit@v9
