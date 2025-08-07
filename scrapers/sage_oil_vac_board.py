@@ -1,16 +1,3 @@
-"""
-sage_oil_vac_scraper.py
-Scrapes the Sage Oil Vac job board (https://sageoilvac.isolvedhire.com/jobs/)
-and returns a list of dictionaries with keys:
-
-    id, title, company, location, employment_type,
-    salary, posted, url, scraped_at, source
-
-Requirements:
-    pip install playwright beautifulsoup4
-    playwright install chromium
-"""
-
 import asyncio
 import datetime as dt
 import re
