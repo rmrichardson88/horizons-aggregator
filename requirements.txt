@@ -4,3 +4,4 @@ pandas
 streamlit>=1.32
 playwright
 nest_asyncio
+cloudscraper>=1.2,<2
