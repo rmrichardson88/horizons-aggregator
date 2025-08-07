@@ -1,16 +1,16 @@
 from __future__ import annotations
 
-"""Scraper for Sage Oil Vac job listings.
+"""Scraper for Sage Oil Vac job listings that bypasses Cloudflare’s anti‑bot page.
 
 Changelog (2025‑08‑06)
 ----------------------
-* Switch to the same XHR headers the iSolved front‑end uses so Cloudflare
-  returns JSON instead of an HTML error page.
-* Broaden JSON extraction (`data.get("data", {}).get("positions")`).
-* Skip Playwright fallback entirely when the feed is reachable.
-* Preserve verbose feed logging for CI debugging.
+* **Add Cloudflare bypass** – use the *cloudscraper* library to negotiate the
+  JS challenge and capture the `cf_clearance` cookie. Once the cookie is set,
+  regular `requests` calls succeed and return JSON.
+* **Keep Playwright as a last‑ditch fallback only** – most CI runs should never
+  launch a browser now, making the job faster and less brittle.
 
-Dependencies: requests, playwright‑python, utils.build_job_id.
+New dependency: `cloudscraper>=1.2,<2`
 """
 
 from datetime import datetime
@@ -19,16 +19,13 @@ from urllib.parse import urljoin
 from typing import List, Dict, Optional
 import asyncio
 import json
-import requests
+
+import cloudscraper  # <— NEW
 from playwright.async_api import async_playwright, TimeoutError as PWTimeout
 from utils import build_job_id
 
 BASE_URL = "https://sageoilvac.isolvedhire.com"
 LIST_URL = f"{BASE_URL}/jobs/"
-
-# ---------------------------------------------------------------------------
-# 1. JSON feed discovery (preferred path)
-# ---------------------------------------------------------------------------
 
 CANDIDATE_FEEDS = [
     "jobs?format=json&per_page=100&page=1",
@@ -36,51 +33,57 @@ CANDIDATE_FEEDS = [
     "jobs/positions.json",
 ]
 
-XHR_HEADERS = {
-    "X-Requested-With": "XMLHttpRequest",  # Marks request as an AJAX call
-    "Referer": LIST_URL,
-    "Accept": "application/json",
-    "Accept-Language": "en-US,en;q=0.9",
-}
+# ----------------------------------------------------------------------------
+# 1. Cloudflare‑aware JSON feed discovery (fast path)
+# ----------------------------------------------------------------------------
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/126.0.0.0 Safari/537.36"
-    ),
-    **XHR_HEADERS,  # Merge dictionaries (requires Python 3.9+)
-}
+def _get_scraper() -> cloudscraper.CloudScraper:
+    """Return a session that automatically solves Cloudflare JS challenges."""
+
+    return cloudscraper.create_scraper(
+        browser={
+            "custom": {
+                "headers": {
+                    "User-Agent": (
+                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                        "AppleWebKit/537.36 (KHTML, like Gecko) "
+                        "Chrome/126.0.0.0 Safari/537.36"
+                    ),
+                    "Accept": "application/json",
+                    "Accept-Language": "en-US,en;q=0.9",
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Referer": LIST_URL,
+                }
+            }
+        }
+    )
 
 
 def _fetch_from_feed() -> Optional[List[Dict]]:
-    """Try the lightweight JSON endpoints first. Returns jobs or None."""
+    """Try every candidate JSON endpoint behind Cloudflare."""
 
+    scraper = _get_scraper()
     feed_log: List[str] = []
 
     for path in CANDIDATE_FEEDS:
         url = f"{BASE_URL}/{path}"
         try:
-            resp = requests.get(url, timeout=20, headers=HEADERS)
+            resp = scraper.get(url, timeout=20)
             ctype = resp.headers.get("content-type", "")
             feed_log.append(f"{url} → {resp.status_code} {ctype} (len={len(resp.content)})")
-
-            # If it's not JSON, bail out early – Cloudflare likely blocked us.
             if "application/json" not in ctype:
-                continue
-
+                continue  # Cloudflare handed us HTML or an error page
             data = resp.json()
         except Exception:
-            continue  # Try the next candidate feed
+            continue
 
-        # iSolved sometimes wraps positions under data -> positions
         rows = (
             data.get("positions")
             or data.get("data", {}).get("positions")
             or (data if isinstance(data, list) else None)
-        )
+        ) or []
         if not rows:
-            continue  # Feed is empty – fall through to next URL
+            continue
 
         jobs: List[Dict] = []
         for row in rows:
@@ -103,17 +106,15 @@ def _fetch_from_feed() -> Optional[List[Dict]]:
                 }
             )
 
-        if jobs:
-            return jobs  # Success – no need for Playwright
+        return jobs  # Success – no Playwright needed
 
-    # If every candidate feed failed or returned empty, save the log for CI.
-    Path("sage_debug_feed.txt").write_text("\n".join(feed_log), encoding="utf-8")
+    # If every feed failed, save the log for CI debugging
+    Path("sage_debug_feed.txt").write_text("\n".join(feed_log), "utf-8")
     return None
 
-
-# ---------------------------------------------------------------------------
-# 2. Playwright fallback (only if feed is blocked)
-# ---------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
+# 2. Playwright fallback (rare)
+# ----------------------------------------------------------------------------
 
 async def _scrape_async() -> List[Dict]:
     async with async_playwright() as p:
@@ -121,16 +122,16 @@ async def _scrape_async() -> List[Dict]:
             headless=True,
             args=["--disable-blink-features=AutomationControlled"],
         )
-        context = await browser.new_context(user_agent=HEADERS["User-Agent"])
+        context = await browser.new_context()
         page = await context.new_page()
         await page.goto(LIST_URL, timeout=120_000, wait_until="domcontentloaded")
         await page.wait_for_load_state("networkidle")
 
+        # Wait until at least one job card appears (Cloudflare now solved)
         try:
             await page.wait_for_selector("a.job-name", timeout=120_000)
         except PWTimeout:
-            # Save artefacts for debugging in CI
-            Path("sage_debug.html").write_text(await page.content(), encoding="utf-8")
+            Path("sage_debug.html").write_text(await page.content(), "utf-8")
             await page.screenshot(path="sage_debug.png", full_page=True)
             await browser.close()
             raise RuntimeError("Playwright fallback timed out – artefacts saved")
@@ -144,7 +145,6 @@ async def _scrape_async() -> List[Dict]:
             href = (await anchor.get_attribute("href")) or ""
             abs_url = urljoin(BASE_URL + "/", href.lstrip("/"))
 
-            # Extract spans (location | employment type | salary)
             spans = [
                 (await s.inner_text()).strip()
                 for s in await card.query_selector_all("div.w-card__content span")
@@ -177,22 +177,19 @@ async def _scrape_async() -> List[Dict]:
         await browser.close()
         return jobs
 
-
-# ---------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 # Public helper
-# ---------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 
 def fetch_jobs() -> List[Dict]:
-    """Return a list of jobs. Prefer JSON feed; fall back to Playwright."""
+    """Return job list from feed (using Cloudflare bypass) or Playwright."""
 
     if jobs := _fetch_from_feed():
-        return jobs  # Fast path
+        return jobs
 
-    # Feed failed – resort to Playwright.
     try:
         return asyncio.run(_scrape_async())
     except RuntimeError as err:
-        # If we're already inside an event loop (e.g. notebook), nest it.
         if "asyncio.run() cannot be called from a running event loop" not in str(err):
             raise
         import nest_asyncio
