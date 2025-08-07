@@ -1,19 +1,43 @@
 from __future__ import annotations
 
-"""Scraper for Sage Oil Vac job listings – Cloudflare‑aware.
+"""Sage Oil Vac scraper with Cloudflare‑proof cookie seeding.
 
-Changelog (2025‑08‑06, hot‑fix)
---------------------------------
-* **Fix cloudscraper usage** – the previous commit passed a *dict* as the
-  `browser` argument; cloudscraper expects a **string** or a dict whose
-  `custom` value is **itself a string**. The bad call blew up before any
-  network traffic happened. We now:
-    1. Instantiate `cloudscraper.create_scraper(browser="chrome")`.
-    2. Immediately update `scraper.headers` with our custom headers.
-* Restored a global `HEADERS` constant so the header set is defined only once.
-* No other logic changes.
+How it works
+============
+1. **Load a cached `cf_clearance` cookie** (``sage_cookie.json``) if present.
+2. Hit the JSON feed. If Cloudflare still serves HTML:
+   • Launch headless Playwright **once**, visit the public job list, solve the
+     challenge, and save ``sage_cookie.json``.
+   • Attach the fresh cookie to a ``cloudscraper`` session and retry the feed.
+3. If *that* fails, fall back to full DOM scraping (Playwright) as a last
+   resort.
 
-New dependency (unchanged): `cloudscraper>=1.2,<2`
+Usage notes
+-----------
+* In CI you’ll need two artifact steps:
+  ```yaml
+  - name: Download CF cookie (if exists)
+    uses: actions/download-artifact@v4
+    with: { name: sage-oil-vac-cookie, path: . }
+
+  - name: Run scrapers
+    run: python run_scrapers.py
+
+  - name: Upload CF cookie
+    if: always()
+    uses: actions/upload-artifact@v4
+    with: { name: sage-oil-vac-cookie, path: sage_cookie.json }
+  ```
+* The cookie usually lives 7–14 days; the seeding step only triggers when the
+  feed fails **and** the cached cookie is missing or expired.
+* Toggle seeding with the env‑var ``CF_SEED_COOKIES=false`` if you ever want
+  to skip Playwright entirely.
+
+Dependencies
+------------
+* ``cloudscraper>=1.2,<2``
+* ``playwright`` (already in repo)
+* ``nest_asyncio`` (for nested event loops)
 """
 
 from datetime import datetime
@@ -21,6 +45,8 @@ from pathlib import Path
 from urllib.parse import urljoin
 from typing import List, Dict, Optional
 import asyncio
+import json
+import os
 
 import cloudscraper
 from playwright.async_api import async_playwright, TimeoutError as PWTimeout
@@ -28,16 +54,13 @@ from utils import build_job_id
 
 BASE_URL = "https://sageoilvac.isolvedhire.com"
 LIST_URL = f"{BASE_URL}/jobs/"
+COOKIE_FILE = Path("sage_cookie.json")
 
 CANDIDATE_FEEDS = [
     "jobs?format=json&per_page=100&page=1",
     "jobs/positions?format=json&per_page=100&page=1",
     "jobs/positions.json",
 ]
-
-# ---------------------------------------------------------------------------
-# Shared headers (used by both requests & Playwright contexts)
-# ---------------------------------------------------------------------------
 
 HEADERS = {
     "User-Agent": (
@@ -52,112 +75,48 @@ HEADERS = {
 }
 
 # ---------------------------------------------------------------------------
+# Cookie helpers
 # ---------------------------------------------------------------------------
-# 1. Cloudflare‑aware JSON feed discovery (fast path)
-# ---------------------------------------------------------------------------
-
-# Cloudflare delivers a JS challenge the **first** time a new IP hits the
-# domain.  cloudscraper can solve it, but only if we let the challenge run on
-# a *regular* HTML page.  Requesting the JSON endpoint directly (with an
-# `Accept: application/json` header) short‑circuits the puzzle and we just get
-# a dummy HTML page — exactly what we saw in CI.
-#
-# Strategy:   1) GET the public job listing page with a *text/html* Accept
-#                header → cloudscraper solves the challenge and stores the
-#                `cf_clearance` cookie.
-#            2) Immediately request the JSON endpoints (with our normal
-#                headers).  The cookie rides along and Cloudflare returns real
-#                JSON.
 
 
-def _get_scraper() -> cloudscraper.CloudScraper:
-    """Return a session that negotiates Cloudflare and carries our headers."""
-
-    scraper = cloudscraper.create_scraper(browser="chrome")  # solves JS challenge automatically
-    scraper.headers.update(HEADERS)
-    return scraper
-
-
-def _prime_cloudflare(scraper: cloudscraper.CloudScraper) -> None:
-    """Visit LIST_URL once as a normal browser to obtain `cf_clearance`."""
-
+def _load_cookies(scraper: cloudscraper.CloudScraper) -> None:
+    """Attach cookies from COOKIE_FILE to scraper session if file exists."""
+    if not COOKIE_FILE.exists():
+        return
     try:
-        scraper.get(LIST_URL, timeout=20, headers={**HEADERS, "Accept": "text/html"})
+        state = json.loads(COOKIE_FILE.read_text())
+        for c in state.get("cookies", []):
+            scraper.cookies.set(c.get("domain"), c.get("name"), c.get("value"), path=c.get("path", "/"))
     except Exception:
-        # Even if this fails, continue – worst case we fall back to Playwright
+        # bad file – ignore and continue
         pass
 
 
-def _fetch_from_feed() -> Optional[List[Dict]]:
-    """Try every candidate JSON endpoint behind Cloudflare."""
+async def _seed_cookie_playwright() -> None:
+    """Run headless Chromium once to obtain a fresh cf_clearance cookie."""
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context()
+        page = await context.new_page()
+        await page.goto(LIST_URL, timeout=120_000, wait_until="networkidle")
+        # Saving storage state captures cf_clearance + other cookies
+        await context.storage_state(path=COOKIE_FILE)
+        await browser.close()
 
-    scraper = _get_scraper()
-    _prime_cloudflare(scraper)  # solve challenge before hitting JSON
 
-    feed_log: List[str] = []
-
-    for path in CANDIDATE_FEEDS:
-        url = f"{BASE_URL}/{path}"
-        try:
-            resp = scraper.get(url, timeout=20)
-            ctype = resp.headers.get("content-type", "")
-            feed_log.append(f"{url} → {resp.status_code} {ctype} (len={len(resp.content)})")
-            if "application/json" not in ctype:
-                continue  # Cloudflare handed us HTML or an error page
-            data = resp.json()
-        except Exception:
-            continue
-
-        rows = (
-            data.get("positions")
-            or data.get("data", {}).get("positions")
-            or (data if isinstance(data, list) else None)
-        ) or []
-        if not rows:
-            continue
-
-        jobs: List[Dict] = []
-        for row in rows:
-            title = row.get("title") or row.get("name", "")
-            url_ = row.get("url") or row.get("applyUrl", "")
-            location = row.get("location", "").replace(", USA", "").strip()
-
-            jobs.append(
-                {
-                    "id": build_job_id(str(row.get("id", url_.split("/")[-1])), title, location),
-                    "title": title,
-                    "company": "Sage Oil Vac",
-                    "location": location,
-                    "employment_type": row.get("employment_type", ""),
-                    "salary": row.get("pay", row.get("compensation", "")),
-                    "posted": row.get("posted", row.get("postDate", "")),
-                    "url": url_,
-                    "scraped_at": datetime.utcnow().isoformat(timespec="seconds"),
-                    "source": "Sage Oil Vac",
-                }
-            )
-
-        return jobs  # Success – no Playwright needed
-
-    # If every feed failed, save the log for CI debugging
-    Path("sage_debug_feed.txt").write_text("".join(feed_log), "utf-8")
-    return None
+# ---------------------------------------------------------------------------
+# Feed discovery (fast path)
 # ---------------------------------------------------------------------------
 
 def _get_scraper() -> cloudscraper.CloudScraper:
-    """Return a session that negotiates Cloudflare and carries our headers."""
-
-    scraper = cloudscraper.create_scraper(browser="chrome")  # solves JS challenge automatically
-    scraper.headers.update(HEADERS)  # apply our custom headers
+    scraper = cloudscraper.create_scraper(browser="chrome")
+    scraper.headers.update(HEADERS)
+    _load_cookies(scraper)
     return scraper
 
 
-def _fetch_from_feed() -> Optional[List[Dict]]:
-    """Try every candidate JSON endpoint behind Cloudflare."""
-
-    scraper = _get_scraper()
-    feed_log: List[str] = []
-
+def _try_json_feed(scraper: cloudscraper.CloudScraper, feed_log: List[str]) -> Optional[List[Dict]]:
+    """Return jobs list if any JSON endpoint succeeds."""
     for path in CANDIDATE_FEEDS:
         url = f"{BASE_URL}/{path}"
         try:
@@ -165,7 +124,7 @@ def _fetch_from_feed() -> Optional[List[Dict]]:
             ctype = resp.headers.get("content-type", "")
             feed_log.append(f"{url} → {resp.status_code} {ctype} (len={len(resp.content)})")
             if "application/json" not in ctype:
-                continue  # Cloudflare handed us HTML or an error page
+                continue
             data = resp.json()
         except Exception:
             continue
@@ -198,15 +157,42 @@ def _fetch_from_feed() -> Optional[List[Dict]]:
                     "source": "Sage Oil Vac",
                 }
             )
+        return jobs
+    return None
 
-        return jobs  # Success – no Playwright needed
 
-    # If every feed failed, save the log for CI debugging
+def _fetch_from_feed() -> Optional[List[Dict]]:
+    """Try JSON endpoints with optional cookie seeding."""
+
+    feed_log: List[str] = []
+    scraper = _get_scraper()
+
+    # First attempt using current cookie jar
+    jobs = _try_json_feed(scraper, feed_log)
+    if jobs:
+        return jobs
+
+    # If feed failed and seeding is allowed, run Playwright once
+    if os.getenv("CF_SEED_COOKIES", "true").lower() in {"1", "true", "yes"}:
+        try:
+            asyncio.run(_seed_cookie_playwright())
+        except RuntimeError:
+            import nest_asyncio
+            nest_asyncio.apply()
+            asyncio.get_event_loop().run_until_complete(_seed_cookie_playwright())
+
+        # Reload scraper with fresh cookie
+        scraper = _get_scraper()
+        jobs = _try_json_feed(scraper, feed_log)
+        if jobs:
+            return jobs
+
+    # Save log for debugging
     Path("sage_debug_feed.txt").write_text("\n".join(feed_log), "utf-8")
     return None
 
 # ---------------------------------------------------------------------------
-# 2. Playwright fallback (rare)
+# Playwright DOM fallback
 # ---------------------------------------------------------------------------
 
 async def _scrape_async() -> List[Dict]:
@@ -265,28 +251,27 @@ async def _scrape_async() -> List[Dict]:
         return jobs
 
 # ---------------------------------------------------------------------------
-# Public helper
+# Public API
 # ---------------------------------------------------------------------------
 
 def fetch_jobs() -> List[Dict]:
-    """Return job list from feed (Cloudflare bypass) or Playwright."""
+    """Return job list using JSON feed when possible; otherwise Playwright."""
 
     jobs = _fetch_from_feed()
     if jobs:
         return jobs
 
+    # Final fallback: full DOM scrape
     try:
         return asyncio.run(_scrape_async())
     except RuntimeError as err:
         if "asyncio.run() cannot be called from a running event loop" not in str(err):
             raise
         import nest_asyncio
-
         nest_asyncio.apply()
         return asyncio.get_event_loop().run_until_complete(_scrape_async())
 
 
 if __name__ == "__main__":
     from pprint import pprint
-
     pprint(fetch_jobs()[:5])
