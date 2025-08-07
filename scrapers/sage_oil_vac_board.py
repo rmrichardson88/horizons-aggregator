@@ -1,16 +1,19 @@
 from __future__ import annotations
 
-"""Scraper for Sage Oil Vac job listings that bypasses Cloudflare’s anti‑bot page.
+"""Scraper for Sage Oil Vac job listings – Cloudflare‑aware.
 
-Changelog (2025‑08‑06)
-----------------------
-* **Add Cloudflare bypass** – use the *cloudscraper* library to negotiate the
-  JS challenge and capture the `cf_clearance` cookie. Once the cookie is set,
-  regular `requests` calls succeed and return JSON.
-* **Keep Playwright as a last‑ditch fallback only** – most CI runs should never
-  launch a browser now, making the job faster and less brittle.
+Changelog (2025‑08‑06, hot‑fix)
+--------------------------------
+* **Fix cloudscraper usage** – the previous commit passed a *dict* as the
+  `browser` argument; cloudscraper expects a **string** or a dict whose
+  `custom` value is **itself a string**. The bad call blew up before any
+  network traffic happened. We now:
+    1. Instantiate `cloudscraper.create_scraper(browser="chrome")`.
+    2. Immediately update `scraper.headers` with our custom headers.
+* Restored a global `HEADERS` constant so the header set is defined only once.
+* No other logic changes.
 
-New dependency: `cloudscraper>=1.2,<2`
+New dependency (unchanged): `cloudscraper>=1.2,<2`
 """
 
 from datetime import datetime
@@ -18,9 +21,8 @@ from pathlib import Path
 from urllib.parse import urljoin
 from typing import List, Dict, Optional
 import asyncio
-import json
 
-import cloudscraper  # <— NEW
+import cloudscraper
 from playwright.async_api import async_playwright, TimeoutError as PWTimeout
 from utils import build_job_id
 
@@ -33,30 +35,32 @@ CANDIDATE_FEEDS = [
     "jobs/positions.json",
 ]
 
-# ----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# Shared headers (used by both requests & Playwright contexts)
+# ---------------------------------------------------------------------------
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/126.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json",
+    "Accept-Language": "en-US,en;q=0.9",
+    "X-Requested-With": "XMLHttpRequest",
+    "Referer": LIST_URL,
+}
+
+# ---------------------------------------------------------------------------
 # 1. Cloudflare‑aware JSON feed discovery (fast path)
-# ----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 def _get_scraper() -> cloudscraper.CloudScraper:
-    """Return a session that automatically solves Cloudflare JS challenges."""
+    """Return a session that negotiates Cloudflare and carries our headers."""
 
-    return cloudscraper.create_scraper(
-        browser={
-            "custom": {
-                "headers": {
-                    "User-Agent": (
-                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                        "AppleWebKit/537.36 (KHTML, like Gecko) "
-                        "Chrome/126.0.0.0 Safari/537.36"
-                    ),
-                    "Accept": "application/json",
-                    "Accept-Language": "en-US,en;q=0.9",
-                    "X-Requested-With": "XMLHttpRequest",
-                    "Referer": LIST_URL,
-                }
-            }
-        }
-    )
+    scraper = cloudscraper.create_scraper(browser="chrome")  # solves JS challenge automatically
+    scraper.headers.update(HEADERS)  # apply our custom headers
+    return scraper
 
 
 def _fetch_from_feed() -> Optional[List[Dict]]:
@@ -112,22 +116,18 @@ def _fetch_from_feed() -> Optional[List[Dict]]:
     Path("sage_debug_feed.txt").write_text("\n".join(feed_log), "utf-8")
     return None
 
-# ----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # 2. Playwright fallback (rare)
-# ----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 async def _scrape_async() -> List[Dict]:
     async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            headless=True,
-            args=["--disable-blink-features=AutomationControlled"],
-        )
-        context = await browser.new_context()
+        browser = await p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+        context = await browser.new_context(user_agent=HEADERS["User-Agent"])
         page = await context.new_page()
         await page.goto(LIST_URL, timeout=120_000, wait_until="domcontentloaded")
         await page.wait_for_load_state("networkidle")
 
-        # Wait until at least one job card appears (Cloudflare now solved)
         try:
             await page.wait_for_selector("a.job-name", timeout=120_000)
         except PWTimeout:
@@ -154,9 +154,7 @@ async def _scrape_async() -> List[Dict]:
 
             posted_span = await card.query_selector("div.pt1 span")
             posted = (
-                (await posted_span.inner_text()).replace("Posted:", "").strip()
-                if posted_span
-                else ""
+                (await posted_span.inner_text()).replace("Posted:", "").strip() if posted_span else ""
             )
 
             jobs.append(
@@ -177,14 +175,15 @@ async def _scrape_async() -> List[Dict]:
         await browser.close()
         return jobs
 
-# ----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # Public helper
-# ----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 def fetch_jobs() -> List[Dict]:
-    """Return job list from feed (using Cloudflare bypass) or Playwright."""
+    """Return job list from feed (Cloudflare bypass) or Playwright."""
 
-    if jobs := _fetch_from_feed():
+    jobs = _fetch_from_feed()
+    if jobs:
         return jobs
 
     try:
