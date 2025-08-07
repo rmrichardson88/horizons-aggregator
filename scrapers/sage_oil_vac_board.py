@@ -57,29 +57,48 @@ def _extract_positions(data: Any) -> List[Dict]:
 
 
 # ---------------------------------------------------------------------------
+# Playwright HTML fallback (handles Cloudflare interstitial)
+# ---------------------------------------------------------------------------
+
+import asyncio
+from playwright.async_api import async_playwright, TimeoutError as PWTimeout
+import nest_asyncio
+
+
+async def _fetch_html_playwright() -> str:
+    """Return page HTML after Cloudflare JS has executed (headless)."""
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+        context = await browser.new_context(user_agent=HEADERS["User-Agent"])
+        page = await context.new_page()
+        await page.goto(LIST_URL, timeout=120_000, wait_until="domcontentloaded")
+        try:
+            # Wait either for job card or for __NEXT_DATA__ script to appear
+            await page.wait_for_function("() => document.querySelector('#__NEXT_DATA__') !== null", timeout=120_000)
+        except PWTimeout:
+            html = await page.content()
+            await browser.close()
+            return html  # Return whatever we have; caller will still attempt parse
+        html = await page.content()
+        await browser.close()
+        return html
+
+
+# ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
 
-def fetch_jobs() -> List[Dict]:
-    """Fetch and parse Sage Oil Vac jobs in a single HTTP request."""
-
-    resp = requests.get(LIST_URL, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-
-    soup = BeautifulSoup(resp.text, "html.parser")
+def _parse_jobs_from_html(html: str) -> List[Dict]:
+    """Parse HTML and return jobs list (empty list if none)."""
+    soup = BeautifulSoup(html, "html.parser")
     script: Optional[Tag] = soup.find("script", id="__NEXT_DATA__", type="application/json")
     if not script or not script.string:
-        raise RuntimeError("Could not locate __NEXT_DATA__ JSON blob – site structure changed?")
-
+        return []
     try:
         data = json.loads(script.string)
-    except json.JSONDecodeError as err:
-        raise RuntimeError("__NEXT_DATA__ JSON is malformed") from err
-
-    rows = _extract_positions(data)
-    if not rows:
+    except json.JSONDecodeError:
         return []
-
+    rows = _extract_positions(data)
     jobs: List[Dict] = []
     for row in rows:
         title = row.get("title") or row.get("name", "")
@@ -88,7 +107,6 @@ def fetch_jobs() -> List[Dict]:
         posted = row.get("posted", row.get("postDate", ""))
         employment_type = row.get("employment_type", "")
         salary = row.get("pay", row.get("compensation", ""))
-
         jobs.append(
             {
                 "id": build_job_id(str(row.get("id", url_.split("/")[-1])), title, location),
@@ -103,7 +121,30 @@ def fetch_jobs() -> List[Dict]:
                 "source": "Sage Oil Vac",
             }
         )
+    return jobs
 
+
+def fetch_jobs() -> List[Dict]:
+    """Fetch Sage Oil Vac jobs, HTML first, Playwright fallback if needed."""
+
+    # 1. Simple requests HTML fetch
+    try:
+        resp = requests.get(LIST_URL, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        jobs = _parse_jobs_from_html(resp.text)
+        if jobs:
+            return jobs
+    except Exception:
+        pass
+
+    # 2. Fallback: Playwright to get HTML after Cloudflare JS challenge
+    try:
+        html = asyncio.run(_fetch_html_playwright())
+    except RuntimeError:
+        nest_asyncio.apply()
+        html = asyncio.get_event_loop().run_until_complete(_fetch_html_playwright())
+
+    jobs = _parse_jobs_from_html(html)
     return jobs
 
 
