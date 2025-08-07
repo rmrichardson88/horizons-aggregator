@@ -140,8 +140,7 @@ def _fetch_from_feed() -> Optional[List[Dict]]:
         return jobs  # Success – no Playwright needed
 
     # If every feed failed, save the log for CI debugging
-    Path("sage_debug_feed.txt").write_text("
-".join(feed_log), "utf-8")
+    Path("sage_debug_feed.txt").write_text("".join(feed_log), "utf-8")
     return None
 # ---------------------------------------------------------------------------
 
