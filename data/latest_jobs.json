@@ -6,7 +6,7 @@
     "location": "Sand Springs, OK",
     "salary": "$20 - $30 / hour",
     "url": "https://careers.yhmc.com/31303336313835362d3734303633?rr_p=192",
-    "scraped_at": "2025-08-08T05:22:52",
+    "scraped_at": "2025-08-09T05:13:07",
     "source": "Yellowhouse"
   },
   {
@@ -16,7 +16,7 @@
     "location": "Enid, OK",
     "salary": "$18 - $50 / hour",
     "url": "https://careers.yhmc.com/31303330303032332d3733373031?rr_p=192",
-    "scraped_at": "2025-08-08T05:22:52",
+    "scraped_at": "2025-08-09T05:13:07",
     "source": "Yellowhouse"
   },
   {
@@ -26,7 +26,17 @@
     "location": "Sand Springs, OK",
     "salary": "$24 - $32 / hour",
     "url": "https://careers.yhmc.com/31303531363037372d3734303633?rr_p=192",
-    "scraped_at": "2025-08-08T05:22:52",
+    "scraped_at": "2025-08-09T05:13:07",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "7e106ef900c26c0723058a0be66f6ab0ba5a8141",
+    "title": "Inventory Control Specialist",
+    "company": "Yellowhouse Machinery",
+    "location": "Abilene, TX",
+    "salary": "",
+    "url": "https://careers.yhmc.com/31303534383235312d3739363031?rr_p=192",
+    "scraped_at": "2025-08-09T05:13:07",
     "source": "Yellowhouse"
   },
   {
@@ -36,7 +46,7 @@
     "location": "Broken Bow, OK",
     "salary": "$18 - $50 / hour",
     "url": "https://careers.yhmc.com/31303336313835332d3734373238?rr_p=192",
-    "scraped_at": "2025-08-08T05:22:52",
+    "scraped_at": "2025-08-09T05:13:07",
     "source": "Yellowhouse"
   },
   {
@@ -46,7 +56,7 @@
     "location": "Amarillo, TX",
     "salary": "$18 - $50 / hour",
     "url": "https://careers.yhmc.com/31303336373039342d3739313031?rr_p=192",
-    "scraped_at": "2025-08-08T05:22:52",
+    "scraped_at": "2025-08-09T05:13:07",
     "source": "Yellowhouse"
   },
   {
@@ -56,7 +66,7 @@
     "location": "McAlester, OK",
     "salary": "$18 - $50 / hour",
     "url": "https://careers.yhmc.com/31303336313835302d3734353031?rr_p=192",
-    "scraped_at": "2025-08-08T05:22:52",
+    "scraped_at": "2025-08-09T05:13:07",
     "source": "Yellowhouse"
   },
   {
@@ -66,7 +76,7 @@
     "location": "Broken Bow, OK",
     "salary": "$18 - $20 / hour",
     "url": "https://careers.yhmc.com/31303439363931392d3734373238?rr_p=192",
-    "scraped_at": "2025-08-08T05:22:52",
+    "scraped_at": "2025-08-09T05:13:07",
     "source": "Yellowhouse"
   },
   {
@@ -76,7 +86,7 @@
     "location": "Abilene, TX",
     "salary": "$85,000 - $95,000 / year",
     "url": "https://careers.yhmc.com/31303532353239392d3739363031?rr_p=192",
-    "scraped_at": "2025-08-08T05:22:52",
+    "scraped_at": "2025-08-09T05:13:07",
     "source": "Yellowhouse"
   }
 ]
