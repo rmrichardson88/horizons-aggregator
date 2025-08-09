@@ -1,5 +1,5 @@
-import json
 import re
+from datetime import datetime, UTC
 from typing import Dict, List, Optional, Tuple
 from urllib.parse import urljoin, urlparse, parse_qs
 import requests
@@ -23,6 +23,10 @@ def _mk_headers(referer: str = LIST_URL) -> Dict[str, str]:
         "Referer": referer,
     }
 
+def _now_utc_iso_seconds() -> str:
+    return datetime.now(UTC).replace(tzinfo=None).isoformat(timespec="seconds")
+
+
 def _parse_loc_line(text: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str], Optional[str], str]:
     s = (text or "").strip()
     job_type, right = (p.strip() for p in s.split("|", 1)) if "|" in s else (None, s)
@@ -37,10 +41,12 @@ def _parse_loc_line(text: str) -> Tuple[Optional[str], Optional[str], Optional[s
 
     return job_type, dept, city, state, postal, (place or s)
 
+
 def _extract_job_id(url: str) -> Optional[str]:
     q = parse_qs(urlparse(url).query)
     vals = q.get("job")
     return vals[0] if vals else None
+
 
 def _select_list_items(soup: BeautifulSoup):
     lis = soup.select("li.jobInfo.JobListing")
@@ -51,12 +57,20 @@ def _select_list_items(soup: BeautifulSoup):
         return alt
     return soup.select("a.JobListing__container[href*='ViewJobDetails'], a[href*='ViewJobDetails?']")
 
+
 def _scrape_list_page(session: requests.Session, url: str):
     resp = session.get(url, headers=_mk_headers(referer=LIST_URL), timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
     nodes = _select_list_items(soup)
     return resp.text, soup, nodes
+
+
+def _compose_location(city: Optional[str], state: Optional[str], location_raw: Optional[str]) -> Optional[str]:
+    if city and state:
+        return f"{city}, {state}"
+    return location_raw or None
+
 
 def _parse_card(card) -> Dict[str, Optional[str]]:
     a = card if getattr(card, "name", None) == "a" else (
@@ -73,28 +87,23 @@ def _parse_card(card) -> Dict[str, Optional[str]]:
 
     loc_el = card.select_one("span.jobInfoLine.jobLocation") if getattr(card, "select_one", None) else None
     loc_text = loc_el.get_text(" ", strip=True) if loc_el else ""
-    job_type, dept, city, state, postal, location_raw = _parse_loc_line(loc_text)
-
-    desc_el = card.select_one("span.jobInfoLine.jobDescription") if getattr(card, "select_one", None) else None
-    snippet = (desc_el.get_text(" ", strip=True) if desc_el else "").strip()
+    _, _, city, state, _, location_raw = _parse_loc_line(loc_text)
 
     return {
-        "source": "paycom",
-        "company": "FMC",
-        "job_id": job_id,
+        "id": job_id,
         "title": title,
+        "company": "FMC",
+        "location": _compose_location(city, state, location_raw),
+        "salary": None,
         "url": abs_url,
-        "job_type": job_type,
-        "department": dept,
-        "city": city,
-        "state": state,
-        "postal_code": postal,
-        "location_raw": location_raw,
-        "description_snippet": snippet[:400],
+        "scraped_at": _now_utc_iso_seconds(),
+        "source": "FMC",
     }
+
 
 def _find_job_ids_in_html(html: str) -> List[str]:
     return list(set(re.findall(r"ViewJobDetails[^\"'>]+?job=(\d+)", html or "")))
+
 
 def _text_after_label(soup: BeautifulSoup, label: str) -> str:
     node = soup.find(string=re.compile(rf"^{re.escape(label)}\\b", re.I))
@@ -122,23 +131,17 @@ def _fetch_minimal_from_detail(session: requests.Session, job_id: str) -> Option
     title = h1.get_text(strip=True) if h1 else None
 
     loc_raw = _text_after_label(soup, "Job Location")
-    job_type = _text_after_label(soup, "Position Type") or None
-
-    _, dept, city, state, postal, location_raw = _parse_loc_line(loc_raw)
+    _, _, city, state, _, location_raw = _parse_loc_line(loc_raw)
 
     return {
-        "source": "paycom",
-        "company": "FMC",
-        "job_id": job_id,
+        "id": job_id,
         "title": title,
+        "company": "FMC",
+        "location": _compose_location(city, state, location_raw or loc_raw),
+        "salary": None,
         "url": url,
-        "job_type": job_type,
-        "department": dept,
-        "city": city,
-        "state": state,
-        "postal_code": postal,
-        "location_raw": location_raw or loc_raw,
-        "description_snippet": "",
+        "scraped_at": _now_utc_iso_seconds(),
+        "source": "FMC",
     }
 
 
@@ -170,4 +173,5 @@ def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
 
 
 if __name__ == "__main__":
-    print(json.dumps(fetch_jobs(), ensure_ascii=False))
+    for job in fetch_jobs():
+        print(job)
