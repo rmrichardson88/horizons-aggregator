@@ -5,7 +5,8 @@ from utils import load_previous, save_latest
 SCRAPER_MODULES = [
     "scrapers.yhmc_board",
     #"scrapers.sage_oil_vac_board",
-    "scrapers.fmc_board"
+    "scrapers.fmc_board",
+    "scrapers.talon_lpe_board"
     # "scrapers.other_board",
 ]
 
