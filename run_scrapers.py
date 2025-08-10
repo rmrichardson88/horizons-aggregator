@@ -7,7 +7,8 @@ SCRAPER_MODULES = [
     #"scrapers.sage_oil_vac_board",
     "scrapers.fmc_board",
     "scrapers.talon_lpe_board",
-    "scrapers.anb_board"
+    "scrapers.anb_board",
+    "scrapers.wtamu_board"
     # "scrapers.other_board",
 ]
 
