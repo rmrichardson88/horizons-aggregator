@@ -69,28 +69,74 @@ def _scrape_listing_page(page, base_url: str) -> List[Dict[str, Optional[str]]]:
         )
     return jobs
 
-def _apply_amarillo(page):
-    try: page.get_by_role("button", name=re.compile("Filter", re.I)).click(timeout=2000)
-    except: pass
-    try: page.get_by_role("button", name=re.compile("^\\s*Campus\\s*$", re.I)).click(timeout=3000)
-    except: pass
-    page.locator("label", has_text="HSC - Amarillo").click()
-    try: page.get_by_role("button", name=re.compile("Apply|Done|Close", re.I)).click(timeout=2000)
-    except: pass
-    _wait_for_amarillo_filter(page)
+from playwright.sync_api import TimeoutError as PWTimeout
+import re
 
+def _wait_for_amarillo_filter(page):
+    page.wait_for_function(
+        r"""
+        () => {
+          const txt = document.body.innerText || "";
+          const chipOK = /HSC\s*[-–—]\s*Amarillo/i.test(txt);
+          const locs = Array.from(document.querySelectorAll('p.jobProperty.position1'))
+            .map(el => el.innerText);
+          const locsOK = locs.length > 0 && locs.every(t => /Amarillo/i.test(t));
+          return chipOK || locsOK;
+        }
+        """,
+        timeout=15000,
+    )
+
+def _apply_amarillo(page):
+    # Open Filters panel if present
+    try:
+        page.get_by_role("button", name=re.compile("Filter|Filters|Refine", re.I)).click(timeout=3000)
+    except Exception:
+        pass
+
+    for trigger in [
+        page.get_by_role("button", name=re.compile(r"^\s*Campus\s*$", re.I)),
+        page.locator("button:has-text('Campus')"),
+        page.locator("h3:has-text('Campus')").locator("..").locator("button")  # some skins
+    ]:
+        try:
+            trigger.first.click(timeout=3000)
+            break
+        except Exception:
+            continue
+
+    try:
+        panel = page.locator(".search-filters, .filtersPanel, .facetContainer, aside[role='complementary']").first
+        if panel:
+            panel.evaluate("el => el.scrollTop = el.scrollHeight")
+    except Exception:
+        page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
+
+    lbl = page.locator(
+        "label",
+        has_text=re.compile(r"HSC\s*[-–—]\s*Amarillo(?:\s*\(\d+\))?", re.I)
+    ).first
+    lbl.scroll_into_view_if_needed()
+    lbl.click(timeout=15000)
+
+    try:
+        page.get_by_role("button", name=re.compile("Apply|Done|Close", re.I)).click(timeout=3000)
+    except Exception:
+        pass
+
+    _wait_for_amarillo_filter(page)
 
 def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
     jobs: List[Dict[str, Optional[str]]] = []
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        ctx = browser.new_context(user_agent=(
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
-        ))
+        ctx = browser.new_context(user_agent=(...))
         page = ctx.new_page()
         page.goto(START_URL, wait_until="networkidle")
-        _apply_amarillo(page)
+        try:
+            _apply_amarillo(page)
+        except PWTimeout:
+            print("[warn] could not click Amarillo filter; continuing without UI filter")
 
         page_index = 1
         seen_total = 0
@@ -99,31 +145,13 @@ def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
             if not page_jobs:
                 break
             jobs.extend(page_jobs)
-
-            advanced = False
-            for sel in [
-                'a[aria-label="Next"]:not([aria-disabled="true"])',
-                'button[aria-label="Next"]:not([disabled])',
-                'li.paginationNext a',
-                'a[title="Next"]',
-            ]:
-                btn = page.query_selector(sel)
-                if btn:
-                    try:
-                        btn.click()
-                        page.wait_for_load_state("networkidle")
-                        advanced = True
-                        break
-                    except Exception:
-                        pass
-            if not advanced:
-                break
             page_index += 1
-            if len(jobs) == seen_total:
-                break
-            seen_total = len(jobs)
 
         browser.close()
+
+    if not any("amarillo" in (j.get("location") or "").lower() for j in jobs):
+        print("[warn] UI filter likely didn't apply; post-filtering to Amarillo")
+        jobs = [j for j in jobs if (j.get("location") or "").lower().startswith("amarillo")]
 
     seen = set()
     uniq: List[Dict[str, Optional[str]]] = []
