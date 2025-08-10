@@ -102,7 +102,6 @@ def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
 
         browser.close()
 
-    # De-dup by (id, url)
     seen = set()
     uniq: List[Dict[str, Optional[str]]] = []
     for j in jobs:
