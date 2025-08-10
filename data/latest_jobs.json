@@ -1,12 +1,112 @@
 [
   {
+    "id": "892687",
+    "title": "HR Generalist I",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Lubbock",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=892687",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "896129",
+    "title": "Correctional Unit Dentist",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Wichita Falls",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=896129",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "896108",
+    "title": "HVAC Mechanic I",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Lubbock",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=896108",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "894242",
+    "title": "Licensed Vocational Nurse - Larry Combest Wellness Center LB",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Lubbock",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=894242",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "883524",
+    "title": "Licensed Vocational Nurse - Surgery",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=883524",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "896166",
+    "title": "Patient Services Specialist",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=896166",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "896068",
+    "title": "Recurrent Staff Employee- Combest IT Support Technician II",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Lubbock",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=896068",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "894482",
+    "title": "Ent IT Consultant I",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Lubbock",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=894482",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "883345",
+    "title": "Corr Unit Medical Director- Hybrid",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Lubbock",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=883345",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "891410",
+    "title": "Mental Health Clinician",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Abilene",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=891410",
+    "scraped_at": "2025-08-10T21:29:51",
+    "source": "TTUHSC"
+  },
+  {
     "id": "R-084793",
     "title": "Regional Director",
     "company": "West Texas A&M University",
     "location": "locations\nAmarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -16,7 +116,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -26,7 +126,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -36,7 +136,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -46,7 +146,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -56,7 +156,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -66,7 +166,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -76,7 +176,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -86,7 +186,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -96,7 +196,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -106,7 +206,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -116,7 +216,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -126,7 +226,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -136,7 +236,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -146,7 +246,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -156,7 +256,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -166,7 +266,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -176,7 +276,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -186,7 +286,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -196,97 +296,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=10",
-    "scraped_at": "2025-08-10T21:14:01",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084793",
-    "title": "Regional Director",
-    "company": "West Texas A&M University",
-    "location": "locations\nAmarillo, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-086126",
-    "title": "Academic Coordinator/Advisor",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-085584",
-    "title": "Associate Director, Recreational Sports",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-085801",
-    "title": "Instructor of Accounting",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-085383",
-    "title": "Career Coordinator",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-085394",
-    "title": "IT Manager II",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-082368",
-    "title": "Police Officer I-IV",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-068634",
-    "title": "Assistant or Associate Professor of Agriculture (Forage Scientist)",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-081698",
-    "title": "Librarian II (Scholarly Communications Librarian)",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:48",
     "source": "WTAMU"
   },
   {
@@ -296,7 +306,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -306,7 +316,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -316,7 +326,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -326,7 +336,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -336,7 +346,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -346,7 +356,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -356,7 +366,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -366,7 +376,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -376,7 +386,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -386,7 +396,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -396,7 +406,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=9",
-    "scraped_at": "2025-08-10T21:13:57",
+    "scraped_at": "2025-08-10T21:29:44",
     "source": "WTAMU"
   },
   {
@@ -405,8 +415,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nAmarillo, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -415,8 +425,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nCanyon, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -425,8 +435,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nCanyon, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -435,8 +445,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nCanyon, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -445,8 +455,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nCanyon, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -455,8 +465,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nCanyon, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -465,8 +475,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nCanyon, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -475,8 +485,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nCanyon, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -485,68 +495,8 @@
     "company": "West Texas A&M University",
     "location": "locations\nCanyon, TX",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084746",
-    "title": "Professor of Psychology",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084745",
-    "title": "Professor of Social Work",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084688",
-    "title": "Athletic Trainer",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084036",
-    "title": "Assistant Professor of Media Communication",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-083977",
-    "title": "Assistant/Associate Professor, Nurse Ph.D.",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-083929",
-    "title": "Assistant/Associate Professor, Nursing Ph.D.",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=9",
+    "scraped_at": "2025-08-10T21:29:43",
     "source": "WTAMU"
   },
   {
@@ -556,7 +506,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "scraped_at": "2025-08-10T21:29:40",
     "source": "WTAMU"
   },
   {
@@ -566,7 +516,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "scraped_at": "2025-08-10T21:29:40",
     "source": "WTAMU"
   },
   {
@@ -576,7 +526,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "scraped_at": "2025-08-10T21:29:40",
     "source": "WTAMU"
   },
   {
@@ -586,7 +536,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "scraped_at": "2025-08-10T21:29:40",
     "source": "WTAMU"
   },
   {
@@ -596,7 +546,157 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=8",
-    "scraped_at": "2025-08-10T21:13:53",
+    "scraped_at": "2025-08-10T21:29:40",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084793",
+    "title": "Regional Director",
+    "company": "West Texas A&M University",
+    "location": "locations\nAmarillo, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-086126",
+    "title": "Academic Coordinator/Advisor",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-085584",
+    "title": "Associate Director, Recreational Sports",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-085801",
+    "title": "Instructor of Accounting",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-085383",
+    "title": "Career Coordinator",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-085394",
+    "title": "IT Manager II",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-082368",
+    "title": "Police Officer I-IV",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-068634",
+    "title": "Assistant or Associate Professor of Agriculture (Forage Scientist)",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-081698",
+    "title": "Librarian II (Scholarly Communications Librarian)",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084746",
+    "title": "Professor of Psychology",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084745",
+    "title": "Professor of Social Work",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084688",
+    "title": "Athletic Trainer",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084036",
+    "title": "Assistant Professor of Media Communication",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-083977",
+    "title": "Assistant/Associate Professor, Nurse Ph.D.",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-083929",
+    "title": "Assistant/Associate Professor, Nursing Ph.D.",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=8",
+    "scraped_at": "2025-08-10T21:29:39",
     "source": "WTAMU"
   },
   {
@@ -606,7 +706,7 @@
     "location": "locations\nAmarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -616,7 +716,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -626,7 +726,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -636,7 +736,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -646,7 +746,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -656,7 +756,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -666,7 +766,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -676,7 +776,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -686,7 +786,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -696,7 +796,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -706,7 +806,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -716,7 +816,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -726,7 +826,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -736,7 +836,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -746,7 +846,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -756,7 +856,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -766,7 +866,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -776,7 +876,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -786,7 +886,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -796,117 +896,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=7",
-    "scraped_at": "2025-08-10T21:13:49",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084746",
-    "title": "Professor of Psychology",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084745",
-    "title": "Professor of Social Work",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084688",
-    "title": "Athletic Trainer",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-084036",
-    "title": "Assistant Professor of Media Communication",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-083977",
-    "title": "Assistant/Associate Professor, Nurse Ph.D.",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-083929",
-    "title": "Assistant/Associate Professor, Nursing Ph.D.",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-083939",
-    "title": "Assistant/Associate Professor, Psychiatric Mental Health Nurse Practitioner",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-083891",
-    "title": "STEM Education Curriculum Developer",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-045792",
-    "title": "Part Time Instructor of Chemistry",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-045805",
-    "title": "Part Time Instructor of Biology",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-061853",
-    "title": "Part-Time Instructor of Dance",
-    "company": "West Texas A&M University",
-    "location": "locations\nCanyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=6",
-    "scraped_at": "2025-08-10T21:13:46",
+    "scraped_at": "2025-08-10T21:29:35",
     "source": "WTAMU"
   },
   {
@@ -916,7 +906,7 @@
     "location": "locations\nAmarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -926,7 +916,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -936,7 +926,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -946,7 +936,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -956,7 +946,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -966,7 +956,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -976,7 +966,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -986,7 +976,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -996,7 +986,117 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=6",
-    "scraped_at": "2025-08-10T21:13:45",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084746",
+    "title": "Professor of Psychology",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084745",
+    "title": "Professor of Social Work",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084688",
+    "title": "Athletic Trainer",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-084036",
+    "title": "Assistant Professor of Media Communication",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-083977",
+    "title": "Assistant/Associate Professor, Nurse Ph.D.",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-083929",
+    "title": "Assistant/Associate Professor, Nursing Ph.D.",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-083939",
+    "title": "Assistant/Associate Professor, Psychiatric Mental Health Nurse Practitioner",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-083891",
+    "title": "STEM Education Curriculum Developer",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-045792",
+    "title": "Part Time Instructor of Chemistry",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-045805",
+    "title": "Part Time Instructor of Biology",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-061853",
+    "title": "Part-Time Instructor of Dance",
+    "company": "West Texas A&M University",
+    "location": "locations\nCanyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=6",
+    "scraped_at": "2025-08-10T21:29:31",
     "source": "WTAMU"
   },
   {
@@ -1006,7 +1106,7 @@
     "location": "locations\nAmarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1016,7 +1116,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1026,7 +1126,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1036,7 +1136,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1046,7 +1146,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1056,7 +1156,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1066,7 +1166,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1076,7 +1176,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1086,7 +1186,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1096,7 +1196,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1106,7 +1206,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1116,7 +1216,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1126,7 +1226,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1136,7 +1236,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1146,7 +1246,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1156,7 +1256,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1166,7 +1266,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1176,7 +1276,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1186,7 +1286,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1196,7 +1296,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=5",
-    "scraped_at": "2025-08-10T21:13:42",
+    "scraped_at": "2025-08-10T21:29:27",
     "source": "WTAMU"
   },
   {
@@ -1206,7 +1306,7 @@
     "location": "locations\nAmarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1216,7 +1316,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1226,7 +1326,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1236,7 +1336,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1246,7 +1346,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1256,7 +1356,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1266,7 +1366,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1276,7 +1376,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1286,7 +1386,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1296,7 +1396,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1306,7 +1406,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1316,7 +1416,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1326,7 +1426,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1336,7 +1436,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1346,7 +1446,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1356,7 +1456,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1366,7 +1466,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1376,7 +1476,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1386,7 +1486,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1396,7 +1496,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=4",
-    "scraped_at": "2025-08-10T21:13:38",
+    "scraped_at": "2025-08-10T21:29:23",
     "source": "WTAMU"
   },
   {
@@ -1406,7 +1506,7 @@
     "location": "locations\nAmarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1416,7 +1516,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1426,7 +1526,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1436,7 +1536,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1446,7 +1546,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1456,7 +1556,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1466,7 +1566,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1476,7 +1576,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1486,7 +1586,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1496,7 +1596,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1506,7 +1606,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1516,7 +1616,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1526,7 +1626,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1536,7 +1636,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1546,7 +1646,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1556,7 +1656,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1566,7 +1666,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1576,7 +1676,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1586,7 +1686,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1596,7 +1696,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=3",
-    "scraped_at": "2025-08-10T21:13:34",
+    "scraped_at": "2025-08-10T21:29:19",
     "source": "WTAMU"
   },
   {
@@ -1606,7 +1706,7 @@
     "location": "locations\nAmarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1616,7 +1716,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1626,7 +1726,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1636,7 +1736,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1646,7 +1746,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1656,7 +1756,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1666,7 +1766,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1676,7 +1776,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1686,7 +1786,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1696,7 +1796,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1706,7 +1806,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1716,7 +1816,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1726,7 +1826,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1736,7 +1836,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1746,7 +1846,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1756,7 +1856,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1766,7 +1866,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1776,7 +1876,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1786,7 +1886,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1796,7 +1896,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853?page=2",
-    "scraped_at": "2025-08-10T21:13:30",
+    "scraped_at": "2025-08-10T21:29:15",
     "source": "WTAMU"
   },
   {
@@ -1806,7 +1906,7 @@
     "location": "locations\nAmarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Amarillo-TX/Regional-Director_R-084793",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1816,7 +1916,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Academic-Coordinator-Advisor_R-086126-1",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1826,7 +1926,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Associate-Director--Recreational-Sports_R-085584-1",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1836,7 +1936,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Accounting_R-085801-1",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1846,7 +1946,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Career-Coordinator_R-085383-1",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1856,7 +1956,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/IT-Manager-II_R-085394-2",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1866,7 +1966,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-082368",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1876,7 +1976,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1886,7 +1986,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1896,7 +1996,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Psychology_R-084746",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1906,7 +2006,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1916,7 +2016,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1926,7 +2026,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Media-Communication_R-084036",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1936,7 +2036,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nurse-PhD_R-083977",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1946,7 +2046,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1956,7 +2056,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1966,7 +2066,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/STEM-Education-Curriculum-Developer_R-083891",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1976,7 +2076,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1986,7 +2086,7 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
   },
   {
@@ -1996,108 +2096,8 @@
     "location": "locations\nCanyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853",
-    "scraped_at": "2025-08-10T21:13:26",
+    "scraped_at": "2025-08-10T21:29:11",
     "source": "WTAMU"
-  },
-  {
-    "id": "amarillo-commercial-teller-ii-commercial-teller-department",
-    "title": "Commercial Teller II - Commercial Teller Department",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-customer-service-representative-canyon-branch",
-    "title": "Customer Service Representative - Canyon Branch",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-part-time-telephone-customer-service-representative-call-center",
-    "title": "Part Time Telephone Customer Service Representative - Call Center",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-digital-banking-specialist",
-    "title": "Digital Banking Specialist",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-teller-supervisor-north-branch",
-    "title": "Teller Supervisor - North Branch",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-call-center-telephone-service-representative-bilingual",
-    "title": "Call Center Telephone Service Representative – Bilingual",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-collector-special-assets",
-    "title": "Collector - Special Assets",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-maintenance-mechanic-2-building-department",
-    "title": "Maintenance Mechanic 2 - Building Department",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-teller-supervisor-borger-branch",
-    "title": "Teller Supervisor - Borger Branch",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "bryan-college-station-customer-service-representative-university-branch",
-    "title": "Customer Service Representative - University Branch",
-    "company": "Amarillo National Bank",
-    "location": "Bryan/College Station, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-08-10T21:13:21",
-    "source": "Amarillo National Bank"
   },
   {
     "id": "tq-pmkBud5-8",
@@ -2106,7 +2106,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/tq-pmkBud5-8?utm_source=careers_page",
-    "scraped_at": "2025-08-10T21:13:20",
+    "scraped_at": "2025-08-10T21:29:05",
     "source": "Talon/LPE"
   },
   {
@@ -2116,7 +2116,7 @@
     "location": "Midland, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/kwm0xNqkNq31?utm_source=careers_page",
-    "scraped_at": "2025-08-10T21:13:20",
+    "scraped_at": "2025-08-10T21:29:05",
     "source": "Talon/LPE"
   },
   {
@@ -2126,7 +2126,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/MLnmxP-WgdqN?utm_source=careers_page",
-    "scraped_at": "2025-08-10T21:13:20",
+    "scraped_at": "2025-08-10T21:29:05",
     "source": "Talon/LPE"
   },
   {
@@ -2136,7 +2136,7 @@
     "location": "Midland, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/sj_Vv9Qkfpfy?utm_source=careers_page",
-    "scraped_at": "2025-08-10T21:13:20",
+    "scraped_at": "2025-08-10T21:29:05",
     "source": "Talon/LPE"
   },
   {
@@ -2146,7 +2146,7 @@
     "location": "Midland, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/PwXimh1Vg59c?utm_source=careers_page",
-    "scraped_at": "2025-08-10T21:13:20",
+    "scraped_at": "2025-08-10T21:29:05",
     "source": "Talon/LPE"
   },
   {
@@ -2156,7 +2156,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/SIY7IP_WkTVw?utm_source=careers_page",
-    "scraped_at": "2025-08-10T21:13:20",
+    "scraped_at": "2025-08-10T21:29:05",
     "source": "Talon/LPE"
   },
   {
@@ -2166,7 +2166,7 @@
     "location": "Decatur, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/EI_uvBSOSHkz?utm_source=careers_page",
-    "scraped_at": "2025-08-10T21:13:20",
+    "scraped_at": "2025-08-10T21:29:05",
     "source": "Talon/LPE"
   },
   {
@@ -2176,8 +2176,118 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/3gAiK611YbYt?utm_source=careers_page",
-    "scraped_at": "2025-08-10T21:13:20",
+    "scraped_at": "2025-08-10T21:29:05",
     "source": "Talon/LPE"
+  },
+  {
+    "id": "amarillo-commercial-teller-ii-commercial-teller-department",
+    "title": "Commercial Teller II - Commercial Teller Department",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "amarillo-customer-service-representative-canyon-branch",
+    "title": "Customer Service Representative - Canyon Branch",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "amarillo-part-time-telephone-customer-service-representative-call-center",
+    "title": "Part Time Telephone Customer Service Representative - Call Center",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "amarillo-digital-banking-specialist",
+    "title": "Digital Banking Specialist",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "amarillo-teller-supervisor-north-branch",
+    "title": "Teller Supervisor - North Branch",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "amarillo-call-center-telephone-service-representative-bilingual",
+    "title": "Call Center Telephone Service Representative – Bilingual",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "amarillo-collector-special-assets",
+    "title": "Collector - Special Assets",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "amarillo-maintenance-mechanic-2-building-department",
+    "title": "Maintenance Mechanic 2 - Building Department",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "amarillo-teller-supervisor-borger-branch",
+    "title": "Teller Supervisor - Borger Branch",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "bryan-college-station-customer-service-representative-university-branch",
+    "title": "Customer Service Representative - University Branch",
+    "company": "Amarillo National Bank",
+    "location": "Bryan/College Station, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2025-08-10T21:29:05",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "95659",
+    "title": "Front Desk - Full Time",
+    "company": "FMC",
+    "location": null,
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95659",
+    "scraped_at": "2025-08-10T21:29:00",
+    "source": "FMC"
   },
   {
     "id": "95467",
@@ -2186,87 +2296,7 @@
     "location": null,
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95467",
-    "scraped_at": "2025-08-10T21:13:18",
-    "source": "FMC"
-  },
-  {
-    "id": "96673",
-    "title": "Medical Assistant - Full Time",
-    "company": "FMC",
-    "location": null,
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=96673",
-    "scraped_at": "2025-08-10T21:13:17",
-    "source": "FMC"
-  },
-  {
-    "id": "95501",
-    "title": "CMA/RMA -  PRN",
-    "company": "FMC",
-    "location": null,
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95501",
-    "scraped_at": "2025-08-10T21:13:17",
-    "source": "FMC"
-  },
-  {
-    "id": "95668",
-    "title": "CMA/RMA -  Full Time",
-    "company": "FMC",
-    "location": null,
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95668",
-    "scraped_at": "2025-08-10T21:13:16",
-    "source": "FMC"
-  },
-  {
-    "id": "88585",
-    "title": "Hospice: CNA - Pampa/Borger/Clarendon Area",
-    "company": "FMC",
-    "location": null,
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=88585",
-    "scraped_at": "2025-08-10T21:13:16",
-    "source": "FMC"
-  },
-  {
-    "id": "95488",
-    "title": "CMA/RMA -  Full Time",
-    "company": "FMC",
-    "location": null,
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95488",
-    "scraped_at": "2025-08-10T21:13:15",
-    "source": "FMC"
-  },
-  {
-    "id": "95555",
-    "title": "AR Specialist",
-    "company": "FMC",
-    "location": null,
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95555",
-    "scraped_at": "2025-08-10T21:13:15",
-    "source": "FMC"
-  },
-  {
-    "id": "92548",
-    "title": "Hospice: RN FT - Amarillo Area",
-    "company": "FMC",
-    "location": null,
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=92548",
-    "scraped_at": "2025-08-10T21:13:14",
-    "source": "FMC"
-  },
-  {
-    "id": "95568",
-    "title": "LVN",
-    "company": "FMC",
-    "location": null,
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95568",
-    "scraped_at": "2025-08-10T21:13:14",
+    "scraped_at": "2025-08-10T21:29:00",
     "source": "FMC"
   },
   {
@@ -2276,17 +2306,27 @@
     "location": null,
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95508",
-    "scraped_at": "2025-08-10T21:13:13",
+    "scraped_at": "2025-08-10T21:28:59",
     "source": "FMC"
   },
   {
-    "id": "95659",
-    "title": "Front Desk - Full Time",
+    "id": "96673",
+    "title": "Medical Assistant - Full Time",
     "company": "FMC",
     "location": null,
     "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95659",
-    "scraped_at": "2025-08-10T21:13:13",
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=96673",
+    "scraped_at": "2025-08-10T21:28:59",
+    "source": "FMC"
+  },
+  {
+    "id": "95488",
+    "title": "CMA/RMA -  Full Time",
+    "company": "FMC",
+    "location": null,
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95488",
+    "scraped_at": "2025-08-10T21:28:58",
     "source": "FMC"
   },
   {
@@ -2296,7 +2336,37 @@
     "location": null,
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=90124",
-    "scraped_at": "2025-08-10T21:13:12",
+    "scraped_at": "2025-08-10T21:28:58",
+    "source": "FMC"
+  },
+  {
+    "id": "92548",
+    "title": "Hospice: RN FT - Amarillo Area",
+    "company": "FMC",
+    "location": null,
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=92548",
+    "scraped_at": "2025-08-10T21:28:57",
+    "source": "FMC"
+  },
+  {
+    "id": "95568",
+    "title": "LVN",
+    "company": "FMC",
+    "location": null,
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95568",
+    "scraped_at": "2025-08-10T21:28:57",
+    "source": "FMC"
+  },
+  {
+    "id": "95668",
+    "title": "CMA/RMA -  Full Time",
+    "company": "FMC",
+    "location": null,
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95668",
+    "scraped_at": "2025-08-10T21:28:56",
     "source": "FMC"
   },
   {
@@ -2306,7 +2376,7 @@
     "location": null,
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=90217",
-    "scraped_at": "2025-08-10T21:13:12",
+    "scraped_at": "2025-08-10T21:28:56",
     "source": "FMC"
   },
   {
@@ -2316,7 +2386,27 @@
     "location": null,
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95534",
-    "scraped_at": "2025-08-10T21:13:11",
+    "scraped_at": "2025-08-10T21:28:55",
+    "source": "FMC"
+  },
+  {
+    "id": "95555",
+    "title": "AR Specialist",
+    "company": "FMC",
+    "location": null,
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95555",
+    "scraped_at": "2025-08-10T21:28:55",
+    "source": "FMC"
+  },
+  {
+    "id": "95501",
+    "title": "CMA/RMA -  PRN",
+    "company": "FMC",
+    "location": null,
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95501",
+    "scraped_at": "2025-08-10T21:28:54",
     "source": "FMC"
   },
   {
@@ -2326,7 +2416,17 @@
     "location": null,
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=95517",
-    "scraped_at": "2025-08-10T21:13:10",
+    "scraped_at": "2025-08-10T21:28:54",
+    "source": "FMC"
+  },
+  {
+    "id": "88585",
+    "title": "Hospice: CNA - Pampa/Borger/Clarendon Area",
+    "company": "FMC",
+    "location": null,
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=88585",
+    "scraped_at": "2025-08-10T21:28:53",
     "source": "FMC"
   },
   {
@@ -2336,7 +2436,7 @@
     "location": "Sand Springs, OK",
     "salary": "$20 - $30 / hour",
     "url": "https://careers.yhmc.com/31303336313835362d3734303633?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   },
   {
@@ -2346,7 +2446,7 @@
     "location": "Enid, OK",
     "salary": "$18 - $50 / hour",
     "url": "https://careers.yhmc.com/31303330303032332d3733373031?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   },
   {
@@ -2356,7 +2456,7 @@
     "location": "Sand Springs, OK",
     "salary": "$24 - $32 / hour",
     "url": "https://careers.yhmc.com/31303531363037372d3734303633?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   },
   {
@@ -2366,7 +2466,7 @@
     "location": "Abilene, TX",
     "salary": "",
     "url": "https://careers.yhmc.com/31303534383235312d3739363031?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   },
   {
@@ -2376,7 +2476,7 @@
     "location": "Broken Bow, OK",
     "salary": "$18 - $50 / hour",
     "url": "https://careers.yhmc.com/31303336313835332d3734373238?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   },
   {
@@ -2386,7 +2486,7 @@
     "location": "Amarillo, TX",
     "salary": "$18 - $50 / hour",
     "url": "https://careers.yhmc.com/31303336373039342d3739313031?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   },
   {
@@ -2396,7 +2496,7 @@
     "location": "McAlester, OK",
     "salary": "$18 - $50 / hour",
     "url": "https://careers.yhmc.com/31303336313835302d3734353031?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   },
   {
@@ -2406,7 +2506,7 @@
     "location": "Broken Bow, OK",
     "salary": "$18 - $20 / hour",
     "url": "https://careers.yhmc.com/31303439363931392d3734373238?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   },
   {
@@ -2416,7 +2516,7 @@
     "location": "Abilene, TX",
     "salary": "$85,000 - $95,000 / year",
     "url": "https://careers.yhmc.com/31303532353239392d3739363031?rr_p=192",
-    "scraped_at": "2025-08-10T21:13:09",
+    "scraped_at": "2025-08-10T21:28:52",
     "source": "Yellowhouse"
   }
 ]
