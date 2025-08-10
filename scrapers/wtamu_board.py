@@ -47,10 +47,17 @@ def _scrape_listing_page(page, start_url: str) -> List[Dict[str, Optional[str]]]
         location = None
         req_id = None
         if li:
-            loc_el = page.evaluate_handle("li => li.querySelector('[data-automation-id=\\"locations\\"]')", li)
+            loc_el = page.evaluate_handle(
+                """(el) => el.querySelector('[data-automation-id="locations"]')""",
+                li
+            )
             if loc_el:
                 location = (page.evaluate("e => e.innerText", loc_el) or "").strip() or None
-            sub_el = page.evaluate_handle("li => li.querySelector('ul[data-automation-id=\\"subtitle\\"] li')", li)
+            sub_el = page.evaluate_handle(
+                """(el) => el.querySelector('ul[data-automation-id="subtitle"] li')""",
+                li
+            )
+
             if sub_el:
                 sub_text = (page.evaluate("e => e.innerText", sub_el) or "").strip()
                 rid = _extract_req_id(sub_text)
