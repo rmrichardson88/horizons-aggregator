@@ -69,6 +69,16 @@ def _scrape_listing_page(page, base_url: str) -> List[Dict[str, Optional[str]]]:
         )
     return jobs
 
+def _apply_amarillo(page):
+    try: page.get_by_role("button", name=re.compile("Filter", re.I)).click(timeout=2000)
+    except: pass
+    try: page.get_by_role("button", name=re.compile("^\\s*Campus\\s*$", re.I)).click(timeout=3000)
+    except: pass
+    page.locator("label", has_text="HSC - Amarillo").click()
+    try: page.get_by_role("button", name=re.compile("Apply|Done|Close", re.I)).click(timeout=2000)
+    except: pass
+    _wait_for_amarillo_filter(page)
+
 
 def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
     jobs: List[Dict[str, Optional[str]]] = []
@@ -80,6 +90,7 @@ def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
         ))
         page = ctx.new_page()
         page.goto(START_URL, wait_until="networkidle")
+        _apply_amarillo(page)
 
         page_index = 1
         seen_total = 0
