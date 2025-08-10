@@ -74,7 +74,6 @@ def _scrape_listing_page(page, start_url: str) -> List[Dict[str, Optional[str]]]
 def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
     jobs: List[Dict[str, Optional[str]]] = []
     with sync_playwright() as p:
-        # headless=True for CI; add args=["--no-sandbox"] if your runner requires it
         browser = p.chromium.launch(headless=True)
         ctx = browser.new_context(user_agent=(
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -88,7 +87,6 @@ def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
             while page_num <= max_pages:
                 url = start if page_num == 1 else f"{start}?page={page_num}"
                 page.goto(url, wait_until="networkidle")
-                # Try to dismiss any cookie/consent quickly; ignore if absent
                 try:
                     page.get_by_role("button", name=re.compile("Accept|Agree|OK", re.I)).click(timeout=2500)
                 except Exception:
