@@ -43,6 +43,8 @@ except Exception:  # pragma: no cover
 BASE = "https://tamus.wd1.myworkdayjobs.com"
 SITE = "WTAMU_External"
 START_URLS = [
+    f"{BASE}/en-US/{SITE}/jobs",
+    f"{BASE}/{SITE}/jobs",
     f"{BASE}/en-US/{SITE}",
     f"{BASE}/{SITE}",
 ]
@@ -172,7 +174,7 @@ async def fetch_jobs_async(max_pages: int = 10, *, headless: bool = True, debug_
         for start in START_URLS:
             page_num = 1
             while page_num <= max_pages:
-                url = start if page_num == 1 else f"{start}?page={page_num}"
+                url = start if page_num == 1 else f"{start}?page={page_num - 1}"
                 await page.goto(url, wait_until="networkidle")
                 # Try to accept cookie banners if present
                 try:
@@ -234,16 +236,3 @@ def fetch_jobs(max_pages: int = 10, *, headless: bool = True, debug_html: bool =
 
 
 
-
-    if args.outfile:
-        with open(args.outfile, "w", encoding="utf-8") as f:
-            if args.pretty:
-                json.dump(jobs, f, ensure_ascii=False, indent=2)
-            else:
-                json.dump(jobs, f, ensure_ascii=False)
-    else:
-        if args.pretty:
-            print(json.dumps(jobs, ensure_ascii=False, indent=2))
-        else:
-            print(json.dumps(jobs, ensure_ascii=False))
-    return 0
