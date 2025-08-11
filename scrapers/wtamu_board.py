@@ -1,33 +1,5 @@
-#!/usr/bin/env python3
-"""
-WTAMU Workday scraper — local CLI
-
-Run this manually on your machine (no scheduler required).
-
-Quick start:
-  # 1) Install deps
-  pip install playwright
-  playwright install chromium
-
-  # 2) In Jupyter (Option A1)
-  #    from wtamu_workday_local import fetch_jobs_async
-  #    jobs = await fetch_jobs_async(max_pages=5, headless=True)
-  #    import pandas as pd; pd.DataFrame(jobs)[["id","title","location","url"]].head(10)
-
-  # 3) Run it
-  python wtamu_workday_local.py --out wtamu_jobs.json --pretty --max-pages 10
-
-Options:
-  --out PATH         Write results to a JSON file instead of stdout
-  --pretty           Pretty-print JSON (adds indentation)
-  --max-pages N      Max pages to crawl per locale (default: 10)
-  --headful          Show a visible browser window (default: headless)
-  --debug-html       Save the first page's HTML for troubleshooting
-"""
-
-from __future__ import annotations
-
 import asyncio
+import argparse
 import json
 import re
 from typing import Dict, List, Optional
@@ -35,8 +7,8 @@ from typing import Dict, List, Optional
 from playwright.async_api import async_playwright, TimeoutError as PWTimeout
 
 try:
-    from datetime import datetime, UTC  # Python 3.11+
-except Exception:  # pragma: no cover
+    from datetime import datetime, UTC
+except Exception: 
     from datetime import datetime, timezone as _tz
     UTC = _tz.utc
 
@@ -71,23 +43,9 @@ def _clean_location(s: Optional[str]) -> Optional[str]:
 
 
 def _normalize_job_href(href: Optional[str], page_url: str) -> str:
-    """Return a canonical, *standalone* job URL (not the sidebar route).
-
-    Workday list pages sometimes render links that are captured by client-side
-    routing (opening a sidebar on /jobs). We normalize to a full detail page:
-      https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/..._R-XXXXXX
-
-    Rules:
-      - absolute http(s) => keep, strip query
-      - leading "//" => prefix https
-      - leading "/" => prefix BASE
-      - startswith "job/" => prefix "/en-US/{SITE}/"
-      - otherwise => prefix BASE + "/"
-    """
     if not href:
         return page_url
     h = href.strip()
-    # Strip leading './'
     if h.startswith('./'):
         h = h[2:]
 
@@ -102,9 +60,90 @@ def _normalize_job_href(href: Optional[str], page_url: str) -> str:
     else:
         u = f"{BASE}/" + h
 
-    # Drop any query/hash to avoid sidebar/stateful routes
     u = u.split('?', 1)[0].split('#', 1)[0]
     return u
+
+
+async def _click_next_or_show_more(page) -> bool:
+    import re as _re
+    for role in ("button", "link"):
+        try:
+            next_btn = page.get_by_role(role, name=_re.compile(r"Next", _re.I))
+            if await next_btn.count():
+                try:
+                    if hasattr(next_btn, "is_disabled") and await next_btn.is_disabled():
+                        pass
+                    else:
+                        await next_btn.first.click()
+                        await page.wait_for_load_state("networkidle")
+                        return True
+                except Exception:
+                    pass
+        except Exception:
+            pass
+    try:
+        more_btn = page.get_by_role("button", name=_re.compile(r"Show more|Load more|More jobs", _re.I))
+        if await more_btn.count():
+            await more_btn.first.click()
+            await page.wait_for_load_state("networkidle")
+            return True
+    except Exception:
+        pass
+    return False
+
+
+async def _goto_numeric_page(page, page_num: int) -> bool:
+    import re as _re
+    try:
+        btn = page.get_by_role("button", name=_re.compile(fr"\bpage\s*{page_num}\b", _re.I))
+        if await btn.count():
+            b = btn.first
+            try:
+                await b.scroll_into_view_if_needed()
+            except Exception:
+                pass
+            await b.click()
+            try:
+                await page.wait_for_load_state("networkidle")
+            except Exception:
+                pass
+            return True
+    except Exception:
+        pass
+
+    try:
+        btn2 = page.locator(f'button[aria-label="page {page_num}"]')
+        if await btn2.count():
+            try:
+                await btn2.first.scroll_into_view_if_needed()
+            except Exception:
+                pass
+            await btn2.first.click()
+            try:
+                await page.wait_for_load_state("networkidle")
+            except Exception:
+                pass
+            return True
+    except Exception:
+        pass
+
+    try:
+        btn3 = page.locator('button[data-uxi-widget-type="paginationPageButton"]').filter(has_text=str(page_num))
+        if await btn3.count():
+            try:
+                await btn3.first.scroll_into_view_if_needed()
+            except Exception:
+                pass
+            await btn3.first.click()
+            try:
+                await page.wait_for_load_state("networkidle")
+            except Exception:
+                pass
+            return True
+    except Exception:
+        pass
+
+    return False
 
 
 async def _scrape_listing_page(page, start_url: str) -> List[Dict[str, Optional[str]]]:
@@ -173,27 +212,53 @@ async def fetch_jobs_async(max_pages: int = 10, *, headless: bool = True, debug_
         collected = False
         for start in START_URLS:
             page_num = 1
+            seen_keys = set()
             while page_num <= max_pages:
-                url = start if page_num == 1 else f"{start}?page={page_num - 1}"
-                await page.goto(url, wait_until="networkidle")
-                # Try to accept cookie banners if present
+                moved_by = None
+                if page_num == 1:
+                    url = start
+                    await page.goto(url, wait_until="networkidle")
+                else:
+                    if await _goto_numeric_page(page, page_num):
+                        moved_by = "pager"
+                        url = page.url
+                    else:
+                        url = f"{start}?page={page_num - 1}"
+                        await page.goto(url, wait_until="networkidle")
+                        moved_by = "param"
                 try:
                     await page.get_by_role("button", name=re.compile("Accept|Agree|OK", re.I)).click(timeout=2500)
                 except Exception:
                     pass
 
-                if debug_html and page_num == 1 and not jobs:
-                    # Save the raw HTML of the first page we land on for troubleshooting
+                if debug_html:
                     try:
-                        with open("wtamu_debug_page1.html", "w", encoding="utf-8") as f:
+                        with open(f"wtamu_debug_page{page_num}.html", "w", encoding="utf-8") as f:
                             f.write(await page.content())
                     except Exception:
                         pass
 
                 page_jobs = await _scrape_listing_page(page, start)
-                if not page_jobs:
+                page_count = len(page_jobs)
+                new = 0
+                for j in page_jobs:
+                    key = (j.get("id"), j.get("url"))
+                    if key in seen_keys:
+                        continue
+                    seen_keys.add(key)
+                    jobs.append(j)
+                    new += 1
+                if debug_html:
+                    try:
+                        print(f"[debug] page {page_num} url={url} jobs={page_count} new={new}")
+                    except Exception:
+                        pass
+                if not page_jobs or new == 0:
+                    moved = await _click_next_or_show_more(page)
+                    if moved:
+                        page_num += 1
+                        continue
                     break
-                jobs.extend(page_jobs)
                 page_num += 1
                 collected = True
             if collected:
@@ -201,7 +266,6 @@ async def fetch_jobs_async(max_pages: int = 10, *, headless: bool = True, debug_
         await ctx.close()
         await browser.close()
 
-    # De-duplicate by (id, url)
     seen = set()
     uniq: List[Dict[str, Optional[str]]] = []
     for j in jobs:
@@ -214,25 +278,59 @@ async def fetch_jobs_async(max_pages: int = 10, *, headless: bool = True, debug_
 
 
 def fetch_jobs(max_pages: int = 10, *, headless: bool = True, debug_html: bool = False) -> List[Dict[str, Optional[str]]]:
-    """Convenience sync wrapper.
-
-    - In Terminal: just call fetch_jobs() or run the CLI (__main__).
-    - In Jupyter: this will try to use an existing loop via nest-asyncio. If that
-      package is not installed, prefer: ``jobs = await fetch_jobs_async(...)``.
-    """
     try:
-        loop = asyncio.get_running_loop()  # already running (e.g., Jupyter)
+        loop = asyncio.get_running_loop()  
         try:
-            import nest_asyncio  # type: ignore
+            import nest_asyncio  
             nest_asyncio.apply()
             return loop.run_until_complete(fetch_jobs_async(max_pages, headless=headless, debug_html=debug_html))
-        except Exception as e:  # pragma: no cover
+        except Exception as e:  
             raise RuntimeError(
                 "Running inside an active asyncio loop. Either install 'nest-asyncio' or use 'await fetch_jobs_async(...)'."
             ) from e
     except RuntimeError:
-        # No running loop — safe to start one
         return asyncio.run(fetch_jobs_async(max_pages, headless=headless, debug_html=debug_html))
 
 
+def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
+    ap = argparse.ArgumentParser(description="WTAMU Workday scraper (GH Actions/CLI)")
+    ap.add_argument("--out", dest="outfile", help="Write JSON to this file; omit to print to stdout")
+    ap.add_argument("--pretty", action="store_true", help="Pretty-print JSON output")
+    ap.add_argument("--max-pages", type=int, default=10, help="Max pages to crawl (default: 10)")
+    ap.add_argument("--headful", action="store_true", help="Show a visible browser window (default: headless)")
+    ap.add_argument("--debug-html", action="store_true", help="Save wtamu_debug_pageN.html files")
+    return ap.parse_known_args(argv)[0]
 
+
+async def amain(argv: Optional[List[str]] = None) -> int:
+    args = _parse_args(argv)
+    jobs = await fetch_jobs_async(
+        max_pages=args.max_pages,
+        headless=not args.headful,
+        debug_html=args.debug_html,
+    )
+    if args.outfile:
+        with open(args.outfile, "w", encoding="utf-8") as f:
+            if args.pretty:
+                json.dump(jobs, f, ensure_ascii=False, indent=2)
+            else:
+                json.dump(jobs, f, ensure_ascii=False)
+    else:
+        if args.pretty:
+            print(json.dumps(jobs, ensure_ascii=False, indent=2))
+        else:
+            print(json.dumps(jobs, ensure_ascii=False))
+    return 0
+
+
+def main(argv: Optional[List[str]] = None) -> int:
+    try:
+        loop = asyncio.get_running_loop()
+        try:
+            import nest_asyncio
+            nest_asyncio.apply()
+            return loop.run_until_complete(amain(argv))
+        except Exception as e:
+            raise RuntimeError("Active asyncio loop detected. Use: await amain([...]) or install nest-asyncio.") from e
+    except RuntimeError:
+        return asyncio.run(amain(argv))
