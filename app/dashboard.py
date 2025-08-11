@@ -19,7 +19,6 @@ def load_data() -> pd.DataFrame:
     if not DATA_FILE.exists():
         return pd.DataFrame(columns=REQUIRED_COLS)
 
-    # Be forgiving about JSON format / partial writes
     try:
         df = pd.read_json(DATA_FILE)
     except ValueError:
@@ -28,12 +27,10 @@ def load_data() -> pd.DataFrame:
         except Exception:
             return pd.DataFrame(columns=REQUIRED_COLS)
 
-    # Ensure required columns exist
     for c in REQUIRED_COLS:
         if c not in df.columns:
             df[c] = None
 
-    # Optional: sort by newest first if available
     if "scraped_at" in df.columns:
         df["scraped_at_dt"] = pd.to_datetime(df["scraped_at"], errors="coerce")
         df = df.sort_values("scraped_at_dt", ascending=False, na_position="last")
@@ -53,7 +50,6 @@ if df.empty:
     st.info("No jobs available yet. Come back after the next run.")
     st.stop()
 
-# --- Filters ---
 col1, col2, col3 = st.columns(3)
 with col1:
     kw = st.text_input("Keyword", "")
@@ -63,7 +59,6 @@ with col2:
 with col3:
     city_state = st.text_input("City / State", "")
 
-# Row-aligned mask
 mask = pd.Series(True, index=df.index)
 if kw:
     mask &= df["title"].astype(str).str.contains(kw, case=False, na=False)
@@ -74,12 +69,10 @@ if city_state:
 
 filtered = df.loc[mask, REQUIRED_COLS]
 
-# Empty-state message
 if filtered.empty:
     st.warning("No results match your filters.")
     st.stop()
 
-# --- Results table with clickable links ---
 st.dataframe(
     filtered,
     use_container_width=True,
