@@ -11,7 +11,7 @@ BASE = "https://www.paycomonline.net"
 CLIENT_KEY = "51CCB437D1A5BB8EA54B11A3C07895CA"
 LIST_URL = f"{BASE}/v4/ats/web.php/jobs?clientkey={CLIENT_KEY}"
 DETAIL_PATH = "/v4/ats/web.php/jobs/ViewJobDetails"
-DEFAULT_STATE = "TX"  # client is FMC Services operating in TX markets per live postings
+DEFAULT_STATE = "TX"
 
 
 def _mk_headers(referer: str = LIST_URL) -> Dict[str, str]:
