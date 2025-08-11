@@ -12,7 +12,7 @@ A small collection of scrapers + a Streamlit dashboard to aggregate open roles f
   * **Team Engine** (e.g., Talon/LPE)
   * **Static/SSR career pages** (e.g., Amarillo National Bank)
 * **Runner**: `run_scrapers.py` calls each scraper and writes a combined `data/latest_jobs.json`.
-* **Dashboard**: `streamlit_dashboard.py` reads `data/latest_jobs.json` and provides a simple UI (search + filters + clickable links).
+* **Dashboard**: `dashboard.py` reads `data/latest_jobs.json` and provides a simple UI (search + filters + clickable links).
 * **GitHub Actions** workflow (recommended) to run nightly and refresh data.
 
 ## Data model
