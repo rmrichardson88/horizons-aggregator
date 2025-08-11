@@ -111,7 +111,7 @@ jobs:
 
 ## Streamlit dashboard
 
-* Script: `app/streamlit_dashboard.py` (or wherever you place it).
+* Script: `app/dashboard.py` (or wherever you place it).
 * Reads `data/latest_jobs.json` and presents keyword/company/location filters.
 * Uses `st.column_config.LinkColumn` so each row has a clickable **Open** link.
 * Handles empty/missing JSON gracefully; shows friendly messages instead of tracebacks.
@@ -130,10 +130,6 @@ jobs:
 * Prefer stable attributes over brittle classnames (`data-automation-id` > `class` when possible).
 * Keep scrapers idempotent and side-effect free (return data; `run_scrapers.py` handles writing files).
 * Log minimally in CI; avoid noisy prints in production scrapers.
-
-## License
-
-MIT (or your choice). Add a `LICENSE` file before publishing.
 
 ## Acknowledgements
 
