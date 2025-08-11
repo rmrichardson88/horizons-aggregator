@@ -6,10 +6,10 @@ from urllib.parse import urlparse, parse_qs
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 
 try:
-    from datetime import datetime, UTC
+    from datetime import datetime, UTC 
 except Exception: 
     from datetime import datetime, timezone as _tz
-    UTC = _tz.utc 
+    UTC = _tz.utc  
 
 START_URL = (
     "https://sjobs.brassring.com/TGnewUI/Search/Home/Home"
@@ -17,11 +17,14 @@ START_URL = (
 )
 COMPANY = "Texas Tech University Health Sciences Center"
 SOURCE = "TTUHSC"
-
+UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/125.0.0.0 Safari/537.36"
+)
 
 def _now_utc_iso_seconds() -> str:
     return datetime.now(UTC).replace(tzinfo=None).isoformat(timespec="seconds")
-
 
 def _extract_job_id(href: str) -> Optional[str]:
     try:
@@ -31,62 +34,59 @@ def _extract_job_id(href: str) -> Optional[str]:
     except Exception:
         return None
 
-
-def _wait_for_amarillo_filter(page) -> None:
-    page.wait_for_function(
-        r"""
-        () => {
-          const txt = document.body.innerText || "";
-          const chipOK = /HSC\s*[-–—]\s*Amarillo/i.test(txt);
-          const locs = Array.from(document.querySelectorAll('p.jobProperty.position1'))
-            .map(el => el.innerText || "");
-          const locsOK = locs.length > 0 && locs.every(t => /Amarillo/i.test(t));
-          return chipOK || locsOK;
-        }
-        """,
-        timeout=15000,
-    )
-
+def _fallback_search_keyword(page) -> None:
+    selectors = [
+        "input#keywordsearch",
+        "input[name='keywordsearch']",
+        "input[ng-model*='Keyword']",
+        "input[placeholder*='keyword' i]",
+        "input[aria-label*='keyword' i]",
+        "input[type='search']",
+    ]
+    for sel in selectors:
+        try:
+            inp = page.locator(sel).first
+            if inp.count() == 0:
+                continue
+            inp.fill("")
+            inp.type("Amarillo, Texas")
+            inp.press("Enter")
+            page.wait_for_load_state("networkidle")
+            return
+        except Exception:
+            continue
 
 def _apply_amarillo(page) -> None:
     try:
-        page.get_by_role("button", name=re.compile("Filter|Filters|Refine", re.I)).click(timeout=3000)
+        page.get_by_role("link", name=re.compile(r"^\s*Advanced Search\s*$", re.I)).click(timeout=7000)
     except Exception:
-        pass
-
-    for trigger in [
-        page.get_by_role("button", name=re.compile(r"^\s*Campus\s*$", re.I)),
-        page.locator("button:has-text('Campus')"),
-        page.locator("h3:has-text('Campus')").locator("..").locator("button"),
-    ]:
         try:
-            trigger.first.click(timeout=3000)
+            page.locator(".powerSearchLink a.UnderLineLink", has_text=re.compile("Advanced Search", re.I)).first.click(timeout=7000)
+        except Exception:
+            _fallback_search_keyword(page)
+            return
+
+    try:
+        page.wait_for_selector("label.checkboxLabel", timeout=10000)
+    except PWTimeout:
+        _fallback_search_keyword(page)
+        return
+
+    try:
+        page.get_by_label(re.compile(r"HSC\s*[-–—]\s*Amarillo", re.I)).check(timeout=8000, force=True)
+    except Exception:
+        lbl = page.locator("label.checkboxLabel", has_text=re.compile(r"HSC\s*[-–—]\s*Amarillo", re.I)).first
+        lbl.scroll_into_view_if_needed()
+        lbl.click(timeout=8000)
+
+    for name in ["Search", "Apply", "Done", "Update", "Go"]:
+        try:
+            page.get_by_role("button", name=re.compile(fr"^\s*{name}\s*$", re.I)).click(timeout=3000)
             break
         except Exception:
             continue
 
-    try:
-        panel = page.locator(".search-filters, .filtersPanel, .facetContainer, aside[role='complementary']").first
-        panel.evaluate("el => el.scrollTop = el.scrollHeight")
-    except Exception:
-        page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
-
-    lbl = page.locator(
-        "label",
-        has_text=re.compile(r"HSC\s*[-–—]\s*Amarillo(?:\s*\(\d+\))?", re.I),
-    ).first
-    lbl.scroll_into_view_if_needed()
-    lbl.click(timeout=15000)
-
-    try:
-        page.get_by_role("button", name=re.compile("Apply|Done|Close", re.I)).click(timeout=3000)
-    except Exception:
-        pass
-
-    _wait_for_amarillo_filter(page)
-
-
-def _scrape_listing_page(page, base_url: str) -> List[Dict[str, Optional[str]]]:
+def _scrape_listing_page(page) -> List[Dict[str, Optional[str]]]:
     jobs: List[Dict[str, Optional[str]]] = []
     try:
         page.wait_for_selector('div.liner.lightBorder a.jobProperty.jobtitle', timeout=25000)
@@ -107,41 +107,35 @@ def _scrape_listing_page(page, base_url: str) -> List[Dict[str, Optional[str]]]:
 
         job_id = _extract_job_id(url) or (url.split("jobid=")[-1] if "jobid=" in url else None)
 
-        jobs.append(
-            {
-                "id": job_id,
-                "title": title,
-                "company": COMPANY,
-                "location": location,
-                "salary": None,
-                "url": url,
-                "scraped_at": _now_utc_iso_seconds(),
-                "source": SOURCE,
-            }
-        )
+        jobs.append({
+            "id": job_id,
+            "title": title,
+            "company": COMPANY,
+            "location": location,
+            "salary": None,
+            "url": url,
+            "scraped_at": _now_utc_iso_seconds(),
+            "source": SOURCE,
+        })
     return jobs
-
 
 def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
     jobs: List[Dict[str, Optional[str]]] = []
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        ctx = browser.new_context(user_agent=(
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
-        ))
+        browser = p.chromium.launch(headless=True, args=["--no-sandbox"]) 
+        ctx = browser.new_context(user_agent=UA)
         page = ctx.new_page()
-        page.goto(START_URL, wait_until="networkidle")
 
+        page.goto(START_URL, wait_until="networkidle")
         try:
             _apply_amarillo(page)
         except PWTimeout:
-            print("[warn] could not click Amarillo filter; continuing without UI filter")
+            pass
 
         page_index = 1
         seen_total = 0
         while page_index <= max_pages:
-            page_jobs = _scrape_listing_page(page, START_URL)
+            page_jobs = _scrape_listing_page(page)
             if not page_jobs:
                 break
             jobs.extend(page_jobs)
@@ -157,6 +151,8 @@ def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
                 'button[aria-label="Next"]:not([disabled])',
                 'li.paginationNext a',
                 'a[title="Next"]',
+                'button:has-text("Load more")',
+                'button:has-text("Show more")',
             ]:
                 btn = page.query_selector(sel)
                 if btn:
@@ -177,7 +173,6 @@ def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
         browser.close()
 
     if not any("amarillo" in (j.get("location") or "").lower() for j in jobs):
-        print("[warn] UI filter likely didn't apply; post-filtering to Amarillo")
         jobs = [j for j in jobs if (j.get("location") or "").lower().startswith("amarillo")]
 
     seen = set()
