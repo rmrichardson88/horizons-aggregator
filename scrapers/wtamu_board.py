@@ -29,6 +29,12 @@ def _extract_req_id(text: str) -> Optional[str]:
     m = re.search(r"\b(R-\d+(?:-\d+)?)\b", text or "")
     return m.group(1) if m else None
 
+def _clean_location(s: Optional[str]) -> Optional[str]:
+    if not s:
+        return None
+    t = re.sub(r"\s+", " ", s).strip()
+    t = re.sub(r"^(locations?|location)\s*", "", t, flags=re.I)
+    return t or None
 
 def _scrape_listing_page(page, start_url: str) -> List[Dict[str, Optional[str]]]:
     jobs: List[Dict[str, Optional[str]]] = []
@@ -63,6 +69,7 @@ def _scrape_listing_page(page, start_url: str) -> List[Dict[str, Optional[str]]]
                 rid = _extract_req_id(sub_text)
                 if rid:
                     req_id = rid
+        location = _clean_location(location)
         job_id = req_id or (href.rstrip("/").split("/")[-1] if href else None)
 
         jobs.append({
@@ -76,7 +83,6 @@ def _scrape_listing_page(page, start_url: str) -> List[Dict[str, Optional[str]]]
             "source": SOURCE,
         })
     return jobs
-
 
 def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
     jobs: List[Dict[str, Optional[str]]] = []
