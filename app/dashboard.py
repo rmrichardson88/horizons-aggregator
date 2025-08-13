@@ -96,7 +96,7 @@ def _get_mtime_ns(path: Path) -> int:
 # --------------- UI Header + Data Source ---------------
 left_hdr, right_hdr = st.columns([1, 1])
 with left_hdr:
-    st.title("Horizons Job Aggregator")
+    st.title("Horizons Employment Opportunities")
 with right_hdr:
     if st.button("🔄 Refresh data", use_container_width=True):
         st.cache_data.clear()
