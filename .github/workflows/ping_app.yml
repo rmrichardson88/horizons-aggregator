@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Ping app
         run: |
-          APP_URL="https://horizons-job-boardv2.streamlit.app/"
+          APP_URL="https://horizons-aggregator.streamlit.app/"
           # small jitter so pings don't always align
           sleep $((RANDOM % 60))
           # try twice, short timeout, don't fail the workflow
