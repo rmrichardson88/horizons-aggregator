@@ -54,7 +54,7 @@ def _safe_read_json_str(s: str) -> pd.DataFrame:
         return _empty_df()
 
 
-@st.cache_data(ttl=60, show_spinner=False)
+@st.cache_data(ttl=86400, show_spinner=False)
 def _load_remote_json(url: str, cache_bust: int) -> pd.DataFrame:
     headers = {"Cache-Control": "no-cache"}
     r = requests.get(url, params={"t": cache_bust}, headers=headers, timeout=15)
@@ -116,7 +116,7 @@ if DATA_MODE == "local":
     df = _load_local_json(str(DATA_FILE), mtime_ns)
 else:
     try:
-        cb = int(time.time() // 60)  # refresh at most once per minute
+        cb = int(time.time() // 86400)  # refresh at most once per minute
         df = _load_remote_json(REMOTE_RAW_URL, cb)
     except Exception as e:
         st.sidebar.error(f"Remote fetch failed: {e}. Falling back to local file.")
@@ -127,7 +127,7 @@ else:
 left, right = st.columns([1, 1])
 with left:
     if DATA_MODE == "remote":
-        st.caption("Reading from GitHub Raw (auto-refresh ~60s)")
+        st.caption("Reading from GitHub Raw (auto-refresh once a day)")
     else:
         st.caption("Reading local repo file (auto-refresh on commit)")
 with right:
