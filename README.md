@@ -1,4 +1,4 @@
-# Horizons Job Aggregator
+# Horizons Employment Opportunities
 
 A small collection of scrapers + a Streamlit dashboard to aggregate open roles from partner organizations around the Texas Panhandle.
 
