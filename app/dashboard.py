@@ -7,7 +7,7 @@ import time
 import requests
 
 st.set_page_config(
-    page_title="Horizons Job Aggregator",
+    page_title="Horizons Employment Opportunities",
     page_icon="💼",
     layout="wide",
 )
