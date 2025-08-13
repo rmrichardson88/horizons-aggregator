@@ -3,13 +3,13 @@ from pathlib import Path
 from utils import load_previous, save_latest
 
 SCRAPER_MODULES = [
-    "scrapers.yhmc_board",
+    "scrapers.wtamu_board",
+    "scrapers.ttuhsc_board",
     #"scrapers.sage_oil_vac_board",
     "scrapers.fmc_board",
-    "scrapers.talon_lpe_board",
     "scrapers.anb_board",
-    "scrapers.wtamu_board",
-    "scrapers.ttuhsc_board"
+    "scrapers.talon_lpe_board",
+    "scrapers.yhmc_board"
     # "scrapers.other_board",
 ]
 
