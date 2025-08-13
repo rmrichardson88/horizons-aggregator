@@ -9,7 +9,7 @@ SCRAPER_MODULES = [
     "scrapers.talon_lpe_board",
     "scrapers.anb_board",
     "scrapers.wtamu_board",
-    #"scrapers.ttuhsc_board"
+    "scrapers.ttuhsc_board"
     # "scrapers.other_board",
 ]
 
