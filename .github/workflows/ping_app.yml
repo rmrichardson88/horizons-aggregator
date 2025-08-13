@@ -1,0 +1,22 @@
+name: Keep Streamlit Awake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 12 hours; change to */6, */3, etc. if needed
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping app
+        run: |
+          APP_URL="https://horizons-job-boardv2.streamlit.app/"
+          # small jitter so pings don't always align
+          sleep $((RANDOM % 60))
+          # try twice, short timeout, don't fail the workflow
+          for i in {1..2}; do
+            curl -fsS -A "keepalive-bot" -m 20 "$APP_URL" -o /dev/null && exit 0
+            sleep 10
+          done
+          true
