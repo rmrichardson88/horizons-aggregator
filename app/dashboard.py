@@ -98,6 +98,8 @@ left_hdr, right_hdr = st.columns([1, 1])
 with left_hdr:
     st.title("Horizons Employment Opportunities")
 with right_hdr:
+    IMG_PATH = Path(__file__).parents[1] / "horizons_logo_master_02_primary.png"
+    st.image(str(IMG_PATH), use_container_width=True)
     if st.button("🔄 Refresh data", use_container_width=True):
         st.cache_data.clear()
         st.rerun()
