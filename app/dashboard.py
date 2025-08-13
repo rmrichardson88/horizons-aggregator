@@ -99,7 +99,7 @@ with left_hdr:
     st.title("Horizons Employment Opportunities")
 with right_hdr:
     IMG_PATH = Path(__file__).parents[1] / "assets" / "horizons_logo_master_02_primary.png"
-    st.image(str(IMG_PATH), width=220)
+    st.image(str(IMG_PATH), width=300)
 
 _default_index = 0 if DEFAULT_DATA_MODE == "remote" else 1
 DATA_MODE = st.sidebar.radio("Data source", ["remote", "local"], index=_default_index)
