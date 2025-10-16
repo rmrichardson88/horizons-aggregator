@@ -6,7 +6,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/MLnmxP-WgdqN?utm_source=careers_page",
-    "scraped_at": "2025-10-15T05:13:24",
+    "scraped_at": "2025-10-16T05:15:20",
     "source": "Talon/LPE"
   },
   {
@@ -16,7 +16,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/nVgKdvRUovZu?utm_source=careers_page",
-    "scraped_at": "2025-10-15T05:13:24",
+    "scraped_at": "2025-10-16T05:15:20",
     "source": "Talon/LPE"
   },
   {
@@ -26,7 +26,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
+    "scraped_at": "2025-10-16T05:15:18",
     "source": "Amarillo National Bank"
   },
   {
@@ -36,7 +36,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
+    "scraped_at": "2025-10-16T05:15:18",
     "source": "Amarillo National Bank"
   },
   {
@@ -46,7 +46,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
+    "scraped_at": "2025-10-16T05:15:18",
     "source": "Amarillo National Bank"
   },
   {
@@ -56,7 +56,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
+    "scraped_at": "2025-10-16T05:15:18",
     "source": "Amarillo National Bank"
   },
   {
@@ -66,7 +66,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
+    "scraped_at": "2025-10-16T05:15:18",
     "source": "Amarillo National Bank"
   },
   {
@@ -76,7 +76,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
+    "scraped_at": "2025-10-16T05:15:18",
     "source": "Amarillo National Bank"
   },
   {
@@ -86,7 +86,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
+    "scraped_at": "2025-10-16T05:15:18",
     "source": "Amarillo National Bank"
   },
   {
@@ -96,27 +96,17 @@
     "location": "Bryan/College Station, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
+    "scraped_at": "2025-10-16T05:15:18",
     "source": "Amarillo National Bank"
   },
   {
-    "id": "bryan-college-station-customer-service-representative-university-branch",
-    "title": "Customer Service Representative - University Branch",
-    "company": "Amarillo National Bank",
-    "location": "Bryan/College Station, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2025-10-15T05:13:22",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "99007",
-    "title": "Nurse Practitioner / Physician Assisstant - Full Time",
+    "id": "101213",
+    "title": "Hospice: Social Worker - Part Time - Amarillo Area",
     "company": "FMC",
-    "location": "Amarillo, TX",
+    "location": "Part Time - Amarillo, TX",
     "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=99007",
-    "scraped_at": "2025-10-15T05:13:20",
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101213",
+    "scraped_at": "2025-10-16T05:15:17",
     "source": "FMC"
   },
   {
@@ -126,87 +116,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101118",
-    "scraped_at": "2025-10-15T05:13:20",
-    "source": "FMC"
-  },
-  {
-    "id": "101005",
-    "title": "Front Desk - Full Time",
-    "company": "FMC",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101005",
-    "scraped_at": "2025-10-15T05:13:19",
-    "source": "FMC"
-  },
-  {
-    "id": "100997",
-    "title": "X-Ray Tech - Full Time",
-    "company": "FMC",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=100997",
-    "scraped_at": "2025-10-15T05:13:19",
-    "source": "FMC"
-  },
-  {
-    "id": "101109",
-    "title": "X-Ray Tech - Full Time",
-    "company": "FMC",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101109",
-    "scraped_at": "2025-10-15T05:13:18",
-    "source": "FMC"
-  },
-  {
-    "id": "101031",
-    "title": "LVN",
-    "company": "FMC",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101031",
-    "scraped_at": "2025-10-15T05:13:18",
-    "source": "FMC"
-  },
-  {
-    "id": "100984",
-    "title": "Nurse Practitioner/Physician Assistant",
-    "company": "FMC",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=100984",
-    "scraped_at": "2025-10-15T05:13:17",
-    "source": "FMC"
-  },
-  {
-    "id": "92548",
-    "title": "Hospice: RN FT - Amarillo Area",
-    "company": "FMC",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=92548",
-    "scraped_at": "2025-10-15T05:13:17",
-    "source": "FMC"
-  },
-  {
-    "id": "101014",
-    "title": "Nurse Practitioner / Physician Assistant - Full Time",
-    "company": "FMC",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101014",
-    "scraped_at": "2025-10-15T05:13:16",
-    "source": "FMC"
-  },
-  {
-    "id": "99661",
-    "title": "Hospice: Home Health Aide/CNA - Amarillo Area",
-    "company": "FMC",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=99661",
-    "scraped_at": "2025-10-15T05:13:16",
+    "scraped_at": "2025-10-16T05:15:17",
     "source": "FMC"
   },
   {
@@ -216,7 +126,67 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=97346",
-    "scraped_at": "2025-10-15T05:13:15",
+    "scraped_at": "2025-10-16T05:15:16",
+    "source": "FMC"
+  },
+  {
+    "id": "101181",
+    "title": "Front Desk - Full Time",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101181",
+    "scraped_at": "2025-10-16T05:15:16",
+    "source": "FMC"
+  },
+  {
+    "id": "101109",
+    "title": "X-Ray Tech - Full Time",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101109",
+    "scraped_at": "2025-10-16T05:15:15",
+    "source": "FMC"
+  },
+  {
+    "id": "92548",
+    "title": "Hospice: RN FT - Amarillo Area",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=92548",
+    "scraped_at": "2025-10-16T05:15:15",
+    "source": "FMC"
+  },
+  {
+    "id": "101014",
+    "title": "Nurse Practitioner / Physician Assistant - Full Time",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101014",
+    "scraped_at": "2025-10-16T05:15:14",
+    "source": "FMC"
+  },
+  {
+    "id": "101031",
+    "title": "LVN",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101031",
+    "scraped_at": "2025-10-16T05:15:14",
+    "source": "FMC"
+  },
+  {
+    "id": "100997",
+    "title": "X-Ray Tech - Full Time",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=100997",
+    "scraped_at": "2025-10-16T05:15:13",
     "source": "FMC"
   },
   {
@@ -226,17 +196,47 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=100929",
-    "scraped_at": "2025-10-15T05:13:15",
+    "scraped_at": "2025-10-16T05:15:12",
     "source": "FMC"
   },
   {
-    "id": "99607",
-    "title": "Hospice: Social Worker - Licensed",
+    "id": "99661",
+    "title": "Hospice: Home Health Aide/CNA - Amarillo Area",
     "company": "FMC",
     "location": "Amarillo, TX",
     "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=99607",
-    "scraped_at": "2025-10-15T05:13:15",
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=99661",
+    "scraped_at": "2025-10-16T05:15:12",
+    "source": "FMC"
+  },
+  {
+    "id": "100984",
+    "title": "Nurse Practitioner/Physician Assistant",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=100984",
+    "scraped_at": "2025-10-16T05:15:11",
+    "source": "FMC"
+  },
+  {
+    "id": "101005",
+    "title": "Front Desk - Full Time",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101005",
+    "scraped_at": "2025-10-16T05:15:11",
+    "source": "FMC"
+  },
+  {
+    "id": "99007",
+    "title": "Nurse Practitioner / Physician Assisstant - Full Time",
+    "company": "FMC",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=99007",
+    "scraped_at": "2025-10-16T05:15:10",
     "source": "FMC"
   },
   {
@@ -246,28 +246,18 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=100968",
-    "scraped_at": "2025-10-15T05:13:14",
+    "scraped_at": "2025-10-16T05:15:10",
     "source": "FMC"
   },
   {
-    "id": "898689",
-    "title": "Groundskeeper II",
-    "company": "Texas Tech University Health Sciences Center",
-    "location": "Amarillo",
+    "id": "101220",
+    "title": "Hospice: Social Worker - Pampa, Borger, Wheeler, Amarillo",
+    "company": "FMC",
+    "location": "Pampa, TX",
     "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=898689",
-    "scraped_at": "2025-10-15T05:13:13",
-    "source": "TTUHSC"
-  },
-  {
-    "id": "892427",
-    "title": "Certified Spec Poison Info",
-    "company": "Texas Tech University Health Sciences Center",
-    "location": "Amarillo",
-    "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=892427",
-    "scraped_at": "2025-10-15T05:13:13",
-    "source": "TTUHSC"
+    "url": "https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?clientkey=51CCB437D1A5BB8EA54B11A3C07895CA&job=101220",
+    "scraped_at": "2025-10-16T05:15:10",
+    "source": "FMC"
   },
   {
     "id": "896816",
@@ -276,17 +266,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=896816",
-    "scraped_at": "2025-10-15T05:13:12",
-    "source": "TTUHSC"
-  },
-  {
-    "id": "897742",
-    "title": "Patient Services Specialist",
-    "company": "Texas Tech University Health Sciences Center",
-    "location": "Amarillo",
-    "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=897742",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -296,17 +276,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=900296",
-    "scraped_at": "2025-10-15T05:13:12",
-    "source": "TTUHSC"
-  },
-  {
-    "id": "900022",
-    "title": "Director",
-    "company": "Texas Tech University Health Sciences Center",
-    "location": "Amarillo",
-    "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=900022",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -316,7 +286,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=900089",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -326,7 +296,17 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=899955",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "900022",
+    "title": "Director",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=900022",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -336,7 +316,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=898852",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -346,7 +326,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=872545",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -356,17 +336,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=897824",
-    "scraped_at": "2025-10-15T05:13:12",
-    "source": "TTUHSC"
-  },
-  {
-    "id": "897921",
-    "title": "Coding & Reimburs Spec",
-    "company": "Texas Tech University Health Sciences Center",
-    "location": "Amarillo",
-    "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=897921",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -376,7 +346,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=889053",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -386,7 +356,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=898552",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
@@ -396,18 +366,28 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=897654",
-    "scraped_at": "2025-10-15T05:13:12",
+    "scraped_at": "2025-10-16T05:15:08",
     "source": "TTUHSC"
   },
   {
-    "id": "R-086358",
-    "title": "Museum Registrar",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
+    "id": "898689",
+    "title": "Groundskeeper II",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Museum-Registrar_R-086358-1",
-    "scraped_at": "2025-10-15T05:12:36",
-    "source": "WTAMU"
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=898689",
+    "scraped_at": "2025-10-16T05:15:08",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "892427",
+    "title": "Certified Spec Poison Info",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=892427",
+    "scraped_at": "2025-10-16T05:15:08",
+    "source": "TTUHSC"
   },
   {
     "id": "R-068634",
@@ -416,7 +396,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor-of-Agriculture--Forage-Scientist-_R-068634",
-    "scraped_at": "2025-10-15T05:12:36",
+    "scraped_at": "2025-10-16T05:14:33",
     "source": "WTAMU"
   },
   {
@@ -426,7 +406,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688",
-    "scraped_at": "2025-10-15T05:12:36",
+    "scraped_at": "2025-10-16T05:14:33",
     "source": "WTAMU"
   },
   {
@@ -436,7 +416,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939",
-    "scraped_at": "2025-10-15T05:12:36",
+    "scraped_at": "2025-10-16T05:14:33",
     "source": "WTAMU"
   },
   {
@@ -446,7 +426,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792",
-    "scraped_at": "2025-10-15T05:12:36",
+    "scraped_at": "2025-10-16T05:14:33",
     "source": "WTAMU"
   },
   {
@@ -456,7 +436,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805",
-    "scraped_at": "2025-10-15T05:12:36",
+    "scraped_at": "2025-10-16T05:14:33",
     "source": "WTAMU"
   },
   {
@@ -466,7 +446,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853",
-    "scraped_at": "2025-10-15T05:12:36",
+    "scraped_at": "2025-10-16T05:14:33",
     "source": "WTAMU"
   },
   {
@@ -476,7 +456,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/PTI-Adjunct-Instructor-for-Basic-Public-Speaking_R-070264",
-    "scraped_at": "2025-10-15T05:12:36",
+    "scraped_at": "2025-10-16T05:14:33",
     "source": "WTAMU"
   },
   {
@@ -486,7 +466,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Associate-Athletic-Director-Business---Administration_R-088109-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -496,7 +476,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Professor-of-Social-Work_R-084745",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -506,7 +486,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-III_R-086998-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -516,7 +496,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-087540-2",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -526,7 +506,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Educational-Psychology_R-087870-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -536,7 +516,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Coordinator-II_R-087833-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -546,17 +526,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Coordinator-II_R-087820-1",
-    "scraped_at": "2025-10-15T05:12:33",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-087824",
-    "title": "Delivery Specialist II",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Delivery-Specialist-II_R-087824-2",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -566,7 +536,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Counseling--Clinical-Coordinator-_R-085598-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -576,7 +546,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Program---Communications-Coordinator_R-087642-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -586,7 +556,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-II_R-087577-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -596,7 +566,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Sports-and-Exercise-Science_R-087699-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -606,7 +576,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-II_R-087586-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -616,7 +586,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Theatre_R-087503-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -626,7 +596,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Library-Specialist-II--Access-Services--Part-Time--_R-087302-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -636,7 +606,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor--Family-Nurse-Practitioner_R-086789-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -646,7 +616,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Museum-Educator_R-087082-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -656,7 +626,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Agricultural-Business-Economics_R-075861-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -666,7 +636,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   },
   {
@@ -676,7 +646,17 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Computer-Science_R-086261-1",
-    "scraped_at": "2025-10-15T05:12:33",
+    "scraped_at": "2025-10-16T05:14:30",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-086358",
+    "title": "Museum Registrar",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Museum-Registrar_R-086358-1",
+    "scraped_at": "2025-10-16T05:14:30",
     "source": "WTAMU"
   }
 ]
