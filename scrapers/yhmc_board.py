@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from utils import build_job_id
 
-BASE_URL = "https://careers.yhmc.com"
+BASE_URL = "https://careers.yellowhouse.com/"
 
 def normalize_href(href: str) -> tuple[str, str]:
     """Return `(absolute_url, slug)` normalized for hashing & display."""
