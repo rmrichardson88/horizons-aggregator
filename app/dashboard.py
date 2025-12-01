@@ -176,7 +176,7 @@ st.dataframe(
     column_config={
         "title": st.column_config.TextColumn("Job Title"),
         "company": st.column_config.TextColumn("Company"),
-        "salary": st.column_config.TextColumn("Salary"),
+        "salary": st.column_config.TextColumn("Salary (if listed)"),
         "location": st.column_config.TextColumn("Location"),
         "url": st.column_config.LinkColumn(
             "Link",
