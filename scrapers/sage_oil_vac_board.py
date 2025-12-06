@@ -16,7 +16,15 @@ except Exception:
 
 COMPANY = "Sage Oil Vac"
 SOURCE = "Sage Oil Vac"
+
+
 LIST_URL = "https://www.sageoilvac.com/careers/"
+
+
+BOARD_URL = (
+    "https://www.sageoilvac.com/v4/ats/web.php/jobs"
+    "?clientkey=B39186ACE47083BD491D331CA51B2261"
+)
 
 
 def _now_utc_iso_seconds() -> str:
@@ -38,6 +46,7 @@ def _extract_clearcompany_id(url: str) -> Optional[str]:
     except Exception:
         pass
 
+
     m = re.search(r"[?&]job=(\d+)", url)
     return m.group(1) if m else None
 
@@ -56,12 +65,15 @@ def fetch_jobs() -> List[Dict[str, Optional[str]]]:
         )
         page = ctx.new_page()
 
-        page.goto(LIST_URL, wait_until="domcontentloaded", timeout=60000)
+
+        page.goto(BOARD_URL, wait_until="domcontentloaded", timeout=60000)
+
 
         try:
             page.get_by_role("button", name=re.compile("Accept|Agree|OK", re.I)).click(timeout=3000)
         except Exception:
             pass
+
 
         try:
             page.wait_for_selector("li.jobInfo.JobListing", timeout=20000)
