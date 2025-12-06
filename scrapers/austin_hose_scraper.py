@@ -1,17 +1,14 @@
 from __future__ import annotations
 
-import html
 import json
 import re
 from typing import Dict, List, Optional
-from urllib.parse import urljoin
 
 import requests
-from bs4 import BeautifulSoup
 
 try:
     from datetime import datetime, UTC
-except Exception:
+except Exception: 
     from datetime import datetime, timezone as _tz
     UTC = _tz.utc
 
@@ -19,6 +16,9 @@ except Exception:
 LIST_URL = "https://recruiting.paylocity.com/recruiting/jobs/All/0a932b3f-65a0-4207-b5be-70d84a78ecaa/Austin-Hose"
 COMPANY = "Austin Hose"
 SOURCE = "Austin Hose"
+
+FEED_GUID = "0a932b3f-65a0-4207-b5be-70d84a78ecaa"
+FEED_URL = f"https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/{FEED_GUID}"
 
 
 def _now_utc_iso_seconds() -> str:
@@ -30,6 +30,26 @@ def _slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+def _compose_location_from_feed(loc: Optional[dict]) -> Optional[str]:
+    if not loc:
+        return None
+
+    city = loc.get("city") or loc.get("City")
+    state = loc.get("state") or loc.get("State")
+    display = (
+        loc.get("locationDisplayName")
+        or loc.get("LocationDisplayName")
+        or loc.get("name")
+        or loc.get("Name")
+    )
+
+    if city and state:
+        return f"{city}, {state}"
+    if display:
+        return display
+    return None
+
+
 def fetch_jobs() -> List[Dict[str, Optional[str]]]:
     headers = {
         "User-Agent": (
@@ -37,55 +57,48 @@ def fetch_jobs() -> List[Dict[str, Optional[str]]]:
             "AppleWebKit/537.36 (KHTML, like Gecko) "
             "Chrome/131.0.0.0 Safari/537.36"
         ),
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Referer": LIST_URL,
+        "Accept": "application/json",
     }
 
-    r = requests.get(LIST_URL, headers=headers, timeout=20)
+    r = requests.get(FEED_URL, headers=headers, timeout=20)
     r.raise_for_status()
 
-    raw = r.text.replace("\r\n", "\n").replace("\r", "\n")
-    raw = html.unescape(raw).replace("\xa0", " ")
+    data = r.json()
 
-    if "In order to use this site, it is necessary to enable JavaScript." in raw:
-        raise RuntimeError(
-            "Paylocity returned the JavaScript/unsupported-browser page; "
-            "try running this scraper from a different IP or updating headers."
-        )
-
-    soup = BeautifulSoup(raw, "html.parser")
+    if isinstance(data, dict) and "jobs" in data:
+        items = data["jobs"]
+    elif isinstance(data, list):
+        items = data
+    else:
+        raise RuntimeError(f"Unexpected Paylocity feed shape: {type(data)!r}")
 
     jobs: List[Dict[str, Optional[str]]] = []
 
-    rows = soup.select("div.row.job-listing-job-item")
-    for row in rows:
-        title_a = row.select_one(".job-title-column .job-item-title a")
-        if not title_a:
-            continue
-
-        title = title_a.get_text(" ", strip=True)
+    for item in items:
+        title = item.get("title") or item.get("Title")
         if not title:
             continue
 
-        href = (title_a.get("href") or "").strip()
-        if href:
-            url = urljoin(LIST_URL, href)
+        display_url = item.get("displayUrl") or item.get("DisplayUrl")
+        if not display_url:
+            display_url = (
+                item.get("applyUrl")
+                or item.get("ApplyUrl")
+                or item.get("listUrl")
+                or item.get("ListUrl")
+                or LIST_URL
+            )
+
+        job_id_val = item.get("jobId") or item.get("JobId")
+        if job_id_val:
+            base_id = f"austinhose-{job_id_val}-{title}"
         else:
-            url = LIST_URL
+            base_id = f"austinhose-{title}"
 
-        loc_el = row.select_one(".location-column span")
-        location = loc_el.get_text(" ", strip=True) if loc_el else None
-        if location == "":
-            location = None
+        job_id = _slug(base_id)[:90]
 
-        job_id_match = re.search(r"/Details/(\d+)", href)
-        numeric_id = job_id_match.group(1) if job_id_match else None
-
-        if numeric_id:
-            job_id = _slug(f"austinhose-{numeric_id}-{title}")[:90]
-        else:
-            job_id = _slug(f"austinhose-{title}")[:90]
+        loc_dict = item.get("jobLocation") or item.get("JobLocation") or {}
+        location = _compose_location_from_feed(loc_dict)
 
         jobs.append(
             {
@@ -93,8 +106,8 @@ def fetch_jobs() -> List[Dict[str, Optional[str]]]:
                 "title": title,
                 "company": COMPANY,
                 "location": location,
-                "salary": None,
-                "url": url,
+                "salary": item.get("salaryDescription") or item.get("SalaryDescription"),
+                "url": display_url,
                 "scraped_at": _now_utc_iso_seconds(),
                 "source": SOURCE,
             }
