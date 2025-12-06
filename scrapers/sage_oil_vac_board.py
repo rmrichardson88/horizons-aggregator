@@ -55,7 +55,8 @@ def fetch_jobs() -> List[Dict[str, Optional[str]]]:
             )
         )
         page = ctx.new_page()
-        page.goto(LIST_URL, wait_until="networkidle")
+
+        page.goto(LIST_URL, wait_until="domcontentloaded", timeout=60000)
 
         try:
             page.get_by_role("button", name=re.compile("Accept|Agree|OK", re.I)).click(timeout=3000)
@@ -101,7 +102,7 @@ def fetch_jobs() -> List[Dict[str, Optional[str]]]:
                 "id": job_id,
                 "title": title,
                 "company": COMPANY,
-                "location": location,
+                "location": location, 
                 "salary": None,
                 "url": url,
                 "scraped_at": _now_utc_iso_seconds(),
