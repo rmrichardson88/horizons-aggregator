@@ -11,7 +11,7 @@ SCRAPER_MODULES = [
     "scrapers.austin_hose_scraper",
     "scrapers.sage_oil_vac_board",
     "scrapers.talon_lpe_board",
-    "scrapers.western_equipment
+    "scrapers.western_equipment"
     # "scrapers.other_board",
 ]
 
