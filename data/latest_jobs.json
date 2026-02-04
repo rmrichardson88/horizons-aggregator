@@ -1,42 +1,12 @@
 [
   {
-    "id": "8db08d12-edfa-4cc3-8250-49a7c23d62c8",
-    "title": "Conventional Machinist",
-    "company": "DISCO Inc.",
-    "location": "Borger, TX",
-    "salary": null,
-    "url": "https://share.striven.com/Job?LinkID=8db08d12-edfa-4cc3-8250-49a7c23d62c8",
-    "scraped_at": "2026-02-02T05:59:06",
-    "source": "DISCO Inc."
-  },
-  {
-    "id": "a0c5dc1c-ce29-49a8-b6fc-3b85438e00ff",
-    "title": "General Opening",
-    "company": "DISCO Inc.",
-    "location": null,
-    "salary": null,
-    "url": "https://share.striven.com/Job?LinkID=a0c5dc1c-ce29-49a8-b6fc-3b85438e00ff",
-    "scraped_at": "2026-02-02T05:59:06",
-    "source": "DISCO Inc."
-  },
-  {
-    "id": "8bafbe1e-45b9-48b2-8dd0-61701f4c077d",
-    "title": "CNC Machinist Operator",
-    "company": "DISCO Inc.",
-    "location": "Lubbock, TX",
-    "salary": null,
-    "url": "https://share.striven.com/Job?LinkID=8bafbe1e-45b9-48b2-8dd0-61701f4c077d",
-    "scraped_at": "2026-02-02T05:59:05",
-    "source": "DISCO Inc."
-  },
-  {
     "id": "181177",
     "title": "Service H-Tech",
     "company": "Western Equipment",
     "location": "Guymon WE - Guymon, OK 73942",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181177",
-    "scraped_at": "2026-02-02T05:59:03",
+    "scraped_at": "2026-02-04T18:18:17",
     "source": "Western Equipment"
   },
   {
@@ -46,7 +16,27 @@
     "location": "Clovis WE - Clovis, NM 88101",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181173",
-    "scraped_at": "2026-02-02T05:59:03",
+    "scraped_at": "2026-02-04T18:18:17",
+    "source": "Western Equipment"
+  },
+  {
+    "id": "361984",
+    "title": "Parts Warehouse",
+    "company": "Western Equipment",
+    "location": "Clinton WE - Arapaho, OK 73620",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/361984",
+    "scraped_at": "2026-02-04T18:18:17",
+    "source": "Western Equipment"
+  },
+  {
+    "id": "361302",
+    "title": "Yard/Maintenance",
+    "company": "Western Equipment",
+    "location": "Clovis WE - Clovis, NM 88101",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/361302",
+    "scraped_at": "2026-02-04T18:18:17",
     "source": "Western Equipment"
   },
   {
@@ -56,7 +46,7 @@
     "location": "Perryton WE - Perryton, TX 79090",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/351221",
-    "scraped_at": "2026-02-02T05:59:03",
+    "scraped_at": "2026-02-04T18:18:17",
     "source": "Western Equipment"
   },
   {
@@ -66,7 +56,7 @@
     "location": "Clinton WE - Arapaho, OK 73620",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181169",
-    "scraped_at": "2026-02-02T05:59:03",
+    "scraped_at": "2026-02-04T18:18:17",
     "source": "Western Equipment"
   },
   {
@@ -76,7 +66,7 @@
     "location": "Weatherford WE - Weatherford, OK 73096",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181165",
-    "scraped_at": "2026-02-02T05:59:03",
+    "scraped_at": "2026-02-04T18:18:17",
     "source": "Western Equipment"
   },
   {
@@ -86,7 +76,7 @@
     "location": "Hobart WE - Hobart, OK 73651",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181161",
-    "scraped_at": "2026-02-02T05:59:03",
+    "scraped_at": "2026-02-04T18:18:17",
     "source": "Western Equipment"
   },
   {
@@ -96,7 +86,7 @@
     "location": "Alva WE - Alva, OK 73717",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181157",
-    "scraped_at": "2026-02-02T05:59:03",
+    "scraped_at": "2026-02-04T18:18:17",
     "source": "Western Equipment"
   },
   {
@@ -106,27 +96,7 @@
     "location": "Altus WE - Altus, OK 73521",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181151",
-    "scraped_at": "2026-02-02T05:59:03",
-    "source": "Western Equipment"
-  },
-  {
-    "id": "181146",
-    "title": "Service Tech",
-    "company": "Western Equipment",
-    "location": "Woodward WE - Woodward, OK 73801",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181146",
-    "scraped_at": "2026-02-02T05:59:03",
-    "source": "Western Equipment"
-  },
-  {
-    "id": "181142",
-    "title": "Service Tech",
-    "company": "Western Equipment",
-    "location": "Childress WE - Childress, TX 79201",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181142",
-    "scraped_at": "2026-02-02T05:59:03",
+    "scraped_at": "2026-02-04T18:18:17",
     "source": "Western Equipment"
   },
   {
@@ -136,7 +106,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/PVW38uYV9HOg?utm_source=careers_page",
-    "scraped_at": "2026-02-02T05:58:59",
+    "scraped_at": "2026-02-04T18:18:12",
     "source": "Talon/LPE"
   },
   {
@@ -146,7 +116,7 @@
     "location": "Midland, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/tWVU6-Tn6rTN?utm_source=careers_page",
-    "scraped_at": "2026-02-02T05:58:59",
+    "scraped_at": "2026-02-04T18:18:12",
     "source": "Talon/LPE"
   },
   {
@@ -156,7 +126,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/Fa71wcCRAr2K?utm_source=careers_page",
-    "scraped_at": "2026-02-02T05:58:59",
+    "scraped_at": "2026-02-04T18:18:12",
     "source": "Talon/LPE"
   },
   {
@@ -166,7 +136,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/ZtWMLMuN1zGa?utm_source=careers_page",
-    "scraped_at": "2026-02-02T05:58:59",
+    "scraped_at": "2026-02-04T18:18:12",
     "source": "Talon/LPE"
   },
   {
@@ -176,7 +146,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/OZr-ABYBvB25?utm_source=careers_page",
-    "scraped_at": "2026-02-02T05:58:59",
+    "scraped_at": "2026-02-04T18:18:12",
     "source": "Talon/LPE"
   },
   {
@@ -186,7 +156,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/rRKsPnCt1Txx?utm_source=careers_page",
-    "scraped_at": "2026-02-02T05:58:59",
+    "scraped_at": "2026-02-04T18:18:12",
     "source": "Talon/LPE"
   },
   {
@@ -196,8 +166,18 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/R_E5kKjAplW3?utm_source=careers_page",
-    "scraped_at": "2026-02-02T05:58:59",
+    "scraped_at": "2026-02-04T18:18:12",
     "source": "Talon/LPE"
+  },
+  {
+    "id": "3886947",
+    "title": "Warehouse Associate",
+    "company": "Austin Hose",
+    "location": "Corpus Christi, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3886947",
+    "scraped_at": "2026-02-04T18:17:46",
+    "source": "Austin Hose"
   },
   {
     "id": "3874238",
@@ -206,17 +186,7 @@
     "location": "Williston, ND",
     "salary": null,
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3874238",
-    "scraped_at": "2026-02-02T05:58:32",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "3854451",
-    "title": "Delivery Driver",
-    "company": "Austin Hose",
-    "location": "Corpus Christi, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3854451",
-    "scraped_at": "2026-02-02T05:58:32",
+    "scraped_at": "2026-02-04T18:17:46",
     "source": "Austin Hose"
   },
   {
@@ -226,7 +196,7 @@
     "location": "Findlay Township, PA",
     "salary": null,
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3834609",
-    "scraped_at": "2026-02-02T05:58:32",
+    "scraped_at": "2026-02-04T18:17:46",
     "source": "Austin Hose"
   },
   {
@@ -236,7 +206,7 @@
     "location": "Findlay Township, PA",
     "salary": null,
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3792062",
-    "scraped_at": "2026-02-02T05:58:32",
+    "scraped_at": "2026-02-04T18:17:46",
     "source": "Austin Hose"
   },
   {
@@ -246,7 +216,7 @@
     "location": "Long Beach, CA",
     "salary": null,
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3775526",
-    "scraped_at": "2026-02-02T05:58:32",
+    "scraped_at": "2026-02-04T18:17:46",
     "source": "Austin Hose"
   },
   {
@@ -256,108 +226,18 @@
     "location": "Long Beach, CA",
     "salary": null,
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3683113",
-    "scraped_at": "2026-02-02T05:58:32",
+    "scraped_at": "2026-02-04T18:17:46",
     "source": "Austin Hose"
   },
   {
-    "id": "d1dbcf2d739671e6b9b6c775f05da236d55d6467",
-    "title": "Service Manager",
-    "company": "Yellowhouse Machinery",
-    "location": "Abilene, TX",
-    "salary": "",
-    "url": "https://careers.yellowhouse.com/951913071?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "123f42af1bfc939e17b8fb5dfc2a32d9b42140b5",
-    "title": "Shop Service Technician",
-    "company": "Yellowhouse Machinery",
-    "location": "Lubbock, TX",
-    "salary": "$18 - $50 / HOUR",
-    "url": "https://careers.yellowhouse.com/740847238?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "47540b7dc3edb4beecb58cfa0a21341fa8db4101",
-    "title": "Field Service Technician",
-    "company": "Yellowhouse Machinery",
-    "location": "Lubbock, TX",
-    "salary": "$18 - $50 / HOUR",
-    "url": "https://careers.yellowhouse.com/740847442?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "cb701a9f5d756f7732a5bccdfeb00957a18fb372",
-    "title": "Field Service Technician",
-    "company": "Yellowhouse Machinery",
-    "location": "Midland, TX",
-    "salary": "$18 - $50 / HOUR",
-    "url": "https://careers.yellowhouse.com/734466475?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "a8ccf28e94d0c3ca8bf9b01475040edde1ed3fe2",
-    "title": "Shop Service Technician",
-    "company": "Yellowhouse Machinery",
-    "location": "Midland, TX",
-    "salary": "$18 - $50 / HOUR",
-    "url": "https://careers.yellowhouse.com/734466496?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "8733e391c874276e2bbb6513491b1826f39ba487",
-    "title": "Shop Service Technician",
-    "company": "Yellowhouse Machinery",
-    "location": "Enid, OK",
-    "salary": "$18 - $50 / HOUR",
-    "url": "https://careers.yellowhouse.com/719837044?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "d29722f41e41916f42e8ff49cc1353144fdeead3",
-    "title": "Shop Service Technician",
-    "company": "Yellowhouse Machinery",
-    "location": "McAlester, OK",
-    "salary": "$18 - $50 / HOUR",
-    "url": "https://careers.yellowhouse.com/719837233?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "005c741752b60a32985e24c57c269a5070b76a9c",
-    "title": "Shop Service Technician",
-    "company": "Yellowhouse Machinery",
-    "location": "Broken Bow, OK",
-    "salary": "$18 - $50 / HOUR",
-    "url": "https://careers.yellowhouse.com/719837236?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "8c63551fef4f77ae9628cb67e89046bf0fc0987b",
-    "title": "Shop Service Technician",
-    "company": "Yellowhouse Machinery",
-    "location": "Sand Springs, OK",
-    "salary": "$20 - $30 / HOUR",
-    "url": "https://careers.yellowhouse.com/719837239?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
-  },
-  {
-    "id": "ff978d35eaed1d62e2e6a4483a24e6183d1c2ea8",
-    "title": "Shop Service Technician",
-    "company": "Yellowhouse Machinery",
+    "id": "amarillo-oil-and-gas-mineral-income-administrator-i",
+    "title": "Oil and Gas Mineral Income Administrator I",
+    "company": "Amarillo National Bank",
     "location": "Amarillo, TX",
-    "salary": "$18 - $50 / HOUR",
-    "url": "https://careers.yellowhouse.com/719837242?rr_p=192",
-    "scraped_at": "2026-02-02T05:58:30",
-    "source": "Yellowhouse"
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Amarillo National Bank"
   },
   {
     "id": "amarillo-compliance-digital-assets-compliance-specialist",
@@ -366,7 +246,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-02-02T05:58:28",
+    "scraped_at": "2026-02-04T18:17:43",
     "source": "Amarillo National Bank"
   },
   {
@@ -376,7 +256,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-02-02T05:58:28",
+    "scraped_at": "2026-02-04T18:17:43",
     "source": "Amarillo National Bank"
   },
   {
@@ -386,7 +266,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-02-02T05:58:28",
+    "scraped_at": "2026-02-04T18:17:43",
     "source": "Amarillo National Bank"
   },
   {
@@ -396,27 +276,247 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-02-02T05:58:28",
+    "scraped_at": "2026-02-04T18:17:43",
     "source": "Amarillo National Bank"
   },
   {
-    "id": "903220",
+    "id": "amarillo-maintenance-mechanic-2",
+    "title": "Maintenance Mechanic 2",
+    "company": "Amarillo National Bank",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://www.anb.com/about-anb/careers.html",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Amarillo National Bank"
+  },
+  {
+    "id": "d1dbcf2d739671e6b9b6c775f05da236d55d6467",
+    "title": "Service Manager",
+    "company": "Yellowhouse Machinery",
+    "location": "Abilene, TX",
+    "salary": "",
+    "url": "https://careers.yellowhouse.com/951913071?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "123f42af1bfc939e17b8fb5dfc2a32d9b42140b5",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "Lubbock, TX",
+    "salary": "$18 - $50 / HOUR",
+    "url": "https://careers.yellowhouse.com/740847238?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "47540b7dc3edb4beecb58cfa0a21341fa8db4101",
+    "title": "Field Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "Lubbock, TX",
+    "salary": "$18 - $50 / HOUR",
+    "url": "https://careers.yellowhouse.com/740847442?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "cb701a9f5d756f7732a5bccdfeb00957a18fb372",
+    "title": "Field Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "Midland, TX",
+    "salary": "$18 - $50 / HOUR",
+    "url": "https://careers.yellowhouse.com/734466475?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "a8ccf28e94d0c3ca8bf9b01475040edde1ed3fe2",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "Midland, TX",
+    "salary": "$18 - $50 / HOUR",
+    "url": "https://careers.yellowhouse.com/734466496?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "8733e391c874276e2bbb6513491b1826f39ba487",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "Enid, OK",
+    "salary": "$18 - $50 / HOUR",
+    "url": "https://careers.yellowhouse.com/719837044?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "d29722f41e41916f42e8ff49cc1353144fdeead3",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "McAlester, OK",
+    "salary": "$18 - $50 / HOUR",
+    "url": "https://careers.yellowhouse.com/719837233?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "005c741752b60a32985e24c57c269a5070b76a9c",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "Broken Bow, OK",
+    "salary": "$18 - $50 / HOUR",
+    "url": "https://careers.yellowhouse.com/719837236?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "ff978d35eaed1d62e2e6a4483a24e6183d1c2ea8",
+    "title": "Shop Service Technician",
+    "company": "Yellowhouse Machinery",
+    "location": "Amarillo, TX",
+    "salary": "$18 - $50 / HOUR",
+    "url": "https://careers.yellowhouse.com/719837242?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "cebe563a7040561b8d1bb141538e7a7cabf6d53f",
+    "title": "Parts Representative",
+    "company": "Yellowhouse Machinery",
+    "location": "Midland, TX",
+    "salary": "$22 - $27 / HOUR",
+    "url": "https://careers.yellowhouse.com/740884102?rr_p=192",
+    "scraped_at": "2026-02-04T18:17:43",
+    "source": "Yellowhouse"
+  },
+  {
+    "id": "906604",
+    "title": "Certified Medical Assistant - Surgery",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=906604",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "905513",
     "title": "Certified Medical Assistant",
     "company": "Texas Tech University Health Sciences Center",
     "location": "Amarillo",
     "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=903220",
-    "scraped_at": "2026-02-02T05:58:27",
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=905513",
+    "scraped_at": "2026-02-04T18:17:41",
     "source": "TTUHSC"
   },
   {
-    "id": "902305",
+    "id": "902080",
+    "title": "Guard",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=902080",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "901976",
+    "title": "Police Officer",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=901976",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "897921",
+    "title": "Coding & Reimburs Spec",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=897921",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "905232",
+    "title": "Neonatal Nurse Practitioner - PRN",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=905232",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "902594",
+    "title": "Pharmacy Fellow",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=902594",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "901579",
+    "title": "Pharmacy Technician",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=901579",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "905209",
+    "title": "Sr Pharmacy Technician",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=905209",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "900981",
+    "title": "Relief Pharmacist",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=900981",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "906680",
     "title": "Licensed Vocational Nurse",
     "company": "Texas Tech University Health Sciences Center",
     "location": "Amarillo",
     "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=902305",
-    "scraped_at": "2026-02-02T05:58:27",
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=906680",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "906975",
+    "title": "Medical Lab Technician",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=906975",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "906900",
+    "title": "Patient Services Specialist",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=906900",
+    "scraped_at": "2026-02-04T18:17:41",
     "source": "TTUHSC"
   },
   {
@@ -426,7 +526,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=906725",
-    "scraped_at": "2026-02-02T05:58:26",
+    "scraped_at": "2026-02-04T18:17:41",
     "source": "TTUHSC"
   },
   {
@@ -436,17 +536,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=906255",
-    "scraped_at": "2026-02-02T05:58:26",
-    "source": "TTUHSC"
-  },
-  {
-    "id": "898852",
-    "title": "Certified Medical Assistant",
-    "company": "Texas Tech University Health Sciences Center",
-    "location": "Amarillo",
-    "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=898852",
-    "scraped_at": "2026-02-02T05:58:26",
+    "scraped_at": "2026-02-04T18:17:41",
     "source": "TTUHSC"
   },
   {
@@ -456,17 +546,17 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=896816",
-    "scraped_at": "2026-02-02T05:58:26",
+    "scraped_at": "2026-02-04T18:17:41",
     "source": "TTUHSC"
   },
   {
-    "id": "905992",
-    "title": "Licensed Vocational Nurse",
+    "id": "898852",
+    "title": "Certified Medical Assistant",
     "company": "Texas Tech University Health Sciences Center",
     "location": "Amarillo",
     "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=905992",
-    "scraped_at": "2026-02-02T05:58:26",
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=898852",
+    "scraped_at": "2026-02-04T18:17:41",
     "source": "TTUHSC"
   },
   {
@@ -476,7 +566,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=902426",
-    "scraped_at": "2026-02-02T05:58:26",
+    "scraped_at": "2026-02-04T18:17:41",
     "source": "TTUHSC"
   },
   {
@@ -486,18 +576,28 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=903046",
-    "scraped_at": "2026-02-02T05:58:26",
+    "scraped_at": "2026-02-04T18:17:41",
     "source": "TTUHSC"
   },
   {
-    "id": "R-086261",
-    "title": "Assistant Professor of Computer Science",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
+    "id": "902305",
+    "title": "Licensed Vocational Nurse",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
     "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Computer-Science_R-086261-1",
-    "scraped_at": "2026-02-02T05:57:49",
-    "source": "WTAMU"
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=902305",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
+  },
+  {
+    "id": "903220",
+    "title": "Certified Medical Assistant",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=903220",
+    "scraped_at": "2026-02-04T18:17:41",
+    "source": "TTUHSC"
   },
   {
     "id": "R-086358",
@@ -506,7 +606,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Museum-Registrar_R-086358-1",
-    "scraped_at": "2026-02-02T05:57:49",
+    "scraped_at": "2026-02-04T18:17:03",
     "source": "WTAMU"
   },
   {
@@ -516,7 +616,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Athletic-Trainer_R-084688",
-    "scraped_at": "2026-02-02T05:57:49",
+    "scraped_at": "2026-02-04T18:17:03",
     "source": "WTAMU"
   },
   {
@@ -526,7 +626,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Psychiatric-Mental-Health-Nurse-Practitioner_R-083939",
-    "scraped_at": "2026-02-02T05:57:49",
+    "scraped_at": "2026-02-04T18:17:03",
     "source": "WTAMU"
   },
   {
@@ -536,7 +636,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792",
-    "scraped_at": "2026-02-02T05:57:49",
+    "scraped_at": "2026-02-04T18:17:03",
     "source": "WTAMU"
   },
   {
@@ -546,7 +646,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805",
-    "scraped_at": "2026-02-02T05:57:49",
+    "scraped_at": "2026-02-04T18:17:03",
     "source": "WTAMU"
   },
   {
@@ -556,7 +656,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853",
-    "scraped_at": "2026-02-02T05:57:49",
+    "scraped_at": "2026-02-04T18:17:03",
     "source": "WTAMU"
   },
   {
@@ -566,27 +666,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/PTI-Adjunct-Instructor-for-Basic-Public-Speaking_R-070264",
-    "scraped_at": "2026-02-02T05:57:49",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-090538",
-    "title": "Assistant Football Coach - Wide Receivers",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Football-Coach---Wide-Receivers_R-090538-1",
-    "scraped_at": "2026-02-02T05:57:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-090536",
-    "title": "Administrative Associate IV",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-IV_R-090536-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:03",
     "source": "WTAMU"
   },
   {
@@ -596,7 +676,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Instructor-or-Assistant-Professor-of-Emergency-Management-Administration_R-090403",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -606,17 +686,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Amarillo-TX/Business-Consultant_R-090083-1",
-    "scraped_at": "2026-02-02T05:57:46",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-081698",
-    "title": "Librarian II (Research & Outreach Librarian)",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Librarian-II--Scholarly-Communications-Librarian-_R-081698",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -626,7 +696,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Librarian-III--Collection-Management-_R-089948-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -636,7 +706,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-II_R-087577-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -646,7 +716,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-IV_R-089730-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -656,7 +726,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor-of-Environmental-Science_R-089764-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -666,7 +736,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Admissions-Counselor-II_R-088342-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -676,7 +746,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Instructional-Designer-III_R-088813-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -686,7 +756,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-III_R-086998-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -696,7 +766,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-087540-2",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -706,7 +776,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Counseling--Clinical-Coordinator-_R-085598-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -716,7 +786,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Sports-and-Exercise-Science_R-087699-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -726,7 +796,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Theatre_R-087503-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -736,7 +806,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-or-Associate-Professor--Family-Nurse-Practitioner_R-086789-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -746,7 +816,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Museum-Educator_R-087082-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -756,7 +826,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Agricultural-Business-Economics_R-075861-1",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
     "source": "WTAMU"
   },
   {
@@ -766,7 +836,37 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Associate-Professor--Nursing-PhD_R-083929",
-    "scraped_at": "2026-02-02T05:57:46",
+    "scraped_at": "2026-02-04T18:17:01",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-086261",
+    "title": "Assistant Professor of Computer Science",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Computer-Science_R-086261-1",
+    "scraped_at": "2026-02-04T18:17:01",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-090538",
+    "title": "Assistant Football Coach - Wide Receivers",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Football-Coach---Wide-Receivers_R-090538-1",
+    "scraped_at": "2026-02-04T18:17:00",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-090536",
+    "title": "Administrative Associate IV",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-IV_R-090536-1",
+    "scraped_at": "2026-02-04T18:17:00",
     "source": "WTAMU"
   }
 ]
