@@ -10,6 +10,12 @@ from bs4 import BeautifulSoup, Tag
 BASE = "https://www.paycomonline.net"
 CLIENT_KEY = "51CCB437D1A5BB8EA54B11A3C07895CA"
 LIST_URL = f"{BASE}/v4/ats/web.php/jobs?clientkey={CLIENT_KEY}"
+PORTAL_URL = f"{BASE}/v4/ats/web.php/portal/{CLIENT_KEY}/career-page"
+PORTAL_JOB_URL = f"{BASE}/v4/ats/web.php/portal/{CLIENT_KEY}/jobs"
+PORTAL_SEARCH_URL = (
+    "https://portal-applicant-tracking.us-cent.paycomonline.net"
+    "/api/ats/job-posting-previews/search"
+)
 DETAIL_PATH = "/v4/ats/web.php/jobs/ViewJobDetails"
 DEFAULT_STATE = "TX"
 
@@ -37,7 +43,7 @@ def _parse_loc_line(text: str) -> Tuple[Optional[str], Optional[str], Optional[s
     dept, place = (p.strip() for p in right.split(" - ", 1)) if " - " in right else (None, right)
 
     city = state = postal = None
-    m = re.search(r"([^,]+),\s*([A-Z]{2})(?:,\s*(\d{5}))?$", place or "")
+    m = re.search(r"([^,]+),\s*([A-Z]{2})(?:[,\s]+(\d{5}))?$", place or "")
     if m:
         city = m.group(1).strip()
         state = m.group(2)
@@ -47,9 +53,13 @@ def _parse_loc_line(text: str) -> Tuple[Optional[str], Optional[str], Optional[s
 
 
 def _extract_job_id(url: str) -> Optional[str]:
-    q = parse_qs(urlparse(url).query)
+    parsed = urlparse(url)
+    q = parse_qs(parsed.query)
     vals = q.get("job")
-    return vals[0] if vals else None
+    if vals:
+        return vals[0]
+    m = re.search(r"/jobs/(\d+)(?:/)?$", parsed.path)
+    return m.group(1) if m else None
 
 
 def _select_list_items(soup: BeautifulSoup):
@@ -121,6 +131,98 @@ def _fetch_detail(session: requests.Session, job_id: str) -> Tuple[Optional[str]
     return title, resp.text
 
 
+def _extract_session_jwt(html: str) -> Optional[str]:
+    m = re.search(r'"sessionJWT"\s*:\s*"([^"]+)"', html or "")
+    return m.group(1) if m else None
+
+
+def _portal_search_payload(skip: int, take: int) -> dict:
+    return {
+        "skip": skip,
+        "take": take,
+        "filtersForQuery": {
+            "distanceFrom": 0,
+            "workEnvironments": [],
+            "positionTypes": [],
+            "educationLevels": [],
+            "categories": [],
+            "travelTypes": [],
+            "shiftTypes": [],
+            "otherFilters": [],
+            "keywordSearchText": "",
+            "location": "",
+            "sortOption": "",
+        },
+    }
+
+
+def _fetch_portal_jobs(session: requests.Session, *, page_size: int = 100) -> List[dict]:
+    resp = session.get(PORTAL_URL, headers=_mk_headers(referer=PORTAL_URL), timeout=25)
+    resp.raise_for_status()
+
+    token = _extract_session_jwt(resp.text)
+    if not token:
+        return []
+
+    headers = _mk_headers(referer=PORTAL_URL)
+    headers.update(
+        {
+            "Authorization": token,
+            "Content-Type": "application/json",
+            "Origin": "https://www.paycomonline.net",
+            "Referer": "https://www.paycomonline.net/",
+        }
+    )
+
+    records: List[dict] = []
+    total: Optional[int] = None
+    skip = 0
+    while total is None or skip < total:
+        api_resp = session.post(
+            PORTAL_SEARCH_URL,
+            headers=headers,
+            json=_portal_search_payload(skip, page_size),
+            timeout=25,
+        )
+        api_resp.raise_for_status()
+        payload = api_resp.json()
+        page_records = payload.get("jobPostingPreviews") or []
+        if total is None:
+            total = int(payload.get("jobPostingPreviewsCount") or len(page_records))
+        if not page_records:
+            break
+        records.extend(page_records)
+        skip += len(page_records)
+        if len(page_records) < page_size:
+            break
+
+    return records
+
+
+def _parse_portal_record(item: dict) -> Dict[str, Optional[str]]:
+    job_id = str(item.get("jobId") or "").strip()
+    title = re.sub(r"\s+", " ", str(item.get("jobTitle") or "")).strip() or None
+    loc_text = re.sub(r"\s+", " ", str(item.get("locations") or "")).strip()
+    _, _, city, state, _, location_raw = _parse_loc_line(loc_text)
+
+    if not (city and state):
+        city_from_title = _extract_city_from_title(title or "")
+        if city_from_title:
+            city, state = city_from_title, DEFAULT_STATE
+            location_raw = f"{city}, {state}"
+
+    return {
+        "id": job_id or None,
+        "title": title,
+        "company": "FMC",
+        "location": _compose_location(city, state, location_raw if loc_text else None),
+        "salary": None,
+        "url": f"{PORTAL_JOB_URL}/{job_id}" if job_id else PORTAL_URL,
+        "scraped_at": _now_utc_iso_seconds(),
+        "source": "FMC",
+    }
+
+
 def _parse_card(session: requests.Session, card: Tag) -> Dict[str, Optional[str]]:
     a = card if getattr(card, "name", None) == "a" else (
         card.select_one("a.JobListing__container[href]") or card.select_one("a[href*='ViewJobDetails']")
@@ -177,6 +279,19 @@ def fetch_jobs(max_pages: int = 10) -> List[Dict[str, Optional[str]]]:
     session = requests.Session()
     out: List[Dict[str, Optional[str]]] = []
     seen_ids: set[str] = set()
+
+    try:
+        for item in _fetch_portal_jobs(session):
+            rec = _parse_portal_record(item)
+            if rec.get("id") and rec["id"] not in seen_ids:
+                out.append(rec)
+                seen_ids.add(rec["id"])
+    except requests.RequestException:
+        out = []
+        seen_ids = set()
+
+    if out:
+        return out
 
     page = 1
     while page <= max_pages:

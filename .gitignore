@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+
+.venv/
+.env
+
+.DS_Store
+
+*_debug*.html
+sage_debug*.*
+wtamu_debug_page*.html

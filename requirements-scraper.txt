@@ -1,7 +1,5 @@
 requests>=2.32,<3
 beautifulsoup4>=4.12,<5
-pandas>=2.2,<3
-streamlit>=1.32,<2
 playwright>=1.44,<2
 nest_asyncio>=1.6,<2
 cloudscraper>=1.2,<2
