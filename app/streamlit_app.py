@@ -24,6 +24,17 @@ REMOTE_RAW_URL = st.secrets.get("REMOTE_RAW_URL", os.environ.get("REMOTE_RAW_URL
 DEFAULT_DATA_MODE = "remote" if REMOTE_RAW_URL else "local"
 
 
+def _int_setting(name: str, default: int) -> int:
+    raw = st.secrets.get(name, os.environ.get(name, default))
+    try:
+        return max(1, int(raw))
+    except (TypeError, ValueError):
+        return default
+
+
+REMOTE_CACHE_TTL_SECONDS = _int_setting("REMOTE_CACHE_TTL_SECONDS", 60)
+
+
 # ---------- Fresh loaders ----------
 
 def _empty_df() -> pd.DataFrame:
@@ -56,8 +67,8 @@ def _safe_read_json_str(s: str) -> pd.DataFrame:
         return _empty_df()
 
 
-@st.cache_data(ttl=86400, show_spinner=False)
-def _load_remote_json(url: str, cache_bust: int) -> pd.DataFrame:
+@st.cache_data(ttl=REMOTE_CACHE_TTL_SECONDS, show_spinner=False)
+def _load_remote_json(url: str, cache_bust: str) -> pd.DataFrame:
     headers = {"Cache-Control": "no-cache"}
     r = requests.get(url, params={"t": cache_bust}, headers=headers, timeout=15)
     r.raise_for_status()
@@ -100,7 +111,8 @@ left_hdr, right_hdr = st.columns([1, 1])
 with left_hdr:
     st.title("Horizons Job Aggregator")
 with right_hdr:
-    if st.button("🔄 Refresh data", use_container_width=True):
+    if st.button("Refresh data", use_container_width=True):
+        st.session_state["remote_cache_nonce"] = int(time.time() * 1000)
         st.cache_data.clear()
         st.rerun()
 
@@ -118,7 +130,8 @@ if DATA_MODE == "local":
     df = _load_local_json(str(DATA_FILE), mtime_ns)
 else:
     try:
-        cb = int(time.time() // 86400)  # refresh at most once per minute
+        cache_bucket = int(time.time() // REMOTE_CACHE_TTL_SECONDS)
+        cb = f"{cache_bucket}-{st.session_state.get('remote_cache_nonce', 0)}"
         df = _load_remote_json(REMOTE_RAW_URL, cb)
     except Exception as e:
         st.sidebar.error(f"Remote fetch failed: {e}. Falling back to local file.")
@@ -129,7 +142,7 @@ else:
 left, right = st.columns([1, 1])
 with left:
     if DATA_MODE == "remote":
-        st.caption("Reading from GitHub Raw (auto-refresh once a day)")
+        st.caption(f"Reading from GitHub Raw (auto-refresh every {REMOTE_CACHE_TTL_SECONDS} seconds)")
     else:
         st.caption("Reading local repo file (auto-refresh on commit)")
 with right:
