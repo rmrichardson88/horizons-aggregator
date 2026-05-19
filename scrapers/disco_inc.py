@@ -7,7 +7,7 @@ from typing import Dict, List, Optional
 from urllib.parse import urlparse, parse_qs, urljoin
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
 try:
     from datetime import datetime, UTC
@@ -46,6 +46,81 @@ def _clean_text(s: Optional[str]) -> Optional[str]:
         return None
     s = html.unescape(s).replace("\xa0", " ").strip()
     return re.sub(r"\s+", " ", s) or None
+
+
+def _is_striven_job_href(href: Optional[str]) -> bool:
+    return bool(href and "share.striven.com/Job" in href)
+
+
+def _looks_like_non_title(text: str) -> bool:
+    return bool(
+        re.search(
+            r"^(apply|available jobs?|careers?|location|job title|description|view job|learn more)$",
+            text,
+            re.I,
+        )
+    )
+
+
+def _looks_like_location(text: str) -> bool:
+    return bool(re.search(r"\b[A-Z][A-Za-z .'-]+,\s*[A-Z]{2}(?:\s+\d{5})?\b", text))
+
+
+def _extract_location(text: Optional[str]) -> Optional[str]:
+    if not text:
+        return None
+    matches = re.findall(r"\b[A-Z][A-Za-z .'-]+,\s*[A-Z]{2}(?:\s+\d{5})?\b", text)
+    return _clean_text(matches[-1]) if matches else None
+
+
+def _nearest_job_card(anchor: Tag) -> Optional[Tag]:
+    for parent in anchor.parents:
+        if not isinstance(parent, Tag):
+            continue
+        if parent.name not in {"article", "li", "div", "section"}:
+            continue
+        links = parent.find_all("a", href=_is_striven_job_href)
+        text = _clean_text(parent.get_text(" ", strip=True)) or ""
+        if len(links) == 1 and 0 < len(text) < 2000:
+            return parent
+    return None
+
+
+def _last_heading_before_anchor(scope: Tag, anchor: Tag) -> Optional[str]:
+    title: Optional[str] = None
+    for node in scope.descendants:
+        if node is anchor:
+            break
+        if isinstance(node, Tag) and node.name in {"h1", "h2", "h3", "h4", "h5", "h6"}:
+            text = _clean_text(node.get_text(" ", strip=True))
+            if text and not _looks_like_non_title(text):
+                title = text
+    return title
+
+
+def _title_from_card(card: Optional[Tag], anchor: Tag, soup: BeautifulSoup) -> Optional[str]:
+    if card:
+        heading = card.find(["h1", "h2", "h3", "h4", "h5", "h6"])
+        title = _clean_text(heading.get_text(" ", strip=True)) if heading else None
+        if title and not _looks_like_non_title(title):
+            return title
+
+        for raw in card.stripped_strings:
+            text = _clean_text(raw)
+            if not text or _looks_like_non_title(text) or _looks_like_location(text):
+                continue
+            if text == _clean_text(anchor.get_text(" ", strip=True)):
+                continue
+            return text
+
+    return _last_heading_before_anchor(soup, anchor)
+
+
+def _listing_details_from_anchor(anchor: Tag, soup: BeautifulSoup) -> tuple[Optional[str], Optional[str]]:
+    card = _nearest_job_card(anchor)
+    title = _title_from_card(card, anchor, soup)
+    location = _extract_location(card.get_text(" ", strip=True) if card else None)
+    return title, location
 
 
 def _fetch_striven_job(url: str) -> tuple[Optional[str], Optional[str]]:
@@ -147,7 +222,11 @@ def fetch_jobs() -> List[Dict[str, Optional[str]]]:
         if job_id:
             seen_ids.add(job_id)
 
-        title, location = _fetch_striven_job(job_url)
+        listing_title, listing_location = _listing_details_from_anchor(a, soup)
+        detail_title, detail_location = _fetch_striven_job(job_url)
+
+        title = detail_title or listing_title
+        location = detail_location or listing_location
 
         if not title:
             continue

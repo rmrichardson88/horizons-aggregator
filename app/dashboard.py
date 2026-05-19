@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -13,12 +14,13 @@ st.set_page_config(
 )
 
 # --- Data locations ---
-DATA_FILE = Path(__file__).parents[1] / "data/latest_jobs.json"  # local fallback (repo file)
+DEFAULT_DATA_FILE = Path(__file__).parents[1] / "data/latest_jobs.json"
+DATA_FILE = Path(os.environ.get("JOB_DATA_PATH") or os.environ.get("OUTPUT_PATH") or DEFAULT_DATA_FILE)
 REQUIRED_COLS = ["title", "company", "salary", "location", "url"]
 
-# Prefer remote raw URL so the app updates without redeploys.
-# Set this in Streamlit secrets: REMOTE_RAW_URL: https://raw.githubusercontent.com/<user>/<repo>/<branch>/data/latest_jobs.json
-REMOTE_RAW_URL = st.secrets.get("REMOTE_RAW_URL", "")
+# Prefer remote raw URL so the app updates without redeploys. In Streamlit Cloud,
+# set this in secrets; in containers, set REMOTE_RAW_URL as an environment variable.
+REMOTE_RAW_URL = st.secrets.get("REMOTE_RAW_URL", os.environ.get("REMOTE_RAW_URL", ""))
 DEFAULT_DATA_MODE = "remote" if REMOTE_RAW_URL else "local"
 
 

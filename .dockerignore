@@ -1,0 +1,14 @@
+.git/
+.github/
+.venv/
+__pycache__/
+*.py[cod]
+
+.DS_Store
+.env
+
+*_debug*.html
+sage_debug*.*
+wtamu_debug_page*.html
+
+.streamlit/secrets.toml
