@@ -6,7 +6,7 @@
     "location": "Guymon WE - Guymon, OK 73942",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181177",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -16,7 +16,7 @@
     "location": "Clovis WE - Clovis, NM 88101",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181173",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -26,7 +26,7 @@
     "location": "Dalhart WE - Dalhart, TX 79022",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/448506",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -36,7 +36,7 @@
     "location": "Muleshoe WE - Muleshoe, TX 79347",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/446770",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -46,7 +46,17 @@
     "location": "Dalhart WE - Dalhart, TX 79022",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/442471",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
+    "source": "Western Equipment"
+  },
+  {
+    "id": "426868",
+    "title": "Regional Truck Driver",
+    "company": "Western Equipment",
+    "location": "Dumas WE - Dumas, TX 79029; Dalhart WE - Dalhart, TX 79022; Spearman WE - Spearman, TX 79081",
+    "salary": null,
+    "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/426868",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -56,7 +66,7 @@
     "location": null,
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/400223",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -66,7 +76,7 @@
     "location": "Clinton WE - Arapaho, OK 73620",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181169",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -76,7 +86,7 @@
     "location": "Weatherford WE - Weatherford, OK 73096",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181165",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -86,7 +96,7 @@
     "location": "Hobart WE - Hobart, OK 73651",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181161",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -96,7 +106,7 @@
     "location": "Alva WE - Alva, OK 73717",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181157",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -106,7 +116,7 @@
     "location": "Altus WE - Altus, OK 73521",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181151",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -116,7 +126,7 @@
     "location": "Woodward WE - Woodward, OK 73801",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181146",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -126,7 +136,7 @@
     "location": "Childress WE - Childress, TX 79201",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181142",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -136,7 +146,7 @@
     "location": "Amarillo WE - Amarillo, TX 79119",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181138",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -146,7 +156,7 @@
     "location": "Dimmitt WE - Dimmitt, TX 79027",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181134",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -156,7 +166,7 @@
     "location": "Muleshoe WE - Muleshoe, TX 79347",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181130",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -166,7 +176,7 @@
     "location": "Olton WE - Olton, TX 79064",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181126",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -176,7 +186,7 @@
     "location": "Plainview WE - Plainview, TX 79072",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181122",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -186,7 +196,7 @@
     "location": "Floydada WE - Floydada, TX 79235",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181118",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -196,7 +206,7 @@
     "location": "Perryton WE - Perryton, TX 79090",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181114",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -206,7 +216,7 @@
     "location": "Pampa WE - Pampa, TX 79065",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181110",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -216,7 +226,7 @@
     "location": "Spearman WE - Spearman, TX 79081",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181106",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -226,7 +236,7 @@
     "location": "Dumas WE - Dumas, TX 79029",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181101",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -236,7 +246,7 @@
     "location": "Dalhart WE - Dalhart, TX 79022",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181096",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -246,7 +256,7 @@
     "location": "Boise City WE - Boise City, OK 73933",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/BEC705AAE8346DB92E3A5C60250EE84C/jobs/181092",
-    "scraped_at": "2026-08-27T16:01:14",
+    "scraped_at": "2026-08-28T17:01:13",
     "source": "Western Equipment"
   },
   {
@@ -256,7 +266,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/H8XKP7vU32Lg?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -266,7 +276,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/aXCMw9vvrD9B?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -276,7 +286,7 @@
     "location": "Midland, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/KOLYbC-6CmoS?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -286,7 +296,7 @@
     "location": "Midland, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/rqlZ1GeyDVHK?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -296,7 +306,7 @@
     "location": "Decatur, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/B_tkS3BDYj1M?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -306,7 +316,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/YuRivnoCpuLz?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -316,7 +326,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/3jQ9K0CEntgV?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -326,7 +336,7 @@
     "location": "Decatur, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/FD9aNbUxfFW4?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -336,7 +346,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/YSTpysg3S5RP?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -346,7 +356,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/oo1PgJvBaiLW?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -356,7 +366,7 @@
     "location": "San Antonio, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/PEIVzoD41kX_?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -366,7 +376,7 @@
     "location": "Dallas, TX",
     "salary": null,
     "url": "https://apply.teamengine.io/apply/nXAxBFLZ5A7f?utm_source=careers_page",
-    "scraped_at": "2026-08-27T16:01:13",
+    "scraped_at": "2026-08-28T17:01:12",
     "source": "Talon/LPE"
   },
   {
@@ -376,7 +386,7 @@
     "location": "Sage Oil Vac  - AMARILLO, TX 79118",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/A2551499AF9F0B92169C5FA32A8E8354/jobs/409410",
-    "scraped_at": "2026-08-27T16:01:10",
+    "scraped_at": "2026-08-28T17:01:09",
     "source": "Sage Oil Vac"
   },
   {
@@ -386,7 +396,7 @@
     "location": "Sage Oil Vac  - AMARILLO, TX 79118",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/A2551499AF9F0B92169C5FA32A8E8354/jobs/402494",
-    "scraped_at": "2026-08-27T16:01:10",
+    "scraped_at": "2026-08-28T17:01:09",
     "source": "Sage Oil Vac"
   },
   {
@@ -396,177 +406,17 @@
     "location": "Sage Oil Vac  - AMARILLO, TX 79118",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/A2551499AF9F0B92169C5FA32A8E8354/jobs/402663",
-    "scraped_at": "2026-08-27T16:01:10",
+    "scraped_at": "2026-08-28T17:01:09",
     "source": "Sage Oil Vac"
   },
   {
-    "id": "95721",
-    "title": "Supply Chain Manager (2960)",
-    "company": "Sage Oil Vac",
-    "location": "Sage Oil Vac  - AMARILLO, TX 79118",
-    "salary": null,
-    "url": "https://www.paycomonline.net/v4/ats/web.php/portal/A2551499AF9F0B92169C5FA32A8E8354/jobs/95721",
-    "scraped_at": "2026-08-27T16:01:10",
-    "source": "Sage Oil Vac"
-  },
-  {
-    "id": "4456228",
-    "title": "Rig Sales Representative",
-    "company": "Austin Hose",
-    "location": "Corpus Christi, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4456228",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4456203",
-    "title": "Rig Sales Representative",
-    "company": "Austin Hose",
-    "location": "Oklahoma City, OK",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4456203",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4295876",
+    "id": "4256106",
     "title": "Warehouse Associate",
     "company": "Austin Hose",
-    "location": "Baton Rouge, LA",
+    "location": "Jacksonville, FL",
     "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4295876",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4435517",
-    "title": "Customer Service Representative",
-    "company": "Austin Hose",
-    "location": "Wichita, KS",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4435517",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4435455",
-    "title": "Warehouse Associate",
-    "company": "Austin Hose",
-    "location": "Wichita, KS",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4435455",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4435424",
-    "title": "Director of HR and Payroll",
-    "company": "Austin Hose",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4435424",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4427591",
-    "title": "Pricing Analyst",
-    "company": "Austin Hose",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4427591",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4427573",
-    "title": "Full Stack Developer 1",
-    "company": "Austin Hose",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4427573",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4427560",
-    "title": "Application Developer 1",
-    "company": "Austin Hose",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4427560",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4417381",
-    "title": "Warehouse Associate",
-    "company": "Austin Hose",
-    "location": "Austin, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4417381",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4409168",
-    "title": "Warehouse Associate",
-    "company": "Austin Hose",
-    "location": "Long Beach, CA",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4409168",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4409153",
-    "title": "Inside Sales",
-    "company": "Austin Hose",
-    "location": "Long Beach, CA",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4409153",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4149690",
-    "title": "Warehouse Associate",
-    "company": "Austin Hose",
-    "location": "San Antonio, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4149690",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4403007",
-    "title": "Inside Sales",
-    "company": "Austin Hose",
-    "location": "Oklahoma City, OK",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4403007",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4380059",
-    "title": "Shop Tech",
-    "company": "Austin Hose",
-    "location": "Odessa, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4380059",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4224843",
-    "title": "Delivery Driver",
-    "company": "Austin Hose",
-    "location": "Austin, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4224843",
-    "scraped_at": "2026-08-27T16:01:05",
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4256106",
+    "scraped_at": "2026-08-28T17:01:05",
     "source": "Austin Hose"
   },
   {
@@ -576,47 +426,7 @@
     "location": "Dallas, TX",
     "salary": null,
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4339236",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4204540",
-    "title": "Delivery Driver",
-    "company": "Austin Hose",
-    "location": "Findlay Township, PA",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4204540",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4256106",
-    "title": "Warehouse Associate",
-    "company": "Austin Hose",
-    "location": "Jacksonville, FL",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4256106",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4324400",
-    "title": "Delivery Driver",
-    "company": "Austin Hose",
-    "location": "Odessa, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4324400",
-    "scraped_at": "2026-08-27T16:01:05",
-    "source": "Austin Hose"
-  },
-  {
-    "id": "4103615",
-    "title": "Warehouse Associate",
-    "company": "Austin Hose",
-    "location": "Odessa, TX",
-    "salary": null,
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4103615",
-    "scraped_at": "2026-08-27T16:01:05",
+    "scraped_at": "2026-08-28T17:01:05",
     "source": "Austin Hose"
   },
   {
@@ -626,7 +436,7 @@
     "location": "Long Beach, CA",
     "salary": null,
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4307563",
-    "scraped_at": "2026-08-27T16:01:05",
+    "scraped_at": "2026-08-28T17:01:05",
     "source": "Austin Hose"
   },
   {
@@ -636,7 +446,187 @@
     "location": "Williston, ND",
     "salary": null,
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3874238",
-    "scraped_at": "2026-08-27T16:01:05",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4103615",
+    "title": "Warehouse Associate",
+    "company": "Austin Hose",
+    "location": "Odessa, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4103615",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4324400",
+    "title": "Delivery Driver",
+    "company": "Austin Hose",
+    "location": "Odessa, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4324400",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4204540",
+    "title": "Delivery Driver",
+    "company": "Austin Hose",
+    "location": "Findlay Township, PA",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4204540",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4456228",
+    "title": "Rig Sales Representative",
+    "company": "Austin Hose",
+    "location": "Corpus Christi, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4456228",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4456203",
+    "title": "Rig Sales Representative",
+    "company": "Austin Hose",
+    "location": "Oklahoma City, OK",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4456203",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4295876",
+    "title": "Warehouse Associate",
+    "company": "Austin Hose",
+    "location": "Baton Rouge, LA",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4295876",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4435517",
+    "title": "Customer Service Representative",
+    "company": "Austin Hose",
+    "location": "Wichita, KS",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4435517",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4435455",
+    "title": "Warehouse Associate",
+    "company": "Austin Hose",
+    "location": "Wichita, KS",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4435455",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4435424",
+    "title": "Director of HR and Payroll",
+    "company": "Austin Hose",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4435424",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4427591",
+    "title": "Pricing Analyst",
+    "company": "Austin Hose",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4427591",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4427573",
+    "title": "Full Stack Developer 1",
+    "company": "Austin Hose",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4427573",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4427560",
+    "title": "Application Developer 1",
+    "company": "Austin Hose",
+    "location": "Amarillo, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4427560",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4417381",
+    "title": "Warehouse Associate",
+    "company": "Austin Hose",
+    "location": "Austin, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4417381",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4409168",
+    "title": "Warehouse Associate",
+    "company": "Austin Hose",
+    "location": "Long Beach, CA",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4409168",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4409153",
+    "title": "Inside Sales",
+    "company": "Austin Hose",
+    "location": "Long Beach, CA",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4409153",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4149690",
+    "title": "Warehouse Associate",
+    "company": "Austin Hose",
+    "location": "San Antonio, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4149690",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4403007",
+    "title": "Inside Sales",
+    "company": "Austin Hose",
+    "location": "Oklahoma City, OK",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4403007",
+    "scraped_at": "2026-08-28T17:01:05",
+    "source": "Austin Hose"
+  },
+  {
+    "id": "4380059",
+    "title": "Shop Tech",
+    "company": "Austin Hose",
+    "location": "Odessa, TX",
+    "salary": null,
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4380059",
+    "scraped_at": "2026-08-28T17:01:05",
     "source": "Austin Hose"
   },
   {
@@ -646,7 +636,7 @@
     "location": "Sand Springs, OK",
     "salary": "",
     "url": "https://careers.yellowhouse.com/1427148537?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -656,7 +646,7 @@
     "location": "Lubbock, TX",
     "salary": "$18 - $50 / HOUR",
     "url": "https://careers.yellowhouse.com/740847238?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -666,7 +656,7 @@
     "location": "Lubbock, TX",
     "salary": "$18 - $50 / HOUR",
     "url": "https://careers.yellowhouse.com/740847442?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -676,7 +666,7 @@
     "location": "Midland, TX",
     "salary": "$18 - $50 / HOUR",
     "url": "https://careers.yellowhouse.com/734466475?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -686,7 +676,7 @@
     "location": "Midland, TX",
     "salary": "$18 - $50 / HOUR",
     "url": "https://careers.yellowhouse.com/734466496?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -696,7 +686,7 @@
     "location": "Enid, OK",
     "salary": "$18 - $50 / HOUR",
     "url": "https://careers.yellowhouse.com/719837044?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -706,7 +696,7 @@
     "location": "Amarillo, TX",
     "salary": "$18 - $22 / HOUR",
     "url": "https://careers.yellowhouse.com/1481972070?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -716,7 +706,7 @@
     "location": "Midland, TX",
     "salary": "$20 - $28 / HOUR",
     "url": "https://careers.yellowhouse.com/740893516?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -726,7 +716,7 @@
     "location": "Broken Bow, OK",
     "salary": "$18 - $50 / HOUR",
     "url": "https://careers.yellowhouse.com/719837236?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -736,7 +726,7 @@
     "location": "Sand Springs, OK",
     "salary": "$18 - $50 / HOUR",
     "url": "https://careers.yellowhouse.com/719837239?rr_p=192",
-    "scraped_at": "2026-08-27T16:01:02",
+    "scraped_at": "2026-08-28T17:01:02",
     "source": "Yellowhouse"
   },
   {
@@ -746,7 +736,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-08-27T16:01:01",
+    "scraped_at": "2026-08-28T17:01:01",
     "source": "Amarillo National Bank"
   },
   {
@@ -756,17 +746,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-08-27T16:01:01",
-    "source": "Amarillo National Bank"
-  },
-  {
-    "id": "amarillo-collector-special-assets",
-    "title": "Collector - Special Assets",
-    "company": "Amarillo National Bank",
-    "location": "Amarillo, TX",
-    "salary": null,
-    "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-08-27T16:01:01",
+    "scraped_at": "2026-08-28T17:01:01",
     "source": "Amarillo National Bank"
   },
   {
@@ -776,7 +756,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-08-27T16:01:01",
+    "scraped_at": "2026-08-28T17:01:01",
     "source": "Amarillo National Bank"
   },
   {
@@ -786,7 +766,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.anb.com/about-anb/careers.html",
-    "scraped_at": "2026-08-27T16:01:01",
+    "scraped_at": "2026-08-28T17:01:01",
     "source": "Amarillo National Bank"
   },
   {
@@ -796,7 +776,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/112732",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -806,7 +786,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/114642",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -816,7 +796,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/114635",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -826,7 +806,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/114628",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -836,7 +816,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/115850",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -846,7 +826,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/115932",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -856,7 +836,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/116312",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -866,7 +846,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/116235",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -876,7 +856,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/116188",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -886,7 +866,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/116169",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -896,7 +876,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/116147",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -906,7 +886,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/116118",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -916,7 +896,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/116039",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -926,7 +906,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/115997",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -936,7 +916,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/115986",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -946,7 +926,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/116616",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -956,7 +936,7 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/117525",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
   },
   {
@@ -966,8 +946,18 @@
     "location": "Amarillo, TX",
     "salary": null,
     "url": "https://www.paycomonline.net/v4/ats/web.php/portal/51CCB437D1A5BB8EA54B11A3C07895CA/jobs/114651",
-    "scraped_at": "2026-08-27T16:01:00",
+    "scraped_at": "2026-08-28T17:01:00",
     "source": "FMC"
+  },
+  {
+    "id": "922085",
+    "title": "Head Nurse",
+    "company": "Texas Tech University Health Sciences Center",
+    "location": "Amarillo",
+    "salary": null,
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=922085",
+    "scraped_at": "2026-08-28T17:00:59",
+    "source": "TTUHSC"
   },
   {
     "id": "921972",
@@ -976,7 +966,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=921972",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -986,7 +976,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=921925",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -996,7 +986,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=913984",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1006,7 +996,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=916862",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1016,7 +1006,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=918037",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1026,7 +1016,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=916725",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1036,7 +1026,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=916704",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1046,7 +1036,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=920800",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1056,7 +1046,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=908037",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1066,7 +1056,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=903368",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1076,7 +1066,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=909565",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1086,7 +1076,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=918957",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1096,17 +1086,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=915898",
-    "scraped_at": "2026-08-27T16:00:59",
-    "source": "TTUHSC"
-  },
-  {
-    "id": "920708",
-    "title": "Patient Services Specialist - Surgery",
-    "company": "Texas Tech University Health Sciences Center",
-    "location": "Amarillo",
-    "salary": null,
-    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=920708",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1116,7 +1096,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=920711",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1126,7 +1106,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=919903",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1136,7 +1116,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=899955",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1146,7 +1126,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=918488",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1156,7 +1136,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=919451",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1166,7 +1146,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=919872",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1176,7 +1156,7 @@
     "location": "Amarillo",
     "salary": null,
     "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25898&siteid=5283&PageType=JobDetails&jobid=897654",
-    "scraped_at": "2026-08-27T16:00:59",
+    "scraped_at": "2026-08-28T17:00:59",
     "source": "TTUHSC"
   },
   {
@@ -1186,7 +1166,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Biology_R-082360",
-    "scraped_at": "2026-08-27T16:00:16",
+    "scraped_at": "2026-08-28T17:00:20",
     "source": "WTAMU"
   },
   {
@@ -1196,7 +1176,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-IV_R-090536-1",
-    "scraped_at": "2026-08-27T16:00:16",
+    "scraped_at": "2026-08-28T17:00:20",
     "source": "WTAMU"
   },
   {
@@ -1206,7 +1186,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Police-Officer-I-IV_R-087540-2",
-    "scraped_at": "2026-08-27T16:00:16",
+    "scraped_at": "2026-08-28T17:00:20",
     "source": "WTAMU"
   },
   {
@@ -1216,7 +1196,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Dance_R-061853",
-    "scraped_at": "2026-08-27T16:00:16",
+    "scraped_at": "2026-08-28T17:00:20",
     "source": "WTAMU"
   },
   {
@@ -1226,97 +1206,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/PTI-Adjunct-Instructor-for-Basic-Public-Speaking_R-070264",
-    "scraped_at": "2026-08-27T16:00:16",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-096328",
-    "title": "Administrative Associate III",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-III_R-096328-1",
-    "scraped_at": "2026-08-27T16:00:13",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-094386",
-    "title": "Assistant Athletic Performance Coach",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Athletic-Performance-Coach_R-094386-1",
-    "scraped_at": "2026-08-27T16:00:13",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-094388",
-    "title": "Senior Career Development Coordinator for Training and Development",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Senior-Career-Development-Coordinator-for-Training-and-Development_R-094388-1",
-    "scraped_at": "2026-08-27T16:00:13",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-096243",
-    "title": "Digital Giving Officer",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Digital-Giving-Officer_R-096243-1",
-    "scraped_at": "2026-08-27T16:00:13",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-096200",
-    "title": "Buyer I",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Buyer-I_R-096200-1",
-    "scraped_at": "2026-08-27T16:00:13",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-096031",
-    "title": "Instructor of Speech & Hearing Sciences/Director of Clinical Education",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Speech---Hearing-Sciences-Director-of-Clinical-Education_R-096031-1",
-    "scraped_at": "2026-08-27T16:00:13",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-095603",
-    "title": "Rural Community Engagement & Impact Coordinator",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Rural-Community-Engagement---Impact-Coordinator_R-095603-1",
-    "scraped_at": "2026-08-27T16:00:13",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-095354",
-    "title": "Program Specialist I",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Program-Specialist-I_R-095354-1",
-    "scraped_at": "2026-08-27T16:00:13",
-    "source": "WTAMU"
-  },
-  {
-    "id": "R-095613",
-    "title": "Program Leader – Rural Systems & Partnerships",
-    "company": "West Texas A&M University",
-    "location": "Canyon, TX",
-    "salary": null,
-    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Program-Leader---Rural-Systems---Partnerships_R-095613-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:20",
     "source": "WTAMU"
   },
   {
@@ -1326,7 +1216,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/rootEd-Pathways-Advisor_R-095606-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1336,7 +1226,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Senior-Academic-Advisor_R-095553-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1346,7 +1236,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Director-of-Student-Engagement---Belonging_R-095419-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1356,7 +1246,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Philanthropy-System-Analyst_R-095410-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1366,7 +1256,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Health-Sciences_R-095062-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1376,7 +1266,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Agricultural-Business-Economics_R-094880-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1386,7 +1276,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Accounting_R-093554-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1396,7 +1286,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Management_R-093555",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1406,7 +1296,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Professor-of-Counseling_R-093174-1",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1416,7 +1306,7 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Biology_R-045805",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
     "source": "WTAMU"
   },
   {
@@ -1426,7 +1316,97 @@
     "location": "Canyon, TX",
     "salary": null,
     "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Part-Time-Instructor-of-Chemistry_R-045792",
-    "scraped_at": "2026-08-27T16:00:13",
+    "scraped_at": "2026-08-28T17:00:18",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-096328",
+    "title": "Administrative Associate III",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Administrative-Associate-III_R-096328-1",
+    "scraped_at": "2026-08-28T17:00:17",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-094386",
+    "title": "Assistant Athletic Performance Coach",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Assistant-Athletic-Performance-Coach_R-094386-1",
+    "scraped_at": "2026-08-28T17:00:17",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-094388",
+    "title": "Senior Career Development Coordinator for Training and Development",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Senior-Career-Development-Coordinator-for-Training-and-Development_R-094388-1",
+    "scraped_at": "2026-08-28T17:00:17",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-096243",
+    "title": "Digital Giving Officer",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Digital-Giving-Officer_R-096243-1",
+    "scraped_at": "2026-08-28T17:00:17",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-096200",
+    "title": "Buyer I",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Buyer-I_R-096200-1",
+    "scraped_at": "2026-08-28T17:00:17",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-096031",
+    "title": "Instructor of Speech & Hearing Sciences/Director of Clinical Education",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Instructor-of-Speech---Hearing-Sciences-Director-of-Clinical-Education_R-096031-1",
+    "scraped_at": "2026-08-28T17:00:17",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-095603",
+    "title": "Rural Community Engagement & Impact Coordinator",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Rural-Community-Engagement---Impact-Coordinator_R-095603-1",
+    "scraped_at": "2026-08-28T17:00:17",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-095354",
+    "title": "Program Specialist I",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Program-Specialist-I_R-095354-1",
+    "scraped_at": "2026-08-28T17:00:17",
+    "source": "WTAMU"
+  },
+  {
+    "id": "R-095613",
+    "title": "Program Leader – Rural Systems & Partnerships",
+    "company": "West Texas A&M University",
+    "location": "Canyon, TX",
+    "salary": null,
+    "url": "https://tamus.wd1.myworkdayjobs.com/en-US/WTAMU_External/job/Canyon-TX/Program-Leader---Rural-Systems---Partnerships_R-095613-1",
+    "scraped_at": "2026-08-28T17:00:17",
     "source": "WTAMU"
   }
 ]
